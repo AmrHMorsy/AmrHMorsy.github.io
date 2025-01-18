@@ -5,7 +5,7 @@ description: Real-time Skeletal Animation, developed in C++/OpenGL, utilizing As
 img: assets/img/s.png
 redirect: https://github.com/AmrHMorsy/Skeletal-Animation-OpenGL
 importance: 4
-category:
+category: Simulations
 ---
 
 Every project has a beautiful feature showcase page.
