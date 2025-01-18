@@ -9,21 +9,21 @@
 - title: Education
   type: time_table
   contents:
-    - title: \n Msc Computer Science
+    - title: Msc Computer Science
       institution: Concordia University | Montréal, Canada
-      year: September 2024 - December 2025
+      year: Sep 2024 - Dec 2025
 
-    - title: \n Bsc Computer Science
+    - title: Bsc Computer Science
       institution: Concordia University | Montréal, Canada
-      year: January 2022 - May 2024
+      year: Jan 2022 - May 2024
 
-    - title: \n Erasmus Exchange Program
+    - title:        Erasmus Exchange Program
       institution: University of Bergen | Bergen, Norway
-      year: January 2021 - December 2021
+      year: Jan 2021 - Dec 2021
 
-    - title: \n Bsc Computer Science
+    - title: Bsc Computer Science
       institution: The American University of Cairo | Cairo, Egypt
-      year: September 2018 - December 2020
+      year: Sep 2018 - Dec 2020
 
 - title: Experience
   type: time_table
