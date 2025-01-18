@@ -21,7 +21,7 @@ Welcome ! <br>
 My name is Amr Morsy, and I am a graphics programmer. 
 
 
-This website is a space where I showcase my graphics programming projects, including video games, animations, simulations, and game engines. 
+This website is a space where I showcase my graphics programming projects, including games, animations, simulations, and game engines. 
 
 I also share tutorials and explanations of advanced graphics programming concepts through my blog and YouTube channel, and offer personal insights, detailing my experiences and development journey.
 
