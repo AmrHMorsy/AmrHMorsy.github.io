@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OpenGL Cloth Simulation
+title: Cloth Simulation (OpenGL)
 description: Real-time cloth simulation, developed in C++/OpenGL, that employs a Mass-Spring System, inspired by the paper "Fast Simulation of Mass-Spring Systems" by Liu et al. Parallelized using OpenMP and features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic, immersive sky.
 img: assets/img/3.png
 importance: 2
