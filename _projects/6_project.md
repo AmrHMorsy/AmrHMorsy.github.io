@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OpenGL Procedural Terrain Generation
+title: Procedural Terrain Generation (OpenGL)
 description: Real-time Procedural Multifractal Terrain Generation, developed in C++/OpenGL, that generates infinite multifractal terrains using Fractal Brownian Motion and Perlin Noise. Features Physically-Based Rendering (PBR), Image-Based Lighting (IBL), HDR skybox and Volumetric Fog Rendering.
 img: assets/img/ptg2.png
 importance: 3
