@@ -28,7 +28,7 @@ I also share tutorials and explanations of advanced graphics programming concept
 
 I mainly work with low-level graphics APIs such as OpenGL, Vulkan, Metal and Direct3D, as I prefer programming at a low level for greater control and optimization.
 
-
+I hope this website inspires and benefits you in your own graphics programming journey.
 
 
 <br> 
