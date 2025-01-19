@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rendering Engine
+title: OpenGL Rendering Engine
 description: OpenGL Rendering Engine that features Physically-Based Rendering (PBR), Image-Based Lighting (IBL), HDR skyboxes, and dynamic soft shadows. The engine also leverages Tessellation shaders to dynamically refine mesh detail at runtime and anti-aliasing to reduce visual artifacts, enabling the creation of visually compelling and realistic scenes. 
 img: assets/img/21.png
 redirect: https://github.com/AmrHMorsy/Rendering-Engine
