@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Skeletal Animation (OpenGL)
+title: Skeletal Animation
 description: Real-time Skeletal Animation, developed in C++/OpenGL, utilizing Assimp, dual quaternion skinning and Inverse Kinematics to create interactive and smooth animations. Parallelized using OpenMP and features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic, immersive sky.
 img: assets/img/s.png
 redirect: https://github.com/AmrHMorsy/Skeletal-Animation-OpenGL
