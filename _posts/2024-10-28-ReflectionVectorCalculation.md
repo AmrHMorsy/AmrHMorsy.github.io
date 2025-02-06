@@ -19,7 +19,7 @@ In this post, we will explore the mathematics behind calculating the reflection 
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Refraction0.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Reflection_Vector_Calculation/1.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -46,7 +46,7 @@ $$
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Reflection0.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Reflection_Vector_Calculation/2.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -88,7 +88,7 @@ $$
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Reflection1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Reflection_Vector_Calculation/3.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -112,7 +112,7 @@ $$
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Reflection2.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Reflection_Vector_Calculation/4.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
