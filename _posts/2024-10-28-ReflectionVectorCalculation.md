@@ -122,11 +122,13 @@ $$
 <br>
 
 Now, let's calculate the reflection vector $$R$$. Since 
+
 $$
 R = R_{||N} + R_{⊥N}
 $$
+
 , then we can calculate $$R$$ by calculating its components 
-$$R = R_{||N}$$
+$$R_{||N}$$
 and 
 $$R_{⊥N}$$
 . 
