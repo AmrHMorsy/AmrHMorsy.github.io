@@ -127,7 +127,7 @@ $$
 R = R_{||N} + R_{⊥N}
 $$
 
-, then we can calculate $$R$$ by calculating its components 
+then we can calculate $$R$$ by calculating its components 
 $$R_{||N}$$
 and 
 $$R_{⊥N}$$
