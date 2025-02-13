@@ -318,6 +318,28 @@ $$
 Thus, proof is complete. 
 
 
+<br>
+### **Applications** <br>
+<br>
+
+In computer graphics, the most popular and used geometric primitive is the triangle. All complex geometric meshes are processed in the GPU (Graphics Processing Unit) in terms of triangles. 
+
+For example, if you wish to render a sphere, you would send the GPU (Graphics Processing Unit) a list of all the triangles that make the sphere mesh, such that when each triangle is rendered to the screen, at the end, they make up the sphere shape on the screen. The same case applies to all other complex shapes and 3D models. 
+
+The reason the triangle is the chosen primitive is because the GPU (Graphics Processing Unit) in modern computers is optimized to process triangles quickly. 
+
+Because triangles are such widely used geometric primitive, there are many applications for barycentric coordinates in the graphics pipeline. One example of such application is rasterization. 
+
+During rasterization, the GPU needs to determine whether a pixel is inside the triangle or outside the triangle. If the pixel is inside the triangle, it will be shaded. If it is outside the triangle, it will not be shaded. 
+
+The GPU uses barycentric coordinates to determine if the pixel is inside the triangle or outside the triangle. It computes the barycnetric coordinates $$α$$, $$β$$, and $$γ$$, given the pixel coordinates and the coordinates of each vertex of the triangle. If 
+
+$$
+α + β + γ = 1
+$$
+
+then the pixel lies inside the triangle. Otherwise, the pixel is outside the triangle. 
+
 ***
 
 <br>
