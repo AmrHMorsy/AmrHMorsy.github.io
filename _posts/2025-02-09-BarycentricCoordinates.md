@@ -379,3 +379,7 @@ then the pixel is inside the triangle and it will be shaded. Otherwise, the pixe
 
 
 *** 
+
+<br>
+
+For any questions or inquiries, please email me at **[amrmhmorsy@gmail.com](mailto:amrmhmorsy@gmail.com)**
