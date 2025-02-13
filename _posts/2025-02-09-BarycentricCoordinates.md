@@ -110,15 +110,15 @@ The equations for calculating the barycentric coordinates are
 
 
 $$
-α = \frac{Area(PBC)}{Area(ABC)}
+α = \frac{▲Area(PBC)}{▲Area(ABC)}
 $$
 
 $$
-β = \frac{Area(PAC)}{Area(ABC)}
+β = \frac{▲Area(PAC)}{▲Area(ABC)}
 $$
 
 $$
-γ = \frac{Area(PAB)}{Area(ABC)}
+γ = \frac{▲Area(PAB)}{▲Area(ABC)}
 $$
 
 
