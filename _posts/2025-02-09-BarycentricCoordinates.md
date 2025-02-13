@@ -107,7 +107,7 @@ These coefficients $$α$$, $$β$$ and $$γ$$ are called the **barycentric coordi
 ### **Calculating Barycentric Coordinates** <br>
 <br>
 
-The equations for calculating the barycentric coordinates are
+The equations for calculating the **barycentric coordinates** are
 
 
 $$
@@ -322,7 +322,7 @@ Thus, proof is complete.
 ### **Applications of Barycentric Coordinates** <br>
 <br>
 
-In modern computer graphics, triangles are the fundamental building block for rendering. 
+In modern **computer graphics**, triangles are the fundamental building block for rendering. 
 
 All complex geometric meshes are processed in the GPU (Graphics Processing Unit) in terms of triangles. 
 
@@ -336,9 +336,9 @@ Regardless of how complex a 3D model is (e.g., spheres, characters, buildings, e
 </div>
 <br>
 
-Why triangles? Because today’s GPUs (Graphics Processing Units) are highly optimized to handle triangle-based operations very efficiently.
+Why triangles? Because today’s **GPUs (Graphics Processing Units)** are highly optimized to handle triangle-based operations very efficiently.
 
-Because triangles are such widely used geometric primitive, there are many applications for barycentric coordinates. 
+Because triangles are such widely used geometric primitive, there are many applications for **barycentric coordinates**. 
 
 One of the key steps in the graphics pipeline is **rasterization**. 
 
@@ -373,7 +373,7 @@ then the pixel is inside the triangle and it will be shaded. Otherwise, the pixe
 ***
 
 <br>
-### References 
+### **References**
 <br>
 - Chapter 7.9.1 - Computer Graphics: Principles and Practice by John F. Hughes
 
