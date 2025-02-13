@@ -216,15 +216,15 @@ where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$.
 We want to prove that 
 
 $$
-α = \frac{▲Area(PBC)}{▲Area(ABC)}
+α = \frac{Area(▲PBC)}{Area(▲ABC)}
 $$
 
 $$
-β = \frac{▲Area(PAC)}{▲Area(ABC)}
+β = \frac{Area(▲PAC)}{Area(▲ABC)}
 $$
 
 $$
-γ = \frac{▲Area(PAB)}{▲Area(ABC)}
+γ = \frac{Area(▲PAB)}{Area(▲ABC)}
 $$
 
 Without loss of generality, consider the barycentric coordinate $$α$$. 
