@@ -13,8 +13,9 @@ featured: false
 <br>
 
 A **nondegenerate** triangle is a triangle where: 
-1 - All vertices are distinct
-2 - The vertices do not all lie on a single line (Non-collinear vertices)
+
+- All vertices are distinct
+- The vertices do not all lie on a single line (Non-collinear vertices)
 
 
 Consider the following **nondegenerate** triangle with vertices $$A$$, $$B$$, and $$C$$. 
