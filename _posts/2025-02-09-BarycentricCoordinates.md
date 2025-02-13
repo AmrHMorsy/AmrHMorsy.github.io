@@ -253,7 +253,16 @@ $$
 
 From these equations, we can see that
 - $$Area(▲PBC)$$ is linearly proportional to the perpendicular distance from $$P$$ to $$BC$$; $$d_P$$
+
+$$
+Area(▲PBC) ∝ d_P
+$$
+
 - $$Area(▲ABC)$$ is linearly proportional to the perpendicular distance from $$A$$ to $$BC$$; $$d_A$$. 
+
+$$
+Area(▲ABC) ∝ d_A
+$$
 
 As $$d_P$$ decreases, the point $$P$$ becomes closer to the edge $$BC$$, causing the value of $$α$$ to also decrease. When $$d_P=0$$, the point $$P$$ lies on the edge $$BC$$ and $$α=0$$. 
 
