@@ -89,7 +89,7 @@ $$
 
 where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$. 
 
-These coefficients $$α$$, $$β$$ and $$γ$$ are called the **barycentric coordinates** of of $$P$$ with respect to the triangle $$ABC$$, such that 
+These coefficients $$α$$, $$β$$ and $$γ$$ are called the **barycentric coordinates** of $$P$$ with respect to the triangle $$ABC$$, such that 
 
 - If $$α = 0$$, then $$P$$ lies on the edge $$BC$$
 - If $$β = 0$$, then $$P$$ lies on the edge $$AC$$
