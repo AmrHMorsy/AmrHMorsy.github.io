@@ -72,7 +72,9 @@ $$
 (1-s)(1-t) + (1-s)t + s = (1 - t - s + st) + (t - st) + s = 1
 $$
 
-Since $$R$$ is an arbitrary point inside the triangle $$ABC$$, we can generalize the equation to any point $$P$$ inside the triangle $$ABC$$. That is, any point $$P$$ inside the triangle $$ABC$$ has the form
+Since $$R$$ is an arbitrary point inside the triangle $$ABC$$, we can generalize the equation to any point $$P$$. 
+
+That is, any point $$P$$ inside the triangle $$ABC$$ has the form
 
 $$
 P = αA + βB + γC
@@ -80,9 +82,8 @@ $$
 
 where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$. 
 
-These coefficients $$α$$, $$β$$ and $$γ$$ are called the barycentric coordinates of of $$P$$ with respect to the triangle $$ABC$$. 
+These coefficients $$α$$, $$β$$ and $$γ$$ are called the barycentric coordinates of of $$P$$ with respect to the triangle $$ABC$$, such that 
 
-**Notes:** 
 - If $$α = 0$$, then $$P$$ lies on the edge $$BC$$
 - If $$β = 0$$, then $$P$$ lies on the edge $$AC$$
 - If $$γ = 0$$, then $$P$$ lies on the edge $$AB$$. 
@@ -129,7 +130,7 @@ There are 2 ways to calculate the area of the triangle:
 The area of the triangle is 
 
 $$
-Area = \frac{1}{2} Base Height
+Area = \frac{1}{2} \times Base \times Height
 $$
 
 where $$Height$$ is the perpendicular shortest distance from the the base edge to the opposite vertex. 
@@ -137,7 +138,7 @@ where $$Height$$ is the perpendicular shortest distance from the the base edge t
 For example, the area of triangle $$PBC$$ is 
 
 $$
-Area(PBC) = \frac{1}{2} ||\vec{BC}|| d_{⊥} (P,BC)
+Area(PBC) = \frac{1}{2} \times ||\vec{BC}|| \times d_{⊥} (P,BC)
 $$
 
 **Approach 2**
@@ -147,7 +148,7 @@ Another easier way to calculate the area of the triangle, is to use the area of 
 Consider the parallelogram $$ABCD$$. The area of the parallelogram $$ABCD$$ is 
 
 $$
-Area(ABCD) = ||\vec{AB}|| ||\vec{AC}|| sin(\theta)
+Area(ABCD) = ||\vec{AB}|| \times ||\vec{AC}|| \times sin(\theta)
 $$
 
 We can also express the area of the parallelogram $$ABCD$$ as the cross product of two vectors that lie on the parallelogram. That is, 
