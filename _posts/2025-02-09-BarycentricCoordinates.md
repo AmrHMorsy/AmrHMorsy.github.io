@@ -340,13 +340,13 @@ Why triangles? Because today’s GPUs (Graphics Processing Units) are highly opt
 
 Because triangles are such widely used geometric primitive, there are many applications for barycentric coordinates. 
 
-One of the key steps in the graphics pipeline is rasterization. 
+One of the key steps in the graphics pipeline is **rasterization**. 
 
-During rasterization, the GPU needs to determine whether a pixel is inside the triangle or outside the triangle. 
+During **rasterization**, the GPU needs to determine whether a pixel is inside the triangle or outside the triangle. 
 
 If the pixel is inside the triangle, it will be shaded. If the pixel is outside the triangle, it will not be shaded. 
 
-The GPU uses barycentric coordinates $$α$$, $$β$$, and $$γ$$, given the pixel coordinates and the coordinates of each vertex of the triangle, to determine if the pixel is inside the triangle or outside the triangle. 
+The GPU uses **barycentric coordinates** $$α$$, $$β$$, and $$γ$$, given the pixel coordinates and the coordinates of each vertex of the triangle, to determine if the pixel is inside the triangle or outside the triangle. 
 
 <br>
 <div class="row mt-3">
