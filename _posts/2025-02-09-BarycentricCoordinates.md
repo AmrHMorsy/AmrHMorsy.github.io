@@ -293,17 +293,17 @@ Since $$d_P$$ is linearly proportional to $$Area(PBC)$$ and $$d_A$$ is linearly 
 
 
 $$
-α = \frac{▲Area(PBC)}{▲Area(ABC)}
+α = \frac{Area(▲PBC)}{Area(▲ABC)}
 $$
 
 By applying the same reasoning to the other two coordinates, we obtain that 
 
 $$
-β = \frac{▲Area(PAC)}{▲Area(ABC)}
+β = \frac{Area(▲PAC)}{Area(▲ABC)}
 $$
 
 $$
-γ = \frac{▲Area(PAB)}{▲Area(ABC)}
+γ = \frac{Area(▲PAB)}{Area(▲ABC)}
 $$
 
 Thus, proof is complete. 
