@@ -110,15 +110,15 @@ The equations for calculating the barycentric coordinates are
 
 
 $$
-α = \frac{▲Area(PBC)}{▲Area(ABC)}
+α = \frac{Area(▲PBC)}{Area(▲ABC)}
 $$
 
 $$
-β = \frac{▲Area(PAC)}{▲Area(ABC)}
+β = \frac{Area(▲PAC)}{Area(▲ABC)}
 $$
 
 $$
-γ = \frac{▲Area(PAB)}{▲Area(ABC)}
+γ = \frac{Area(▲PAB)}{Area(▲ABC)}
 $$
 
 
@@ -181,7 +181,7 @@ $$
 The area of the triangle is equal to half the area of the parallelogram. Hence, the area of the triangle $$ABC$$ can be expressed as 
 
 $$
-Area = \frac{||\vec{AB}|| \times ||\vec{AC}|| \times sin(\theta)}{2} = \frac{||\vec{AB} \times \vec{AC}|| }{2}
+Area(▲ABC) = \frac{||\vec{AB}|| \times ||\vec{AC}|| \times sin(\theta)}{2} = \frac{||\vec{AB} \times \vec{AC}|| }{2}
 $$
 
 <br>
