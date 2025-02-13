@@ -170,19 +170,19 @@ Another easier way to calculate the area of the triangle, is to use the area of 
 Consider the parallelogram $$ABCD$$. The area of the parallelogram $$ABCD$$ is 
 
 $$
-Area(▰ABCD) = ||\vec{AB}|| \times ||\vec{AC}|| \times sin(\theta)
+Area(▰ABCD) = ||\vec{AB}|| \times ||\vec{BC}|| \times sin(\theta)
 $$
 
-We can also express the area of the parallelogram $$ABCD$$ as the cross product of two vectors that lie on the parallelogram. That is, 
+We can also express the area of the parallelogram $$ABCD$$ as the magnitude of the cross product of two vectors that lie on the parallelogram. That is, 
 
 $$
-Area(▰ABCD) = ||\vec{AB} \times \vec{AC}|| 
+Area(▰ABCD) = ||\vec{AB} \times \vec{BC}|| 
 $$
 
 The area of the triangle is equal to half the area of the parallelogram. Hence, the area of the triangle $$ABC$$ can be expressed as 
 
 $$
-Area(▲ABC) = \frac{||\vec{AB}|| \times ||\vec{AC}|| \times sin(\theta)}{2} = \frac{||\vec{AB} \times \vec{AC}|| }{2}
+Area(▲ABC) = \frac{||\vec{AB}|| \times ||\vec{BC}|| \times sin(\theta)}{2} = \frac{||\vec{AB} \times \vec{BC}|| }{2}
 $$
 
 <br>
@@ -197,14 +197,6 @@ $$
 ### **Proof** <br>
 <br>
 
-<br>
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/8.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<br>
-
 Consider the triangle $$ABC$$. Let $$P$$ be a point inside the triangle. We know that 
 
 $$
@@ -212,6 +204,14 @@ P = αA + βB + γC
 $$
 
 where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$. 
+
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/5.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
 
 We want to prove that 
 
@@ -252,13 +252,13 @@ Area(▲ABC) = \frac{1}{2} \times ||\vec{BC}|| \times d_A
 $$
 
 From these equations, we can see that
-- $$Area(▲PBC)$$ is linearly proportional to the perpendicular distance from $$P$$ to $$BC$$; $$d_P$$
+- $$Area(▲PBC)$$ is linearly proportional to the perpendicular distance from $$P$$ to $$BC$$ -- $$d_P$$
 
 $$
 Area(▲PBC) ∝ d_P
 $$
 
-- $$Area(▲ABC)$$ is linearly proportional to the perpendicular distance from $$A$$ to $$BC$$; $$d_A$$. 
+- $$Area(▲ABC)$$ is linearly proportional to the perpendicular distance from $$A$$ to $$BC$$ -- $$d_A$$. 
 
 $$
 Area(▲ABC) ∝ d_A
