@@ -338,7 +338,7 @@ Regardless of how complex a 3D model is (e.g., spheres, characters, buildings, e
 
 Why triangles? Because today’s **GPUs (Graphics Processing Units)** are highly optimized to handle triangle-based operations very efficiently.
 
-Because triangles are such widely used geometric primitive, there are many applications for **barycentric coordinates**. 
+Because triangles are such a widely used geometric primitive, there are many applications for **barycentric coordinates**. 
 
 One of the key steps in the graphics pipeline is **rasterization**. 
 
@@ -356,19 +356,9 @@ The GPU uses **barycentric coordinates** $$α$$, $$β$$, and $$γ$$, given the p
 </div>
 <br>
 
-If 
+If $$α + β + γ = 1$$ and $$α, β, γ \geq 0$$, then the pixel is inside the triangle and it will be shaded. 
 
-$$
-α + β + γ = 1
-$$
-
-and 
-
-$$
-α, β, γ \geq 0
-$$
-
-then the pixel is inside the triangle and it will be shaded. Otherwise, the pixel is outside the triangle and it will not be shaded. 
+Otherwise, the pixel is outside the triangle and it will not be shaded. 
 
 ***
 
