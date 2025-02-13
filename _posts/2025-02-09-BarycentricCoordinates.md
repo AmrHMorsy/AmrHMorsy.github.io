@@ -322,23 +322,53 @@ Thus, proof is complete.
 ### **Applications** <br>
 <br>
 
-In computer graphics, the most popular and used geometric primitive is the triangle. All complex geometric meshes are processed in the GPU (Graphics Processing Unit) in terms of triangles. 
+In modern computer graphics, triangles are the fundamental building block for rendering. 
 
-For example, if you wish to render a sphere, you would send the GPU (Graphics Processing Unit) a list of all the triangles that make the sphere mesh, such that when each triangle is rendered to the screen, at the end, they make up the sphere shape on the screen. The same case applies to all other complex shapes and 3D models. 
+All complex geometric meshes are processed in the GPU (Graphics Processing Unit) in terms of triangles. 
 
-The reason the triangle is the chosen primitive is because the GPU (Graphics Processing Unit) in modern computers is optimized to process triangles quickly. 
+Regardless of how complex a 3D model is (e.g., spheres, characters, buildings, etc..), it is ultimately broken down into a mesh of triangles that the GPU processes.
 
-Because triangles are such widely used geometric primitive, there are many applications for barycentric coordinates in the graphics pipeline. One example of such application is rasterization. 
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/12.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
 
-During rasterization, the GPU needs to determine whether a pixel is inside the triangle or outside the triangle. If the pixel is inside the triangle, it will be shaded. If it is outside the triangle, it will not be shaded. 
+Why triangles? Because today’s GPUs (Graphics Processing Units) are highly optimized to handle triangle-based operations very efficiently.
 
-The GPU uses barycentric coordinates to determine if the pixel is inside the triangle or outside the triangle. It computes the barycnetric coordinates $$α$$, $$β$$, and $$γ$$, given the pixel coordinates and the coordinates of each vertex of the triangle. If 
+Because triangles are such widely used geometric primitive, there are many applications for barycentric coordinates. 
+
+One of the key steps in the graphics pipeline is rasterization. 
+
+During rasterization, the GPU needs to determine whether a pixel is inside the triangle or outside the triangle. 
+
+If the pixel is inside the triangle, it will be shaded. If the pixel is outside the triangle, it will not be shaded. 
+
+The GPU uses barycentric coordinates $$α$$, $$β$$, and $$γ$$, given the pixel coordinates and the coordinates of each vertex of the triangle, to determine if the pixel is inside the triangle or outside the triangle. 
+
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/13.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
+
+If 
 
 $$
 α + β + γ = 1
 $$
 
-then the pixel lies inside the triangle. Otherwise, the pixel is outside the triangle. 
+and 
+
+$$
+α, β, γ \geq 0
+$$
+
+then the pixel is inside the triangle and it will be shaded. Otherwise, the pixel is outside the triangle and it will not be shaded. 
 
 ***
 
