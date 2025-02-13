@@ -123,7 +123,7 @@ $$
 $$
 
 
-The proof for these equations will be explained in the last section of this blog post. 
+The proof for these equations will be explained later in this blog post. 
 
 <br>
 <div class="row mt-3">
@@ -319,7 +319,7 @@ Thus, proof is complete.
 
 
 <br>
-### **Applications** <br>
+### **Applications of Barycentric Coordinates** <br>
 <br>
 
 In modern computer graphics, triangles are the fundamental building block for rendering. 
