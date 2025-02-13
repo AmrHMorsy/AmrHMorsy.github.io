@@ -62,25 +62,30 @@ $$
 R = (1-s)((1-t)A + tB) + sC
 $$
 
-\begin{equation} 
+$$
 R = (1-s)(1-t)A + (1-s)tB + sC
-\end{equation}
+$$
 
-Now, if we sum the coefficients of equation 1, we get
+Now, if we sum the coefficients of equation of $$R$$, we get
 
 $$
 (1-s)(1-t) + (1-s)t + s = (1 - t - s + st) + (t - st) + s = 1
 $$
 
-This means that we can say that any point $$P$$ inside the triangle $ABC$ has the form
+Since $$R$$ is an arbitrary point inside the triangle $$ABC$$, we can generalize the equation to any point $$P$$ inside the triangle $$ABC$$. That is, any point $$P$$ inside the triangle $$ABC$$ has the form
 
-\begin{equation} 
+$$
 P = αA + βB + γC
-\end{equation}
+$$
 
 where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$. 
 
-These coefficients $$α, β and γ$$ are called the barycentric coordinates of of $$P$$ with respect to the triangle $ABC$. If $$α = 0$$, then $$P$$ lies on the edge $$BC$$; if $$β = 0$$, then $$P$$ lies on the edge $$AC$$; if $$γ = 0$$, then $$P$$ lies on the edge $$AB$$. 
+These coefficients $$α$$, $$β$$ and $$γ$$ are called the barycentric coordinates of of $$P$$ with respect to the triangle $$ABC$$. 
+
+**Notes:** 
+- If $$α = 0$$, then $$P$$ lies on the edge $$BC$$
+- If $$β = 0$$, then $$P$$ lies on the edge $$AC$$
+- If $$γ = 0$$, then $$P$$ lies on the edge $$AB$$. 
 
 
 <br>
@@ -98,17 +103,17 @@ These coefficients $$α, β and γ$$ are called the barycentric coordinates of o
 The equations for calculating the barycentric coordinates are
 
 
-\begin{equation} 
+$$
 α = \frac{Area(PBC)}{Area(ABC)}
-\end{equation}
+$$
 
-\begin{equation} 
+$$
 β = \frac{Area(PAC)}{Area(ABC)}
-\end{equation}
+$$
 
-\begin{equation} 
+$$
 γ = \frac{Area(PAB)}{Area(ABC)}
-\end{equation}
+$$
 
 
 The proof for these equations will be explained in the last section of this blog post. 
@@ -124,7 +129,7 @@ There are 2 ways to calculate the area of the triangle:
 The area of the triangle is 
 
 $$
-Area = \frac{1}{2} . Base . Height
+Area = \frac{1}{2} Base Height
 $$
 
 where $$Height$$ is the perpendicular shortest distance from the the base edge to the opposite vertex. 
@@ -132,7 +137,7 @@ where $$Height$$ is the perpendicular shortest distance from the the base edge t
 For example, the area of triangle $$PBC$$ is 
 
 $$
-Area(PBC) = \frac{1}{2} ||BC|| ||d_{⊥} (P,BC)||
+Area(PBC) = \frac{1}{2} ||\vec{BC}|| d_{⊥} (P,BC)
 $$
 
 **Approach 2**
@@ -142,19 +147,19 @@ Another easier way to calculate the area of the triangle, is to use the area of 
 Consider the parallelogram $$ABCD$$. The area of the parallelogram $$ABCD$$ is 
 
 $$
-Area(ABCD) = ||(B-A)|| . ||(C-A)|| . sin(\theta)
+Area(ABCD) = ||\vec{AB}|| ||\vec{AC}|| sin(\theta)
 $$
 
 We can also express the area of the parallelogram $$ABCD$$ as the cross product of two vectors that lie on the parallelogram. That is, 
 
 $$
-Area(ABCD) = ||(B-A) X (C-A)|| 
+Area(ABCD) = ||\vec{AB} \times \vec{AC}|| 
 $$
 
 The area of the triangle is equal to half the area of the parallelogram. Hence, the area of the triangle $$ABC$$ can be expressed as 
 
 $$
-Area = \frac{||(B-A)|| . ||(C-A)|| . sin(\theta)}{2} = \frac{||(B-A) X (C-A)|| }{2}
+Area = \frac{||\vec{AB}|| ||\vec{AC}|| sin(\theta)}{2} = \frac{||\vec{AB} \times \vec{AC})|| }{2}
 $$
 
 
@@ -168,7 +173,9 @@ $$
 P = αA + βB + γC
 $$
 
-where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$. We want to prove that 
+where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$. 
+
+We want to prove that 
 
 $$
 α = \frac{Area(PBC)}{Area(ABC)}
@@ -187,16 +194,16 @@ Without loss of generality, consider the barycentric coordinate $$α$$.
 We know that the area of triangle $$PBC$$ is 
 
 $$
-Area(PBC) = \frac{1}{2} ||BC|| ||d_⊥ (P,BC)||
+Area(PBC) = \frac{1}{2} ||\vec{BC}|| d_⊥ (P,BC)
 $$
 
 and the area of triangle $$ABC$$ is 
 
 $$
-Area(ABC) = \frac{1}{2} ||BC|| ||d_⊥ (A,BC)||
+Area(ABC) = \frac{1}{2} ||\vec{BC}|| d_⊥ (A,BC)
 $$
 
-This means that the $$Area(PBC)$$ is linearly proportional to the perpendicular distance from $$P$$ to $$BC$$; , let's call it $$d_P$$, and the $$Area(ABC)$$ is linearly proportional to the perpendicular distance from $$A$$ to $$BC$$, let's call it $$d_A$$. 
+This means that the $$Area(PBC)$$ is linearly proportional to the perpendicular distance from $$P$$ to $$BC$$; let's call it $$d_P$$, and the $$Area(ABC)$$ is linearly proportional to the perpendicular distance from $$A$$ to $$BC$$; let's call it $$d_A$$. 
 
 As $$d_P$$ decreases, the point $$P$$ becomes closer to the edge $$BC$$, causing the value of $$α$$ to also decrease. When $$d_P=0$$, the point $$P$$ lies on the edge $$BC$$ and $$α=0$$. 
 
