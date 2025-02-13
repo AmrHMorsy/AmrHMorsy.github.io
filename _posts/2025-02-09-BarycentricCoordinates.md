@@ -229,6 +229,14 @@ Without loss of generality, consider the barycentric coordinate $$α$$.
 
 Let $$d_P$$ be the perpendicular distance from $$P$$ to $$BC$$ and $$d_A$$ be the perpendicular distance from $$A$$ to $$BC$$. 
 
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
+
 We know that the area of triangle $$PBC$$ is 
 
 $$
@@ -247,7 +255,23 @@ From these equations, we can see that
 
 As $$d_P$$ decreases, the point $$P$$ becomes closer to the edge $$BC$$, causing the value of $$α$$ to also decrease. When $$d_P=0$$, the point $$P$$ lies on the edge $$BC$$ and $$α=0$$. 
 
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
+
 As $$d_P$$ increases, the point $$P$$ becomes closer to the point $$A$$, causing the value of $$α$$ to increase. When $$d_P=d_A$$, the point $$P$$ coincides the point $$A$$ and $$α=1$$. 
+
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
 
 This implies that $$α$$ is proportional to $$d_P$$
 
