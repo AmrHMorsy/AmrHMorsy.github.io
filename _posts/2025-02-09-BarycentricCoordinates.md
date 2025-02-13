@@ -142,13 +142,19 @@ Another easier way to calculate the area of the triangle, is to use the area of 
 Consider the parallelogram $$ABCD$$. The area of the parallelogram $$ABCD$$ is 
 
 $$
-Area = ||(B-A)|| ||(C-A)|| sin(\theta) = ||(B-A)x(C-A)|| 
+Area(ABCD) = ||(B-A)|| . ||(C-A)|| . sin(\theta)
+$$
+
+We can also express the area of the parallelogram $$ABCD$$ as the cross product of two vectors that lie on the parallelogram. That is, 
+
+$$
+Area(ABCD) = ||(B-A) X (C-A)|| 
 $$
 
 The area of the triangle is equal to half the area of the parallelogram. Hence, the area of the triangle $$ABC$$ can be expressed as 
 
 $$
-Area = \frac{||(B-A)|| ||(C-A)|| sin(\theta)}{2} = \frac{||(B-A)x(C-A)|| }{2}
+Area = \frac{||(B-A)|| . ||(C-A)|| . sin(\theta)}{2} = \frac{||(B-A) X (C-A)|| }{2}
 $$
 
 
