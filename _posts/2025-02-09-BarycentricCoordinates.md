@@ -170,19 +170,19 @@ Another easier way to calculate the area of the triangle, is to use the area of 
 Consider the parallelogram $$ABCD$$. The area of the parallelogram $$ABCD$$ is 
 
 $$
-Area(▰ABCD) = ||\vec{AB}|| \times ||\vec{BC}|| \times sin(\theta)
+Area(▰ABCD) = ||\vec{AB}|| \times ||\vec{AC}|| \times sin(\theta)
 $$
 
 We can also express the area of the parallelogram $$ABCD$$ as the magnitude of the cross product of two vectors that lie on the parallelogram. That is, 
 
 $$
-Area(▰ABCD) = ||\vec{AB} \times \vec{BC}|| 
+Area(▰ABCD) = ||\vec{AB} \times \vec{AC}|| 
 $$
 
 The area of the triangle is equal to half the area of the parallelogram. Hence, the area of the triangle $$ABC$$ can be expressed as 
 
 $$
-Area(▲ABC) = \frac{||\vec{AB}|| \times ||\vec{BC}|| \times sin(\theta)}{2} = \frac{||\vec{AB} \times \vec{BC}|| }{2}
+Area(▲ABC) = \frac{||\vec{AB}|| \times ||\vec{AC}|| \times sin(\theta)}{2} = \frac{||\vec{AB} \times \vec{AC}|| }{2}
 $$
 
 <br>
