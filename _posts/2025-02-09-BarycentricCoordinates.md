@@ -252,13 +252,13 @@ Area(▲ABC) = \frac{1}{2} \times ||\vec{BC}|| \times d_A
 $$
 
 From these equations, we can see that
-- $$Area(▲PBC)$$ is linearly proportional to the perpendicular distance from $$P$$ to $$BC$$ -- $$d_P$$
+- $$Area(▲PBC)$$ is linearly proportional to the perpendicular distance from $$P$$ to $$BC$$ ; $$d_P$$
 
 $$
 Area(▲PBC) ∝ d_P
 $$
 
-- $$Area(▲ABC)$$ is linearly proportional to the perpendicular distance from $$A$$ to $$BC$$ -- $$d_A$$. 
+- $$Area(▲ABC)$$ is linearly proportional to the perpendicular distance from $$A$$ to $$BC$$ ; $$d_A$$. 
 
 $$
 Area(▲ABC) ∝ d_A
