@@ -98,7 +98,7 @@ These coefficients $$α$$, $$β$$ and $$γ$$ are called the **barycentric coordi
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -128,7 +128,7 @@ The proof for these equations will be explained in the last section of this blog
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/5.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -158,7 +158,7 @@ $$
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/6.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -188,7 +188,7 @@ $$
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/7.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -200,7 +200,7 @@ $$
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/8.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -234,7 +234,7 @@ Let $$d_P$$ be the perpendicular distance from $$P$$ to $$BC$$ and $$d_A$$ be th
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/9.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -269,7 +269,7 @@ As $$d_P$$ decreases, the point $$P$$ becomes closer to the edge $$BC$$, causing
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/10.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -279,7 +279,7 @@ As $$d_P$$ increases, the point $$P$$ becomes closer to the point $$A$$, causing
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/4.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Barycentric_Coordinates/11.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
