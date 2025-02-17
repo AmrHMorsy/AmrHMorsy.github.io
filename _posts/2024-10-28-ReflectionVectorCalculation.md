@@ -180,6 +180,7 @@ The GLM library has a built-in function that computes the reflection vector, giv
 ```c++
 #include <glm/glm.hpp>
 #include <glm/gtx/reflect.hpp>
+
 glm::vec3 compute_reflection_vector( glm::vec3 L, glm::vec3 N )
 {
     return glm::reflect(L, N) ;
