@@ -175,12 +175,14 @@ $$
 ### Implementation <br>
 <br>
 
-Here’s the C++ code using the GLM library:
+The GLM library has a built-in function that computes the reflection vector, given the normal and incident vector. Here’s the C++ code using the GLM library:
 
 ```c++
+#include <glm/glm.hpp>
+#include <glm/gtx/reflect.hpp>
 glm::vec3 compute_reflection_vector( glm::vec3 L, glm::vec3 N )
 {
-    return L - 2.0f * glm::dot( L, N ) * N ;
+    return glm::reflect(L, N) ;
 }
 ```
 
