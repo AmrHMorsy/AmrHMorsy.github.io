@@ -80,7 +80,7 @@ Each vector has both a parallel component and perpendicular component relative t
 The parallel component of $$L$$ along $$N$$ is 
 
 $$
-L_{||N} = (N.L)N = N cos \theta
+L_{||N} = (N.L)N = N cos \theta_L
 $$
 
 The perpendicular component of $$L$$ along $$N$$ can be calculated by subtracting 
@@ -106,14 +106,6 @@ $$L_{||N}$$
 and
 $$L_{⊥N}$$ 
 form a right-angled triangle, we can use trignometric relationships to calculate their magnitudes. 
-
-<br>
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/4.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<br>
 
 We know that
 
@@ -151,7 +143,7 @@ Just like we did with the incoming light vector $$L$$, we are going to decompose
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/5.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/4.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -183,14 +175,6 @@ $$T_{||N}$$
 and
 $$T_{⊥N}$$ 
 form a right-angled triangle, we can use trignometric relationships to calculate their magnitudes. 
-
-<br>
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/6.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<br>
 
 We know that 
 
@@ -310,7 +294,7 @@ This phenomena is called **Total Internal Reflection**, which means that no refr
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/7.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/5.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
