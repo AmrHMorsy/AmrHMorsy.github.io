@@ -19,7 +19,7 @@ In this post, we will explore the mathematics behind calculating the refraction 
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Refraction_Vector_Calculation/1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/1.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -48,7 +48,7 @@ Each material has its own unique index of refraction. For example, the index of 
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Refraction_Vector_Calculation/2.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/2.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -72,7 +72,7 @@ Each vector has both a parallel component and perpendicular component relative t
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Refraction_Vector_Calculation/3.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/3.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -110,7 +110,7 @@ form a right-angled triangle, we can use trignometric relationships to calculate
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Refraction_Vector_Calculation/4.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/4.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -151,7 +151,7 @@ Just like we did with the incoming light vector $$L$$, we are going to decompose
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Refraction_Vector_Calculation/5.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/5.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -187,7 +187,7 @@ form a right-angled triangle, we can use trignometric relationships to calculate
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Refraction_Vector_Calculation/6.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/6.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
@@ -310,7 +310,7 @@ This phenomena is called **Total Internal Reflection**, which means that no refr
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Refraction_Vector_Calculation/7.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/Blog/Refraction_Vector_Calculation/7.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
