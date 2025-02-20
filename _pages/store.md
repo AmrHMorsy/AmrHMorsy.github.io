@@ -5,11 +5,11 @@ permalink: /store/
 description:
 nav: true
 nav_order: 3
-display_categories:
+display_categories: [eBooks, Courses, Games, Software Tools]
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
+<!-- pages/store.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
