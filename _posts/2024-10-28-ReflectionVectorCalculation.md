@@ -17,35 +17,52 @@ When a beam of light hits the surface of an object, part of its energy is absorb
 
 In this post, we will explore the mathematics behind calculating the reflection vector. 
 
-<div class="spotlight-group">
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg" />
-    </a>
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" />
-    </a>
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" />
-    </a>
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="theme-image img-fluid rounded z-depth-1" loading="eager" 
+             data-light="assets/img/Blog/Reflection_Vector_Calculation/Light/1.png" 
+             data-dark="assets/img/Blog/Reflection_Vector_Calculation/Dark/1.png"
+             src="assets/img/Blog/Reflection_Vector_Calculation/Light/1.png" />
+    </div>
 </div>
+<br>
+
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="theme-image img-fluid rounded z-depth-1" loading="eager" 
+             data-light="assets/img/Blog/Reflection_Vector_Calculation/Light/2.png" 
+             data-dark="assets/img/Blog/Reflection_Vector_Calculation/Dark/2.png"
+             src="assets/img/Blog/Reflection_Vector_Calculation/Light/2.png" />
+    </div>
+</div>
+<br>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-      const theme = document.documentElement.getAttribute("data-theme");
+      const images = document.querySelectorAll(".theme-image");
 
-      if (theme !== "dark") {
-          document.querySelector(".spotlight-group").style.display = "none";
+      function updateImages() {
+          const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+          images.forEach(img => {
+              img.src = currentTheme === "dark" ? img.getAttribute("data-dark") : img.getAttribute("data-light");
+          });
       }
 
-      // Listen for theme changes if toggle exists
-      const observer = new MutationObserver(() => {
-          const newTheme = document.documentElement.getAttribute("data-theme");
-          document.querySelector(".spotlight-group").style.display = newTheme === "dark" ? "block" : "none";
-      });
+      // Set images based on the current theme
+      updateImages();
 
+      // Listen for theme changes (if user toggles the theme)
+      const observer = new MutationObserver(updateImages);
       observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   });
 </script>
+
+
+
+
+
 
 <br>
 <div class="row mt-3">
