@@ -5,6 +5,7 @@ date: 2024-10-31 12:00:00
 description:
 tags:
 categories:
+thumbnail: assets/img/Blog/Refraction_Vector_Calculation/4.png
 featured: false
 ---
 
