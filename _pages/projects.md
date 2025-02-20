@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Portfolio
+title: Services
 permalink: /projects/
 description:
 nav: true
@@ -8,6 +8,8 @@ nav_order: 2
 display_categories:
 horizontal: false
 ---
+
+I offer freelancing, tutoring, and consulting services in computer graphics. Whether you need help with a project or want to improve your skills, I can help.
 
 <!-- pages/projects.md -->
 <div class="projects">
