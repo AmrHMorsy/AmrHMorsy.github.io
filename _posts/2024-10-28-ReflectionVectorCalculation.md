@@ -17,13 +17,6 @@ When a beam of light hits the surface of an object, part of its energy is absorb
 
 In this post, we will explore the mathematics behind calculating the reflection vector. 
 
-<br>
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Blog/Reflection_Vector_Calculation/10.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<br>
 
 <br>
 <div class="row mt-3">
