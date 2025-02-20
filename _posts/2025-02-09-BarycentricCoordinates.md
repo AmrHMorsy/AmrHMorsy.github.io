@@ -5,6 +5,7 @@ date: 2025-02-09 12:00:00
 description:
 tags:
 categories:
+thumbnail: assets/img/Blog/Barycentric_Coordinates/5.png
 featured: false
 ---
 
