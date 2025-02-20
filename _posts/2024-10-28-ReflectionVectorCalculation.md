@@ -20,49 +20,10 @@ In this post, we will explore the mathematics behind calculating the reflection 
 <br>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="theme-image img-fluid rounded z-depth-1" loading="eager" 
-             data-light="assets/img/Blog/Reflection_Vector_Calculation/1.png" 
-             data-dark="assets/img/Blog/Reflection_Vector_Calculation/Dark/1.png"
-             src="assets/img/Blog/Reflection_Vector_Calculation/1.png" />
+        {% include figure.html loading="eager" path="assets/img/Blog/Reflection_Vector_Calculation/10.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br>
-
-<br>
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="theme-image img-fluid rounded z-depth-1" loading="eager" 
-             data-light="assets/img/Blog/Reflection_Vector_Calculation/2.png" 
-             data-dark="assets/img/Blog/Reflection_Vector_Calculation/Dark/2.png"
-             src="assets/img/Blog/Reflection_Vector_Calculation/2.png" />
-    </div>
-</div>
-<br>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-      const images = document.querySelectorAll(".theme-image");
-
-      function updateImages() {
-          const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
-          images.forEach(img => {
-              img.src = currentTheme === "dark" ? img.getAttribute("data-dark") : img.getAttribute("data-light");
-          });
-      }
-
-      // Set images based on the current theme
-      updateImages();
-
-      // Listen for theme changes (if user toggles the theme)
-      const observer = new MutationObserver(updateImages);
-      observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
-  });
-</script>
-
-
-
-
-
 
 <br>
 <div class="row mt-3">
