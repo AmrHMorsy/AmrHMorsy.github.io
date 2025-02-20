@@ -5,6 +5,7 @@ date: 2024-10-28 12:00:00
 description:
 tags:
 categories:
+thumbnail: assets/img/Blog/Reflection_Vector_Calculation/4.png
 featured: false
 ---
 
