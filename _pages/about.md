@@ -16,6 +16,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
+<br> 
+
 **Welcome !** <br>
 <br>
 
@@ -41,6 +43,11 @@ I specialize in low-level graphics programming, working with APIs like OpenGL, V
 <br>
 
 Whether you're here to learn, collaborate, or explore my work, I hope you find value in what I create.
+
+<br> 
+
+*If you'd like to learn more about my background, you can view my resume [here](https://amrhmorsy.github.io/assets/pdf/resume.pdf).* 
+
 
 <br> 
 <br>
