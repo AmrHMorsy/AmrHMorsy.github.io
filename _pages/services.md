@@ -13,7 +13,7 @@ horizontal: false
 
 I offer one-on-one and group tutoring sessions in computer graphics, covering a wide range of topics—from introductory concepts to advanced techniques. With three years of experience teaching students from various countries, I have helped learners of all levels improve their understanding and skills in graphics programming.
 
-My expertise includes developing game engines, simulations, animations, and video games using low-level graphics APIs such as OpenGL, Vulkan, Metal, and DirectX.
+My expertise includes developing game engines, simulations, animations, and video games using low-level graphics APIs such as OpenGL, WebGL, Vulkan, Metal, and Direct3D.
 
 ### How I Can Help
 
