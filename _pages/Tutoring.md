@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tutoring
-permalink: /projects/
+permalink: /tutoring/
 description:
 nav: true
 nav_order: 2
