@@ -35,6 +35,24 @@ I'm here to help.
 #### **Testimonials**
 <br>
 
+A student from California, USA. 
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Testimonials/1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
+
+A student from Warsaw, Poland. 
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Testimonials/2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
+
 If you’d like to book a session, send me an [**email**](amrmhmorsy@gmail.com), and let’s get in touch.
 
 <br>
