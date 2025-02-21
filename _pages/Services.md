@@ -2,7 +2,7 @@
 layout: page
 title: Services
 nav: true
-nav_order: 4
+nav_order: 2
 dropdown: true
 children:
   - title: Tutoring
