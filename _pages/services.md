@@ -53,7 +53,7 @@ A student from Warsaw, Poland.
 </div>
 <br>
 
-If you’d like to book a session, send me an [**email**](amrmhmorsy@gmail.com), and let’s get in touch.
+If you’d like to book a session, send me an [**email**](mailto:amrmhmorsy@gmail.com), and let’s get in touch.
 
 <br>
 
