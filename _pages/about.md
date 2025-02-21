@@ -16,20 +16,31 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Welcome ! <br>
+**Welcome !** <br>
 <br>
+
 My name is Amr Morsy, and I am a graphics programmer. 
 
+I specialize in low-level graphics programming, working with APIs like OpenGL, Vulkan, Metal, and Direct3D to develop games, simulations, and game engines.
 
-This website is a space where I showcase my graphics programming projects, including games, simulations, and game engines. 
+<br>
 
-I also share tutorials and explanations of advanced graphics programming concepts through my blog, and offer personal insights, detailing my experiences and development journey.
+**This website is a space where I share:**
 
+- My graphics programming portfolio
+- Tutorials and explanations of advanced graphics programming concepts through my blog, along with personal insights on my experiences and development journey.
 
-I mainly work with low-level graphics APIs such as OpenGL, Vulkan, Metal and Direct3D, as I prefer programming at a low level for greater control and optimization.
+<br>
 
-I hope this website inspires and benefits you in your own graphics programming journey.
+**Beyond showcasing my work, I also offer:**
 
+- Freelancing & consulting services for graphics programming projects
+- One-on-one or group tutoring in computer graphics
+- Products, including games, eBooks, courses, and software tools
+
+<br>
+
+Whether you're here to learn, collaborate, or explore my work, I hope you find value in what I create.
 
 <br> 
 <br>
