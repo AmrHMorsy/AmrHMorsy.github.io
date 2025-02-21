@@ -1,9 +1,13 @@
-<br>
-
-## **Freelancing & Consulting**
-<br>
-
-<br>
+---
+layout: page
+title: Freelancing
+permalink: /projects/
+description:
+nav: true
+nav_order: 2
+display_categories:
+horizontal: false
+---
 
 ## **Portfolio**
 <br>
