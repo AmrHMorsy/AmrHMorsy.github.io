@@ -1,12 +1,18 @@
 ---
 layout: page
 title: Products
-permalink: /products/
-description:
 nav: true
 nav_order: 3
-display_categories:
-horizontal: false
+dropdown: true
+children:
+  - title: eBooks
+    permalink: /ebooks/
+  - title: divider
+  - title: Courses
+    permalink: /courses/
+  - title: divider
+  - title: Games
+    permalink: /games/
+  - title: Software Tools
+    permalink: /tools/
 ---
-
-Coming Soon !
