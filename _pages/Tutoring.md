@@ -24,6 +24,8 @@ My expertise includes:
 - Developing game engines, simulations, animations, and video games
 - Using low-level graphics APIs such as OpenGL, WebGL, Vulkan, Metal, and Direct3D
 
+For examples of my work, feel free to check out my [portfolio](https://amrhmorsy.github.io/portfolio/).
+
 <br>
 
 #### **How I Can Help**
