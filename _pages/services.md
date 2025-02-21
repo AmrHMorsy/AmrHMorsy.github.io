@@ -35,6 +35,9 @@ I'm here to help.
 #### **Testimonials**
 <br>
 
+Here are some testimonials from students I’ve worked with:
+<br> 
+
 A student from California, USA. 
 <br>
 <div class="row mt-3">
