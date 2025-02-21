@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Freelancing
-permalink: /projects/
+permalink: /freelancing/
 description:
 nav: true
 nav_order: 2
