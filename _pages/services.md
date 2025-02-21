@@ -9,13 +9,16 @@ display_categories:
 horizontal: false
 ---
 
-## Computer Graphics Tutoring
+## **Tutoring**
+<br>
 
-I offer one-on-one and group tutoring sessions in computer graphics, covering a wide range of topics—from introductory concepts to advanced techniques. With three years of experience teaching students from various countries, I have helped learners of all levels improve their understanding and skills in graphics programming.
+I offer one-on-one and group tutoring sessions in **computer graphics**, covering a wide range of topics—from introductory concepts to advanced techniques. 
+
+With **three** years of experience teaching students from various countries, I have helped learners of all levels improve their understanding and skills in graphics programming.
 
 My expertise includes developing game engines, simulations, animations, and video games using low-level graphics APIs such as OpenGL, WebGL, Vulkan, Metal, and Direct3D.
 
-### How I Can Help
+<br>
 
 My lessons are tailored to your specific needs. Whether you’re looking to:
 
@@ -27,15 +30,22 @@ My lessons are tailored to your specific needs. Whether you’re looking to:
 
 I'm here to help.
 
-### Testimonials
-(Insert images of testimonials here)
+<br> 
 
-If you’d like to book a session, send me an email, and let’s get in touch.
+#### **Testimonials**
+<br>
 
+If you’d like to book a session, send me an [**email**](amrmhmorsy@gmail.com), and let’s get in touch.
 
-## Freelancing & Consulting
+<br>
 
-## Portfolio
+## **Freelancing & Consulting**
+<br>
+
+<br>
+
+## **Portfolio**
+<br>
 
 <!-- pages/projects.md -->
 <div class="projects">
