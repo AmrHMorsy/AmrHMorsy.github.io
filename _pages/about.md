@@ -27,14 +27,14 @@ I specialize in low-level graphics programming, working with APIs like OpenGL, V
 
 <br>
 
-**This website is a space where I share:**
+This website is a space where I share:
 
 - My graphics programming portfolio
 - Tutorials and explanations of advanced graphics programming concepts through my blog, along with personal insights on my experiences and development journey.
 
 <br>
 
-**Beyond showcasing my work, I also offer:**
+Beyond showcasing my work, I also offer:
 
 - Freelancing & consulting services for graphics programming projects
 - One-on-one or group tutoring in computer graphics
