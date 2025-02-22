@@ -48,6 +48,8 @@ Whether you're here to learn, collaborate, or explore my work, I hope you find v
 
 *If you'd like to learn more about my background, you can view my resume [here](https://amrhmorsy.github.io/assets/pdf/resume.pdf).* 
 
+*If you'd like to learn more about my background, you can view my resume <a href="https://amrhmorsy.github.io/assets/pdf/resume.pdf" target="_blank">here</a>
+
 
 <br> 
 <br>
