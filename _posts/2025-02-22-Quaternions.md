@@ -63,10 +63,10 @@ where $$s$$ represents the scalar component, corresponding to the $$w$$-componen
 
 The laws of quaternions are: 
 
-1- $$i^{2} = j^{2} = k^{2} = -1$$
-2- $$ij = -ji = k$$
-3- $$jk = -kj = ii$$
-4- $$ki = -ik = j$$
+- $$i^{2} = j^{2} = k^{2} = -1$$
+- $$ij = -ji = k$$
+- $$jk = -kj = ii$$
+- $$ki = -ik = j$$
 
 
 To Be Continued....
