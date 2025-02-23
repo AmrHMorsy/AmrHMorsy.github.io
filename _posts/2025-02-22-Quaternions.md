@@ -61,16 +61,28 @@ $$
 q = s + v
 $$
 
-where $$s$$ represents the scalar component, corresponding to the $$w$$-component of $$q$$ (i.e. $$s = w$$), and $$v$$ represents the vector component, corresponding to the $$x$$, $$y$$, and $$z$$ components of $$q$$ (i.e. $$v = (x,y,z)$$ ). 
+where $$s$$ represents the scalar component, corresponding to the $$w$$-component of $$q$$ (i.e. $$s = w$$), and $$v$$ represents the vector component, corresponding to the $$x$$, $$y$$, and $$z$$ components of $$q$$ (i.e. $$v = (x,y,z) = xi + yj + zk$$ ). 
 
 <br> 
 
-The laws of quaternions are: 
+Multiplication of quaternions follows a specific set of rules. These rules are: 
 
-- $$i^{2} = j^{2} = k^{2} = -1$$
-- $$ij = -ji = k$$
-- $$jk = -kj = ii$$
-- $$ki = -ik = j$$
+1) $$i^{2} = j^{2} = k^{2} = -1$$
+2) $$ij = -ji = k$$
+3) $$jk = -kj = ii$$
+4) $$ki = -ik = j$$
+
+As noted, multiplication of quaternions is **not** commutative. That is, for any two quaternions $$q1$$ and $$q2$$, 
+
+$$
+q1 q2 \neq q2 q1
+$$
+
+<br>
+
+Consider the following example: 
+
+#### **Example**
 
 
 <br>
