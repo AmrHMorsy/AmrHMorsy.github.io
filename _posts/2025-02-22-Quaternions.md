@@ -69,7 +69,7 @@ The laws of quaternions are:
 - $$ki = -ik = j$$
 
 \begin{enumerate}
-    \item First item
+    \item $$ij = -ji = k$$
     \item Second item
     \item Third item
 \end{enumerate}
