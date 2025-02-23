@@ -72,11 +72,8 @@ The laws of quaternions are:
 - $$jk = -kj = ii$$
 - $$ki = -ik = j$$
 
-\begin{enumerate}
-    \item $$ij = -ji = k$$
-    \item Second item
-    \item Third item
-\end{enumerate}
+
+<br>
 
 To Be Continued....
 
