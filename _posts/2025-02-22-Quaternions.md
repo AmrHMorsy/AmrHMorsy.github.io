@@ -44,7 +44,7 @@ In this post, we will dive into the topic of quaternions. We will explore their 
 
 The set of quaternions is a 4-dimensional vector space denoted by $$H$$.
 
-A quaternion $$q$$, $$q \in H$$ has the form 
+A quaternion $$q$$, where $$q \in H$$, has the form 
 
 $$
 q = (w, x, y, z) = w + xi + yj + zk
