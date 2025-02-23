@@ -65,24 +65,37 @@ where $$s$$ represents the scalar component, corresponding to the $$w$$-componen
 
 <br> 
 
-Multiplication of quaternions follows a specific set of rules. These rules are: 
+The set of quaternions $$H$$ is a natural extension of the set of complex numbers. Multiplication of quaternions's imaginary components $$i$$, $$j$$, and $$k$$, follows a specific set of rules. These rules are: 
 
-1) $$i^{2} = j^{2} = k^{2} = -1$$
-2) $$ij = -ji = k$$
-3) $$jk = -kj = ii$$
-4) $$ki = -ik = j$$
+$$
+i^{2} = j^{2} = k^{2} = -1
+$$
 
-As noted, multiplication of quaternions is **not** commutative. That is, for any two quaternions $$q1$$ and $$q2$$, 
+$$
+ij = -ji = k
+$$
+
+$$
+jk = -kj = ii
+$$
+
+$$
+ki = -ik = j
+$$
+
+<br>
+
+As noted in these rules, the multiplication of the imaginary components $$i$$, $$j$$, and $$k$$, are **not** commutative. 
+
+As a result, the multiplication of quaternions must also be **not** commutative. 
+
+That is, for any two quaternions $$q1$$ and $$q2$$, 
 
 $$
 q1 q2 \neq q2 q1
 $$
 
 <br>
-
-Consider the following example: 
-
-#### **Example**
 
 
 <br>
