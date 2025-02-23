@@ -67,14 +67,5 @@ A student from Warsaw, Poland.
 </div>
 <br>
 
-A student from England, UK
-
-<br>
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Testimonials/3.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<br>
 
 If you’d like to book a session, send me an [**email**](mailto:amrmhmorsy@gmail.com), and let’s get in touch.
