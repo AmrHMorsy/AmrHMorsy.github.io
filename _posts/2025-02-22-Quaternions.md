@@ -34,7 +34,7 @@ However, matrices are not the only mathematical entity to represent rotations. T
 <br>
 
 - Requires less storage than traditional matrices 
-- Easier to interpolate for smoother animations 
+- Easier and more stable to interpolate for smoother animations 
 - Concatenation requires fewer arithmetic operations
 
 <br>
@@ -51,17 +51,16 @@ The set of quaternions is a 4-dimensional vector space denoted by $$H$$.
 A quaternion $$q$$, where $$q \in H$$, has the form 
 
 $$
-q = (w, x, y, z) = w + xi + yj + zk
+q = q_{w} + q_{x}i + q_{y}j + q_{z}k = q_{w} + q_{v}
 $$
 
+where 
 
-It can also be written as: 
-
-$$
-q = s + v
-$$
-
-where $$s$$ represents the scalar component, corresponding to the $$w$$-component of $$q$$ (i.e. $$s = w$$), and $$v$$ represents the vector component, corresponding to the $$x$$, $$y$$, and $$z$$ components of $$q$$ (i.e. $$v = (x,y,z) = xi + yj + zk$$ ). 
+- $$q_{v} = q_{x}i + q_{y}j + q_{z}k$$, such that $$q_{v}$$ is called the imaginary part of a quaternion, and $$i$$, $$j$$, and $$k$$ are called imaginary units, 
+- $$q_{w}$$ is called the real part of a quaternion,
+- All $$q_{w}$$, $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$ are real numbers, 
+- $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$ are closely related to axis of rotation, and
+- The angle of rotation affects all four parts $$q_{w}$$, $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$. 
 
 <br> 
 
@@ -96,11 +95,33 @@ q1 q2 \neq q2 q1
 $$
 
 <br>
-
-
 <br>
 
-To Be Continued....
+**Multiplication**
+
+The multiplication of the two quaternions $$q$$ and $$r$$ is as follows: 
+
+$$
+qr = (iq_{x} + jq_{y} + kq_{z} + q_{w}) (ir_{x} + jr_{y} + kr_{z} + r_{w})
+$$
+
+$$
+= i(q_{y}r_{z} - q_{z}r_{y} + r_{w}q_{x} + q_{w}r_{x})
+$$
+
+$$
++ j( q_{z}r_{x} - q_{x}r_{z} + r_{w}q_{y} + q_{w}r_{y}) 
+$$
+
+$$
++ k( q_{x}r_{y} - q_{y}r_{x} + r_{w}q_{z} + q_{w}r_{z})
+$$
+
+$$
++ q_{w}r_{w} - q_{x}r_{x} - q_{y}r_{y} - q_{z}r_{z}
+$$
+
+<br>
 
 ***
 
