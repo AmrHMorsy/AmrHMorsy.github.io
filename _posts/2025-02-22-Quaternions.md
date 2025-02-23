@@ -68,6 +68,11 @@ The laws of quaternions are:
 - $$jk = -kj = ii$$
 - $$ki = -ik = j$$
 
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
 
 To Be Continued....
 
