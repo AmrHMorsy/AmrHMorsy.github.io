@@ -56,7 +56,7 @@ $$
 q = iq_{x} + jq_{y} + kq_{z} + q_{w}
 $$
 
-where $$q_{w}$$ is called the real part of a quaternion and $$iq_{x} + jq_{y} + kq_{z}$$ is called the imaginary part of the quaternion. 
+where $$q_{w}$$ is called the **real** part of a quaternion and $$iq_{x} + jq_{y} + kq_{z}$$ is called the **imaginary** part of the quaternion. 
 
 The quaternion $$q$$ can also be written as: 
 
@@ -71,8 +71,6 @@ q_{v} = q_{x}i + q_{y}j + q_{z}k
 $$
 
 <br>
-
-<br> 
 
 **Notes:**
 
