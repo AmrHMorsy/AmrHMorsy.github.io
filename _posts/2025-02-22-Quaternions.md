@@ -144,13 +144,13 @@ $$
 
 ##### **Addition**
 
+<br>
+
 ***
 
 <br>
-### References 
+
+### **References**
 <br>
 - Chapter 4.6 - Mathematics for 3D Programming and Computer Graphics by Eric Lengyel
 - Chapter 4.3 - Real-Time Rendering by Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michat Iwanicki and Sébastien Hillaire
-
-
-*** 
