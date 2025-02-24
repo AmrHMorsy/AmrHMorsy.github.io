@@ -46,7 +46,7 @@ In this post, we will dive into the topic of quaternions. We will explore their 
 ### **Quaternion Mathematics** <br>
 <br> 
 
-The set of quaternions is a 4-dimensional vector space denoted by $$H$$ and is a natural extension of the set of complex numbers. 
+The set of quaternions $$H$$ is an extension of the set of complex numbers and can be thought of as a 4-dimensional vector space. 
 
 A complex number has the form 
 
@@ -56,7 +56,7 @@ $$
 
 where $$a$$ is the real part and $$b$$ is the imaginary part. 
 
-On on the other hand, a quaternion $$q$$, where $$q \in H$$, has the form 
+On the other hand, a quaternion $$q$$, where $$q \in H$$, has the form 
 
 $$
 q = q_{w} + q_{x}i + q_{y}j + q_{z}k = q_{w} + q_{v}
@@ -72,7 +72,7 @@ where
 
 <br> 
 
-Multiplication of quaternions's imaginary components $$i$$, $$j$$, and $$k$$, follows a specific set of rules. These rules are: 
+Multiplication of quaternions's imaginary components $$i$$, $$j$$, and $$k$$ follows a specific set of rules. These rules are: 
 
 $$
 i^{2} = j^{2} = k^{2} = -1
@@ -92,14 +92,14 @@ $$
 
 <br>
 
-As noted in these rules, the multiplication of the imaginary components $$i$$, $$j$$, and $$k$$, are **not** commutative. 
+As noted in these rules, the multiplication of the imaginary components $$i$$, $$j$$, and $$k$$, is **not** commutative. 
 
 As a result, the multiplication of quaternions must also be **not** commutative. 
 
-That is, for any two quaternions $$q1$$ and $$q2$$, 
+That is, for any two quaternions $$q$$ and $$r$$, their multiplication is not commutative: 
 
 $$
-q1 q2 \neq q2 q1
+qr \neq rq
 $$
 
 <br>
