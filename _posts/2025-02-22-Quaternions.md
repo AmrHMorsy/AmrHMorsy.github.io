@@ -46,23 +46,31 @@ In this post, we will dive into the topic of quaternions. We will explore their 
 ### **Quaternion Mathematics** <br>
 <br> 
 
-The set of quaternions $$H$$ is an extension of the set of complex numbers and can be thought of as a 4-dimensional vector space. 
+The set of quaternions is denoted by $$H$$. 
 
-A complex number has the form 
+It is considered an extension of the set of complex numbers and can be thought of as a 4-dimensional vector space. 
 
-$$
-a + bi
-$$
-
-where $$a$$ is the real part and $$b$$ is the imaginary part. 
-
-On the other hand, a quaternion $$q$$, where $$q \in H$$, has the form 
+A quaternion $$q \in H$$, has the form 
 
 $$
-q = q_{w} + q_{x}i + q_{y}j + q_{z}k = q_{w} + q_{v}
+q = iq_{x} + jq_{y} + kq_{z} + q_{w}
 $$
 
-where $$q_{v} = q_{x}i + q_{y}j + q_{z}k$$ is called the imaginary part of a quaternion and $$q_{w}$$ is called the real part of a quaternion. 
+where $$q_{w}$$ is called the real part of a quaternion and $$iq_{x} + jq_{y} + kq_{z}$$ is called the imaginary part of the quaternion. 
+
+The quaternion $$q$$ can also be written as: 
+
+$$
+q = q_{v} + q_{w}
+$$
+
+where 
+
+$$
+q_{v} = q_{x}i + q_{y}j + q_{z}k
+$$
+
+<br>
 
 <br> 
 
@@ -75,7 +83,7 @@ where $$q_{v} = q_{x}i + q_{y}j + q_{z}k$$ is called the imaginary part of a qua
 
 <br> 
 
-Multiplication of quaternions's imaginary components $$i$$, $$j$$, and $$k$$ follows a specific set of rules. These rules are: 
+The multiplication of quaternions's imaginary units $$i$$, $$j$$, and $$k$$ follows a specific set of rules. These rules are: 
 
 $$
 i^{2} = j^{2} = k^{2} = -1
