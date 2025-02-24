@@ -82,6 +82,10 @@ $$
 - The angle of rotation affects all four parts: $$q_{w}$$, $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$. 
 
 <br> 
+<br>
+
+##### **Multiplication**
+<br>
 
 The multiplication of quaternions's imaginary units $$i$$, $$j$$, and $$k$$ follows a specific set of rules. These rules are: 
 
@@ -114,9 +118,6 @@ qr \neq rq
 $$
 
 <br>
-<br>
-
-**Multiplication**
 
 The multiplication of the two quaternions $$q$$ and $$r$$ is as follows: 
 
@@ -141,6 +142,9 @@ $$
 $$
 
 <br>
+<br>
+
+##### **Addition**
 
 ***
 
@@ -148,6 +152,7 @@ $$
 ### References 
 <br>
 - Chapter 4.6 - Mathematics for 3D Programming and Computer Graphics by Eric Lengyel
+- Chapter 4.3 - Real-Time Rendering by Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michat Iwanicki and Sébastien Hillaire
 
 
 *** 
