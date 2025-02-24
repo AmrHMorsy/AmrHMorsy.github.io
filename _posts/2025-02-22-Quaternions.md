@@ -62,13 +62,16 @@ $$
 q = q_{w} + q_{x}i + q_{y}j + q_{z}k = q_{w} + q_{v}
 $$
 
-where 
+where $$q_{v} = q_{x}i + q_{y}j + q_{z}k$$ is called the imaginary part of a quaternion and $$q_{w}$$ is called the real part of a quaternion. 
 
-- $$q_{v} = q_{x}i + q_{y}j + q_{z}k$$, such that $$q_{v}$$ is called the imaginary part of a quaternion, and $$i$$, $$j$$, and $$k$$ are called imaginary units, 
-- $$q_{w}$$ is called the real part of a quaternion,
-- All $$q_{w}$$, $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$ are real numbers, 
-- $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$ are closely related to axis of rotation, and
-- The angle of rotation affects all four parts $$q_{w}$$, $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$. 
+<br> 
+
+**Notes:**
+
+- $$i$$, $$j$$, and $$k$$ are called imaginary units.
+- All $$q_{w}$$, $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$ are real numbers.
+- $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$ are closely related to axis of rotation.
+- The angle of rotation affects all four parts: $$q_{w}$$, $$q_{x}$$, $$q_{y}$$, and $$q_{z}$$. 
 
 <br> 
 
