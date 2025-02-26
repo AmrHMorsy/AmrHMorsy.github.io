@@ -82,6 +82,21 @@ $$
 <br> 
 <br>
 
+##### **Addition**
+<br>
+
+The definition of the addition of two quaternions $$q$$ and $$r$$ is as follows: 
+
+$$
+q + r = (iq_{x} + jq_{y} + kq_{z} + q_{w}) + (ir_{x} + jr_{y} + kr_{z} + r_{w}) 
+$$
+
+$$
+= i(q_{x} + r_{x}) + j(q_{y} + r_{y}) + k(q_{z} + r_{z}) + (q_{w} + r_{w} )
+$$
+
+<br>
+
 ##### **Multiplication**
 <br>
 
@@ -142,9 +157,6 @@ $$
 <br>
 <br>
 
-##### **Addition**
-
-<br>
 
 ***
 
