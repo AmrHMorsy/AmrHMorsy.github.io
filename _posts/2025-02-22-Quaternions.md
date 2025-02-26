@@ -159,7 +159,7 @@ $$
 The definition of the multiplication of the two quaternions $$q$$ and $$r$$ can also be written in scalar-vector form as: 
 
 $$
-qr = q_{w}r_{w} - q_{v}.r_{v} + q_{w}r_{v} + r_{w}q_{v} + q_{v} \cross r_{v}
+qr = q_{w}r_{w} - q_{v}.r_{v} + q_{w}r_{v} + r_{w}q_{v} + q_{v} \times r_{v}
 $$
 
 <br>
