@@ -132,7 +132,7 @@ $$
 
 <br>
 
-The multiplication of the two quaternions $$q$$ and $$r$$ is as follows: 
+The definition of the multiplication of the two quaternions $$q$$ and $$r$$ is as follows: 
 
 $$
 qr = (iq_{x} + jq_{y} + kq_{z} + q_{w}) (ir_{x} + jr_{y} + kr_{z} + r_{w})
@@ -152,6 +152,14 @@ $$
 
 $$
 + q_{w}r_{w} - q_{x}r_{x} - q_{y}r_{y} - q_{z}r_{z}
+$$
+
+<br>
+
+The definition of the multiplication of the two quaternions $$q$$ and $$r$$ can also be written in scalar-vector form as: 
+
+$$
+qr = q_{w}r_{w} - q_{v}.r_{v} + q_{w}r_{v} + r_{w}q_{v} + q_{v} \cross r_{v}
 $$
 
 <br>
