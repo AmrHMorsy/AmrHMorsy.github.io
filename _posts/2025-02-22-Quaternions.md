@@ -163,9 +163,27 @@ qr = q_{w}r_{w} - q_{v}.r_{v} + q_{w}r_{v} + r_{w}q_{v} + q_{v} \cross r_{v}
 $$
 
 <br>
+
+
+
+##### **Conjugate**
 <br>
 
+The conjugate of a quaternion $$q$$, where 
 
+$$
+q = s + v
+$$
+
+denoted by $$\bar{q}$$, is given by 
+
+$$
+q = s - v
+$$
+
+
+<br>
+<br>
 ***
 
 <br>
