@@ -9,7 +9,7 @@ featured: false
 ---
 
 <br> 
-### ** 1  Introduction** <br>
+### **1   Introduction** <br>
 <br> 
 
 In computer graphics, rotations are commonly represented using matrices. For example, a rotation by an angle $$\theta$$ around the axis $$A$$ is expressed using the following matrix: 
@@ -43,7 +43,7 @@ In this post, we will dive into the topic of quaternions. We will explore their 
 
 
 <br> 
-### **2  Quaternion Mathematics** <br>
+### **2   Quaternion Mathematics** <br>
 <br> 
 
 The set of quaternions is denoted by $$H$$. 
@@ -82,7 +82,7 @@ $$
 <br> 
 <br>
 
-##### **2.1  Addition**
+##### **2.1   Addition**
 <br>
 
 The definition of the addition of two quaternions $$q$$ and $$r$$ is as follows: 
