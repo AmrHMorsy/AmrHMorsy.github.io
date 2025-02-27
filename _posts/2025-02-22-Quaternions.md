@@ -202,7 +202,8 @@ $$
 ##### **Normalization**
 <br>
 
-The norm or the magnitude of a quaternion $$q$$, denoted by $$n(q)$$ or sometimes $$||q||$$, is given by
+The norm or the magnitude of a quaternion $$q$$, denoted by $$n(q)$$ or sometimes $$||q||$$
+, is given by
 
 $$
 n(q) = ||q|| = \sqrt{q_{x}^{2} + q_{y}^{2} + q_{z}^{2} + q_{w}^{2} }
@@ -249,11 +250,15 @@ $$
 
 We also know that 
 
+$$
 n(q) = ||q|| = \sqrt{q \bar{q}}
+$$
 
-and, consequently, 
+and, consequently
 
+$$
 n(q)^{2} = ||q||^{2} = q \bar{q}
+$$
 
 Hence, we can rewrite $$q q^{-1}$$ as
 
