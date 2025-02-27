@@ -165,7 +165,6 @@ $$
 <br>
 
 
-
 ##### **Conjugate**
 <br>
 
@@ -215,7 +214,7 @@ $$
 q \bar{q} = q_{x}^{2} + q_{y}^{2} + q_{z}^{2} + q_{w}^{2}
 $$
 
-we can rewrite the magnitude equation as 
+then we can rewrite the magnitude equation as 
 
 $$
 ||q|| = \sqrt{q \bar{q}}
