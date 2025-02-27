@@ -50,7 +50,7 @@ Here are some testimonials from students I’ve worked with:
 
 <br> 
 
-> ⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐
 <br>
 > ***"This guy was a very versatile tutor. He helped me with lectures, figuring out how to code, helping me debug and any other issue. He was available on short notice. I was incredibly lucky to have this guy. He saved me in my Graphics class.  Really had a strong knowledge of computer graphics."***
 <br>
@@ -58,7 +58,7 @@ Here are some testimonials from students I’ve worked with:
 
 <br>
 
-> ⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐
 <br>
 > ***"He is very knowledgeable in what he is doing . He make complex things really easy . Definitely recommend him"***
 <br>
