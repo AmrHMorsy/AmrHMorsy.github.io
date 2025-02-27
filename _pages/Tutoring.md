@@ -22,13 +22,14 @@ My expertise includes:
 
 - Teaching computer graphics at all levels, from beginners to advanced learners
 - Developing game engines, simulations, animations, and video games
-- Using low-level graphics APIs such as OpenGL, WebGL, Vulkan, Metal, and Direct3D
+- Using low-level graphics APIs such as **OpenGL**, **WebGL**, **Vulkan**, **Metal**, and **Direct3D**
 
 For examples of my work, feel free to check out my [portfolio](https://amrhmorsy.github.io/portfolio/).
 
 <br>
 
 #### **How I Can Help**
+<br>
 
 My lessons are tailored to your specific needs. Whether you’re looking to:
 
@@ -49,7 +50,11 @@ Here are some testimonials from students I’ve worked with:
 
 <br> 
 
-A student from California, USA. 
+> ⭐⭐⭐⭐⭐
+> ***"This guy was a very versatile tutor. He helped me with lectures, figuring out how to code, helping me debug and any other issue. He was available on short notice. I was incredibly lucky to have this guy. He saved me in my Graphics class.  Really had a strong knowledge of computer graphics."***
+> - A student from California, USA. 
+
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html loading="eager" path="assets/img/Testimonials/1.png" class="img-fluid rounded z-depth-1" %}
