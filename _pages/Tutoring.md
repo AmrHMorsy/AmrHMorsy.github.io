@@ -51,18 +51,21 @@ Here are some testimonials from students I’ve worked with:
 <br> 
 
 > ⭐⭐⭐⭐⭐
+<br>
 > ***"This guy was a very versatile tutor. He helped me with lectures, figuring out how to code, helping me debug and any other issue. He was available on short notice. I was incredibly lucky to have this guy. He saved me in my Graphics class.  Really had a strong knowledge of computer graphics."***
-> - A student from California, USA. 
+<br>
+> - *A student from California, USA*
 
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Testimonials/1.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
 <br>
 
-A student from Warsaw, Poland. 
+> ⭐⭐⭐⭐⭐
+<br>
+> ***"He is very knowledgeable in what he is doing . He make complex things really easy . Definitely recommend him"***
+<br>
+> - *A student from Warsaw, Poland*
+
+
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html loading="eager" path="assets/img/Testimonials/2.png" class="img-fluid rounded z-depth-1" %}
