@@ -192,7 +192,7 @@ $$
 $$
 
 $$
-= q_{w}^{2} + q_{x}^{2} + q_{y}^{2} + q_{z}^{2}
+= q_{x}^{2} + q_{y}^{2} + q_{z}^{2} + q_{w}^{2}
 $$
 
 
@@ -202,7 +202,7 @@ $$
 ##### **Normalization**
 <br>
 
-The norm or the magnitude of a quaternion $$q$$, denoted by $$n(q)$$ or sometimes $$||q||$$
+The magnitude of a quaternion $$q$$, denoted by $$||q||$$
 , is given by
 
 $$
@@ -215,7 +215,7 @@ $$
 q \bar{q} = q_{x}^{2} + q_{y}^{2} + q_{z}^{2} + q_{w}^{2}
 $$
 
-we can rewrite the norm equation as 
+we can rewrite the magnitude equation as 
 
 $$
 ||q|| = \sqrt{q \bar{q}}
@@ -229,7 +229,7 @@ $$
 The inverse of a non-zero quaternion $$q$$, denoted by $$q^{-1}$$, is given by
 
 $$
-q^{-1} = \frac{\bar{q}}{n(q)^{2}} = \frac{\bar{q}}{||q||^{2}}
+q^{-1} = \frac{\bar{q}}{||q||^{2}}
 $$
 
 <br>
@@ -239,13 +239,7 @@ $$
 We know that 
 
 $$
-q q^{-1} = 1
-$$
-
-and 
-
-$$
-q^{-1} q = 1
+q q^{-1} = q^{-1} q = 1
 $$
 
 We also know that 
@@ -266,7 +260,7 @@ $$
 q q^{-1} = \frac{q \bar{q}}{||q||^{2}}
 $$
 
-Thus, 
+, and therefore, 
 
 $$
 q^{-1} = \frac{q \bar{q}}{q ||q||^{2}} = \frac{\bar{q}}{||q||^{2}}
