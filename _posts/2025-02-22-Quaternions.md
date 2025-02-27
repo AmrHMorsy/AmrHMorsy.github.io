@@ -169,21 +169,106 @@ $$
 ##### **Conjugate**
 <br>
 
-The conjugate of a quaternion $$q$$, where 
+The conjugate of a quaternion $$q$$, denoted by $$\bar{q}$$, is given by 
 
 $$
-q = s + v
+\bar{q} = -q_{v} + q_{w}
 $$
 
-denoted by $$\bar{q}$$, is given by 
+<br>
+
+If we take the product of the quaternion $$q$$ and its conjugate $$\bar{q}$$, we get 
 
 $$
-q = s - v
+q \bar{q} = (q_{v} + q_{w})(-q_{v} + q_{w}) 
 $$
+
+$$
+= q_{w}^{2} + (q_{v}.q_{v}) - q_{w}q_{v} + q_{w}q_{v} + q_{v} x -q_{v}
+$$
+
+$$
+= q_{w}^{2} + (q_{v}.q_{v})
+$$
+
+$$
+= q_{w}^{2} + q_{x}^{2} + q_{y}^{2} + q_{z}^{2}
+$$
+
 
 
 <br>
+
+##### **Normalization**
 <br>
+
+The norm or the magnitude of a quaternion $$q$$, denoted by $$n(q)$$ or sometimes $$||q||$$, is given by
+
+$$
+n(q) = ||q|| = \sqrt{q_{x}^{2} + q_{y}^{2} + q_{z}^{2} + q_{w}^{2} }
+$$
+
+Since the product of $$q$$ and its conjugate, $$\bar{q}$$, is given by
+
+$$
+q \bar{q} = q_{x}^{2} + q_{y}^{2} + q_{z}^{2} + q_{w}^{2}
+$$
+
+we can rewrite the norm equation as 
+
+$$
+n(q) = ||q|| = \sqrt{q \bar{q}}
+$$
+
+<br>
+
+##### **Inverse**
+<br>
+
+The inverse of a non-zero quaternion $$q$$, denoted by $$q^{-1}$$, is given by
+
+$$
+q^{-1} = \frac{\bar{q}}{n(q)^{2}} = \frac{\bar{q}}{||q||^{2}}
+$$
+
+<br>
+
+**Proof**
+
+We know that 
+
+$$
+q q^{-1} = 1
+$$
+
+and 
+
+$$
+q^{-1} q = 1
+$$
+
+We also know that 
+
+n(q) = ||q|| = \sqrt{q \bar{q}}
+
+and, consequently, 
+
+n(q)^{2} = ||q||^{2} = q \bar{q}
+
+Hence, we can rewrite $$q q^{-1}$$ as
+
+$$
+q q^{-1} = \frac{q \bar{q}}{n(q)^{2}}
+$$
+
+Thus, 
+
+$$
+q^{-1} = \frac{q \bar{q}}{q ||q||^{2}} = \frac{\bar{q}}{||q||^{2}}
+$$
+
+<br>
+
 ***
 
 <br>
