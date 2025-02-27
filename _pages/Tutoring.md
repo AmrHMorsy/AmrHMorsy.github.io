@@ -64,15 +64,6 @@ Here are some testimonials from students I’ve worked with:
 <br>
 > - *A student from Warsaw, Poland*
 
-
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/Testimonials/2.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<br>
-
 <br>
 
 ***
