@@ -271,13 +271,6 @@ $$
 q^{-1} = \frac{q \bar{q}}{q ||q||^{2}} = \frac{\bar{q}}{||q||^{2}}
 $$
 
-\hfill $\square$
-
-\begin{proof}
-This is a proof example.
-\end{proof}
-
-
 <br>
 
 **Note**
