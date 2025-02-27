@@ -206,7 +206,7 @@ The norm or the magnitude of a quaternion $$q$$, denoted by $$n(q)$$ or sometime
 , is given by
 
 $$
-n(q) = ||q|| = \sqrt{q_{x}^{2} + q_{y}^{2} + q_{z}^{2} + q_{w}^{2} }
+||q|| = \sqrt{q_{x}^{2} + q_{y}^{2} + q_{z}^{2} + q_{w}^{2} }
 $$
 
 Since the product of $$q$$ and its conjugate, $$\bar{q}$$, is given by
@@ -218,7 +218,7 @@ $$
 we can rewrite the norm equation as 
 
 $$
-n(q) = ||q|| = \sqrt{q \bar{q}}
+||q|| = \sqrt{q \bar{q}}
 $$
 
 <br>
@@ -251,19 +251,19 @@ $$
 We also know that 
 
 $$
-n(q) = ||q|| = \sqrt{q \bar{q}}
+||q|| = \sqrt{q \bar{q}}
 $$
 
 and, consequently
 
 $$
-n(q)^{2} = ||q||^{2} = q \bar{q}
+||q||^{2} = q \bar{q}
 $$
 
 Hence, we can rewrite $$q q^{-1}$$ as
 
 $$
-q q^{-1} = \frac{q \bar{q}}{n(q)^{2}}
+q q^{-1} = \frac{q \bar{q}}{||q||^{2}}
 $$
 
 Thus, 
