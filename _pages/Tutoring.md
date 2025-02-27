@@ -54,6 +54,7 @@ Here are some testimonials from students I’ve worked with:
 <br>
 > ***"This guy was a very versatile tutor. He helped me with lectures, figuring out how to code, helping me debug and any other issue. He was available on short notice. I was incredibly lucky to have this guy. He saved me in my Graphics class.  Really had a strong knowledge of computer graphics."***
 <br>
+<br>
 > - *A student from California, USA*
 
 <br>
@@ -62,7 +63,19 @@ Here are some testimonials from students I’ve worked with:
 <br>
 > ***"He is very knowledgeable in what he is doing . He make complex things really easy . Definitely recommend him"***
 <br>
+<br>
 > - *A student from Warsaw, Poland*
+
+<br>
+
+> ⭐⭐⭐⭐⭐
+<br>
+> ***"Thank you! and thank you so much for all your help, it's made a huge difference! You explained everything so clearly it all makes much more sense now I really appreciate it"***
+<br>
+<br>
+> - *A student from England, UK*
+
+
 
 <br>
 
