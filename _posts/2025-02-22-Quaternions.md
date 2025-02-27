@@ -278,15 +278,8 @@ $$
 If quaternion $$q$$ is a unit quaternion, then
 
 $$
-q^{-1} = \bar{q}
+q^{-1} = \frac{\bar{q}}{||q||^{2}} = \frac{\bar{q}}{1} = \bar{q}
 $$
-
-since 
-
-$$
-||q|| = 1
-$$
-
 
 <br>
 <br>
