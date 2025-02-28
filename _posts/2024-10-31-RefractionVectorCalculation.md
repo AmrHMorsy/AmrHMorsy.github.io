@@ -387,5 +387,17 @@ $$
 <br>
 - Chapter 6.4.2 - Mathematics for 3D Programming and Computer Graphics by Eric Lengyel
 
+<br>
 
 ***
+
+<br>
+<br>
+
+> **Need help with computer graphics?**
+<br>
+> **I offer one-on-one tutoring for students and professionals, covering all levels of computer graphics along with the APIs <u>OpenGL</u>, <u>WebGL</u>, <u>Vulkan</u>, <u>Metal</u>, and <u>Direct3D</u> for developing game engines, simulations, animations, and video games.**
+<br>
+Learn more → [Tutoring](https://amrhmorsy.github.io/tutoring/)
+
+
