@@ -196,5 +196,20 @@ glm::vec3 compute_reflection_vector( glm::vec3 L, glm::vec3 N )
 <br>
 - Chapter 6.4.1 - Mathematics for 3D Programming and Computer Graphics by Eric Lengyel
 
+<br>
 
-*** 
+***
+
+<br>
+<br>
+
+> **Need help with computer graphics?**
+<br>
+<br>
+> I offer one-on-one tutoring for students and professionals, covering all levels of computer graphics along with the APIs <u>OpenGL</u>, <u>WebGL</u>, <u>Vulkan</u>, <u>Metal</u>, and <u>Direct3D</u> for developing game engines, simulations, animations, and video games.
+<br>
+<br>
+Learn more → [Tutoring](https://amrhmorsy.github.io/tutoring/)
+
+
+
