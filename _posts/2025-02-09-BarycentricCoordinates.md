@@ -368,9 +368,19 @@ Otherwise, the pixel is outside the triangle and it will not be shaded.
 <br>
 - Chapter 7.9.1 - Computer Graphics: Principles and Practice by John F. Hughes
 
-
-*** 
-
 <br>
 
-For any questions or inquiries, please email me at **[amrmhmorsy@gmail.com](mailto:amrmhmorsy@gmail.com)**
+***
+
+<br>
+<br>
+
+> **Need help with computer graphics?**
+<br>
+<br>
+> I offer one-on-one tutoring for students and professionals, covering all levels of computer graphics along with the APIs <u>OpenGL</u>, <u>WebGL</u>, <u>Vulkan</u>, <u>Metal</u>, and <u>Direct3D</u> for developing game engines, simulations, animations, and video games.
+<br>
+<br>
+Learn more → [Tutoring](https://amrhmorsy.github.io/tutoring/)
+
+
