@@ -9,7 +9,7 @@ children:
     permalink: /games/
   - title: divider
   - title: Game Engines
-    permalink: /tools/
+    permalink: /game_engines/
   - title: divider
   - title: Courses
     permalink: /courses/
