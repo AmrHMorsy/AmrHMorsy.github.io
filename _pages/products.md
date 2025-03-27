@@ -5,15 +5,12 @@ nav: true
 nav_order: 4
 dropdown: true
 children:
-  - title: eBooks
-    permalink: /ebooks/
-  - title: divider
-  - title: Courses
-    permalink: /courses/
-  - title: divider
   - title: Games
     permalink: /games/
   - title: divider
-  - title: GameEngines
+  - title: Game Engines
     permalink: /tools/
+  - title: divider
+  - title: Courses
+    permalink: /courses/
 ---
