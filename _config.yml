@@ -65,7 +65,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: #amrhmorsy # your GitHub user name
+github_username: # amrhmorsy # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
@@ -175,7 +175,7 @@ announcements:
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  scrollable: false # true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
