@@ -9,37 +9,17 @@ display_categories:
 horizontal: false
 ---
 
-I offer one-on-one and group tutoring sessions in **computer graphics**, covering a wide range of topics—from introductory concepts to advanced techniques. 
+I offer tutoring sessions in **computer graphics**, covering a wide range of topics—from introductory concepts to advanced techniques—teaching both beginners and advanced learners.
 
-With **three** years of experience teaching students from various countries, I have helped learners of all levels improve their understanding and skills in graphics programming.
+I specialize in low-level graphics programming, teaching APIs like **Vulkan**, **OpenGL**, **Metal**, and **DirectX**.
 
-<br> 
+With **four** years of teaching experience, I’ve helped learners from around the world improve their understanding of graphics programming and bring their dream game engines, hobby games, and animations to life.
 
-#### **Expertise**
-<br> 
+My expertise includes developing custom game engines, real-time simulations, interactive animations, and video games.
 
-My expertise includes:
-
-- Teaching computer graphics at all levels, from beginners to advanced learners
-- Developing game engines, simulations, animations, and video games
-- Using low-level graphics APIs such as **OpenGL**, **WebGL**, **Vulkan**, **Metal**, and **Direct3D**
+I can help you build your own graphics engine, video game, or animation, or debug your project, assignment, or school-related work.
 
 For examples of my work, feel free to check out my [portfolio](https://amrhmorsy.github.io/portfolio/).
-
-<br>
-
-#### **How I Can Help**
-<br>
-
-My lessons are tailored to your specific needs. Whether you’re looking to:
-
-- Become a graphics programmer
-- Deepen your knowledge of computer graphics
-- Debug a graphics project
-- Get support with an assignment
-- Bring a hobby project or dream game to life
-
-I'm here to help.
 
 <br> 
 
@@ -83,6 +63,14 @@ Here are some testimonials from students I’ve worked with:
 <br>
 <br>
 > - *A student from England, UK*
+
+
+> ⭐⭐⭐⭐⭐
+<br>
+> ***"Easy to talk to, patient...will meet with Amr again!"***
+<br>
+<br>
+> - *A student from Midwest, USA*
 
 
 
