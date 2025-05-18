@@ -80,4 +80,4 @@ Here are some testimonials from students I’ve worked with:
 
 <br>
 
-##### **If you’d like to book a session, send me an [email](mailto:amrmhmorsy@gmail.com), and let’s get in touch.**
+##### **To book a session or inquire further, please contact me via [email](mailto:amrmhmorsy@gmail.com)**
