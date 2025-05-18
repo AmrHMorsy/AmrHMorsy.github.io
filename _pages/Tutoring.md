@@ -65,15 +65,6 @@ Here are some testimonials from students I’ve worked with:
 > - *A student from England, UK*
 
 
-> ⭐⭐⭐⭐⭐
-<br>
-> ***"Easy to talk to, patient...will meet with Amr again!"***
-<br>
-<br>
-> - *A student from Midwest, USA*
-
-
-
 <br>
 
 ***
