@@ -30,7 +30,9 @@ With **four** years of teaching experience, I’ve helped learners from around t
 <br>
 
 - Learning theoretical computer graphics, from foundational concepts to advanced topics
+
 - Building custom game engines, real-time simulations, animations, and video games
+
 - Debugging and guiding you through projects, assignments, or personal work
 
 <br> 
