@@ -45,7 +45,7 @@ With **four** years of teaching experience, I’ve helped learners from around t
 
 <br> 
 
-#### Contact
+#### **Contact**
 
 **To book a session or inquire further, email me at [email](mailto:amrmhmorsy@gmail.com)**
 
