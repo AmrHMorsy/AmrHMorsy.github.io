@@ -9,11 +9,11 @@ display_categories:
 horizontal: false
 ---
 
-I offer personalized tutoring sessions in **Computer Graphics** and **Computer Graphics Programming**, teaching both beginners and advanced learners.
+I offer personalized tutoring sessions in **computer graphics** and **graphics programming**, teaching both beginners and advanced learners.
 
 My expertise includes developing custom game engines, real-time simulations, interactive animations, and video games using low-level graphics APIs such as **Vulkan**, **OpenGL**, **Metal**, and **DirectX**.
 
-With **four** years of teaching experience, I’ve helped learners from around the world improve their understanding of **Computer Graphics** and **Graphics Programming** and bring their dream game engines, hobby games, and animations to life.
+With **four** years of teaching experience, I’ve helped learners from around the world improve their understanding of computer graphics and their graphics programming skills and bring their dream game engines, hobby games, and animations to life.
 
 
 <br> 
@@ -22,9 +22,9 @@ With **four** years of teaching experience, I’ve helped learners from around t
 
 <br>
 
-#### I can help you with: 
+#### **I can help you with:**
 
-- Learning theoretical **Computer Graphics**, from foundational concepts to advanced topics
+- Learning theoretical computer graphics, from foundational concepts to advanced topics
 - Building custom game engines, real-time simulations, animations, and video games
 - Debugging and guiding you through projects, assignments, or personal work
 
@@ -45,10 +45,20 @@ With **four** years of teaching experience, I’ve helped learners from around t
 
 <br> 
 
+#### Contact
+
+**To book a session or inquire further, email me at [email](mailto:amrmhmorsy@gmail.com)**
+
+<br>
+
+***
+
+<br> 
+
 #### **Students Feedback**
 <br>
 
-Here are some testimonials from students I’ve worked with:
+Here are some feedbacks from students I’ve worked with:
 
 <br> 
 
@@ -97,9 +107,3 @@ Here are some testimonials from students I’ve worked with:
 
 
 ***
-
-<br>
-
-#### Contact
-
-**To book a session or inquire further, email me at [email](mailto:amrmhmorsy@gmail.com)**
