@@ -11,7 +11,7 @@ horizontal: false
 
 I offer personalized tutoring sessions in **computer graphics** and **graphics programming**, teaching both beginners and advanced learners.
 
-***
+&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•
 
 My expertise includes developing custom game engines, simulations, animations, and video games using low-level graphics APIs such as **Vulkan**, **OpenGL**, **Metal**, and **DirectX**.
 
