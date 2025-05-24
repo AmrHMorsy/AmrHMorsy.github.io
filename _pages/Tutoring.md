@@ -9,21 +9,43 @@ display_categories:
 horizontal: false
 ---
 
-I offer tutoring sessions in **computer graphics**, covering a wide range of topics—from introductory concepts to advanced techniques—teaching both beginners and advanced learners.
+I offer personalized tutoring sessions in **Computer Graphics** and **Computer Graphics Programming**, teaching both beginners and advanced learners.
 
-I specialize in low-level graphics programming, teaching APIs like **Vulkan**, **OpenGL**, **Metal**, and **DirectX**.
+My expertise includes developing custom game engines, real-time simulations, interactive animations, and video games using low-level graphics APIs such as **Vulkan**, **OpenGL**, **Metal**, and **DirectX**.
 
-With **four** years of teaching experience, I’ve helped learners from around the world improve their understanding of graphics programming and bring their dream game engines, hobby games, and animations to life.
+With **four** years of teaching experience, I’ve helped learners from around the world improve their understanding of **Computer Graphics** and **Graphics Programming** and bring their dream game engines, hobby games, and animations to life.
 
-My expertise includes developing custom game engines, real-time simulations, interactive animations, and video games.
-
-I can help you build your own graphics engine, video game, or animation, or debug your project, assignment, or school-related work.
-
-For examples of my work, feel free to check out my [portfolio](https://amrhmorsy.github.io/portfolio/).
 
 <br> 
 
-#### **Testimonials**
+***
+
+<br>
+
+#### I can help you with: 
+
+- Learning theoretical **Computer Graphics**, from foundational concepts to advanced topics
+- Building custom game engines, real-time simulations, animations, and video games
+- Debugging and guiding you through projects, assignments, or personal work
+
+<br> 
+
+***
+
+<br>
+
+#### **Session Details**
+
+- **Format**: Online
+- **Rate**: $60/hour
+
+<br>
+
+***
+
+<br> 
+
+#### **Students Feedback**
 <br>
 
 Here are some testimonials from students I’ve worked with:
@@ -78,4 +100,6 @@ Here are some testimonials from students I’ve worked with:
 
 <br>
 
-##### **To book a session or inquire further, please contact me via [email](mailto:amrmhmorsy@gmail.com)**
+#### Contact
+
+**To book a session or inquire further, email me at [email](mailto:amrmhmorsy@gmail.com)**
