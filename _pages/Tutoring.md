@@ -55,10 +55,7 @@ With **four** years of teaching experience, I’ve helped learners from around t
 
 <br> 
 
-#### **Students Feedback**
-<br>
-
-Here are some feedbacks from students I’ve worked with:
+#### **Student Feedback**
 
 <br> 
 
