@@ -1,6 +1,6 @@
 ---
 layout: page
-title: **Tutoring**
+title: Tutoring
 permalink: /tutoring/
 description:
 nav: false
