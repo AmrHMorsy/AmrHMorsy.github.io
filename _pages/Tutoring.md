@@ -32,6 +32,15 @@ Here are some testimonials from students I’ve worked with:
 
 > ⭐⭐⭐⭐⭐
 <br>
+> ***"Perfect! Amr is an incredible tutor, and I can't recommend him enough. He goes above and beyond to help his students. He makes sure I understand the concepts completely, and is patient enough to repeat himself however many times you need him to. I feel comfortable asking him questions, and he answers them in a way that you will understand, but by also making sure you're not missing any key information. 10/10 best tutor."***
+<br>
+<br>
+> - *A student from British Columbia, Canada*
+
+<br>
+
+> ⭐⭐⭐⭐⭐
+<br>
 > ***"This guy was a very versatile tutor. He helped me with lectures, figuring out how to code, helping me debug and any other issue. He was available on short notice. I was incredibly lucky to have this guy. He saved me in my Graphics class.  Really had a strong knowledge of computer graphics."***
 <br>
 <br>
@@ -55,8 +64,15 @@ Here are some testimonials from students I’ve worked with:
 <br>
 > - *A student from England, UK*
 
-
 <br>
+
+> ⭐⭐⭐⭐⭐
+<br>
+> ***"Easy to talk to, patient...will meet with Amr again!"***
+<br>
+<br>
+> - *A student from Midwest, USA*
+
 
 ***
 
