@@ -11,7 +11,7 @@ horizontal: false
 
 I offer personalized tutoring sessions in **computer graphics** and **graphics programming**, teaching both beginners and advanced learners.
 
-My expertise includes developing custom game engines, real-time simulations, interactive animations, and video games using low-level graphics APIs such as **Vulkan**, **OpenGL**, **Metal**, and **DirectX**.
+My expertise includes developing custom game engines, simulations, animations, and video games using low-level graphics APIs such as **Vulkan**, **OpenGL**, **Metal**, and **DirectX**.
 
 With **four** years of teaching experience, I’ve helped learners from around the world improve their understanding of computer graphics and their graphics programming skills and bring their dream game engines, hobby games, and animations to life.
 
@@ -23,6 +23,7 @@ With **four** years of teaching experience, I’ve helped learners from around t
 <br>
 
 #### **I can help you with:**
+<br>
 
 - Learning theoretical computer graphics, from foundational concepts to advanced topics
 - Building custom game engines, real-time simulations, animations, and video games
@@ -35,6 +36,7 @@ With **four** years of teaching experience, I’ve helped learners from around t
 <br>
 
 #### **Session Details**
+<br>
 
 - **Format**: Online
 - **Rate**: $60/hour
@@ -46,6 +48,7 @@ With **four** years of teaching experience, I’ve helped learners from around t
 <br> 
 
 #### **Contact**
+<br>
 
 **To book a session or inquire further, email me at [email](mailto:amrmhmorsy@gmail.com)**
 
@@ -56,7 +59,6 @@ With **four** years of teaching experience, I’ve helped learners from around t
 <br> 
 
 #### **Student Feedback**
-
 <br> 
 
 > ⭐⭐⭐⭐⭐
