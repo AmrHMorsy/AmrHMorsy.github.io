@@ -67,7 +67,7 @@ With **four** years of teaching experience, I’ve helped students from around t
 
 <br> 
 
-#### **Student Feedback**
+#### **Students Feedback**
 <br> 
 
 > ⭐⭐⭐⭐⭐
