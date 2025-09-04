@@ -1,0 +1,67 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Amr Morsy
+    - name: Languages
+      value: English, Arabic
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Bsc Computer Science
+      institution: Concordia University | Montréal, Canada
+      year: 2019 - 2024
+
+    - title: Erasmus Exchange Program
+      institution: University of Bergen | Bergen, Norway
+      year: 2021 - 2022
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: Ocean Simulation | (C++, OpenGL)
+      description: 
+        - Real-time ocean simulation developed in OpenGL, using Fast Fourier Transform (FFT) for wave simulation and OpenCL for optimization. Features Physically-Based Rendering (PBR), image-based lighting (IBL), and an HDR skybox. Inspired by Jerry Tessendorf's paper 'Simulating Ocean Water'.
+
+    - title: Game Engine | (C++, Vulkan)
+      description: Game engine developed in Vulkan, featuring Physically-Based Rendering (PBR), Image-Based Lighting (IBL), HDR skybox, volumetric fog, shadow mapping, dynamic tessellation, and noise generation. Integrated collision detection, skeletal animation, rigid body physics, and compute shaders for performance.
+
+    - title: Procedural Terrain Generation | (C++, OpenGL)
+      description: Real-time procedural multifractal terrain generation, developed in OpenGL, that generates infinite multifractal terrains using Fractal Brownian Motion (fBM) and Perlin Noise. Features Physically-Based Rendering (PBR), Image-Based Lighting (IBL), HDR skybox and Volumetric Fog Rendering.
+
+    - title: Cloth Simulation | (C++, OpenGL)
+      description: Real-time cloth simulation, developed in OpenGL, that employs a Mass-Spring System, inspired by the paper "Fast Simulation of Mass- Spring Systems" by Liu et al. Parallelized using Compute Shaders and features Physically-Based Rendering (PBR), image-based lighting (IBL) and an HDR skybox.
+
+    - title: Game Engine | (C++, OpenGL)
+      description: Game engine developed in OpenGL, featuring Physically-Based Rendering (PBR), Image-Based Lighting (IBL), HDR skybox, volumetric fog, shadow mapping, dynamic tessellation, and noise generation. Integrated collision detection, skeletal animation, rigid body physics, and compute shaders for performance.
+
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Freelance Graphics Programmer
+      year: 2024 - Present
+      description: 
+        - Developed simulations and desktop applications for several clients using low-level graphics APIs such as OpenGL, Vulkan, Direct3D and Metal. 
+        - Tutored several university students in different countries in computer graphics, helping them understand core concepts and complete assignments and projects. 
+        - Authored several technical blogs explaining advanced computer graphics techniques (Blog).
+
+    - title: Teaching Assistant | Computer Graphics
+      year: 2022 - Present
+      description: 
+        - Led weekly lab sessions, explaining complex computer graphics topics to a diverse student body, while offering individualized support to help students understand and apply concepts in their projects and assignments
+
+- title: Skills
+  type: list
+  contents:
+    - C / C++
+    - OpenGL
+    - Vulkan API
+    - Direct3D
+    - Metal API
+    - OpenMP
+    - OpenCL
+    - CUDA
+    - Blender
+    - GLSL Shader Programming
