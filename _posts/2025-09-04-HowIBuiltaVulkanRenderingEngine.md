@@ -1,11 +1,11 @@
 ---
 layout: post
-title: How I Built a Vulkan Rendering Engine - Part 1
+title: How I Built a Vulkan Rendering Engine
 date: 2025-09-04 12:00:00
 description:
 tags:
 categories:
-thumbnail: assets/img/Blog/HowIBuiltaVulkanRenderingEnginePart1/Thumbnail.png
+thumbnail: assets/img/Blog/HowIBuiltaVulkanRenderingEngine/Thumbnail.png
 featured: false
 ---
 
