@@ -3,7 +3,7 @@ layout: post
 title: How I Built a Rendering Engine using Vulkan - Part 1
 date: 2025-09-04 12:00:00
 description:
-tags: Vulkan Rendering Engine PBR IBL Frustum Culling Shadow Mapping HDR Skybox OpenGL
+tags:
 categories:
 thumbnail: assets/img/Blog/How_I_Built_a_Rendering_Engine_using_Vulkan_Part1/Thumbnail.png
 featured: false
