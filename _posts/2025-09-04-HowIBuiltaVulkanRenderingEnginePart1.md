@@ -5,7 +5,7 @@ date: 2025-09-04 12:00:00
 description:
 tags:
 categories:
-thumbnail: assets/img/Blog/How_I_Built_a_Rendering_Engine_using_Vulkan_Part1/Thumbnail.png
+thumbnail: assets/img/Blog/HowIBuiltaVulkanRenderingEnginePart1/Thumbnail.png
 featured: false
 ---
 
