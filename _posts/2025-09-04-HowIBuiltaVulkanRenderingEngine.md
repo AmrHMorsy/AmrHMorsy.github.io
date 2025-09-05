@@ -21,7 +21,7 @@ Although the engine is still under development, I thought it might worthwhile to
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
-      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEnginePart1/Thumbnail.png" class="img-fluid rounded z-depth-1" %}
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/Thumbnail.png" class="img-fluid rounded z-depth-1" %}
       <figcaption class="mt-2 text-muted">A scene of a car on a bridge in the morning, rendered using Vejaler.</figcaption>
     </figure>
   </div>
@@ -43,7 +43,7 @@ Before starting learning Vulkan, I was already proficient in OpenGL and have bui
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
-      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEnginePart1/OpenGLScene.png" class="img-fluid rounded z-depth-1" %}
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/OpenGLScene.png" class="img-fluid rounded z-depth-1" %}
       <figcaption class="mt-2 text-muted">A scene of a piano room in a house, rendered using my OpenGL engine</figcaption>
     </figure>
   </div>
