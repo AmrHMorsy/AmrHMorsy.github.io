@@ -71,6 +71,9 @@ At that point, Vulkan became a bit clearer to me in some way. In fact, after cle
 
 From then on, I was excited to continue developing the engine further and add more features. The next set of features I added were lighting system, PBR and textures. The journey of developing these features will be shared in the next part of the blog. 
 
+At that point, the engine was capable of rendering models with solid colors only. The obvious next step of development was to add support for textures. Implementing textures involved several steps 
+
+
 <br>
 
 ***
