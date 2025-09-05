@@ -78,28 +78,24 @@ From then on, I was excited to continue developing the engine further and add mo
 
 At that point, the engine was capable of rendering models with solid colors only. The obvious next step of development was to add support for textures. 
 
-Implementing textures was a bit tricky, as it involved several steps. First, it was apparent to me that I needed to load the image first. This part of implementation is similar to how I used to do it in OpenGL. I used the library STB_Image to load images of different types and store the data inside a buffer. After that, I decided to calculate the maximum number of mip levels possible of that loaded image. This will be needed later when adding support for mip mapped textures. 
+Implementing textures was a bit tricky, as it involved several steps. First, it was apparent to me that I needed to load the image first. This part of implementation is similar to how I used to do it in OpenGL. I used the library STB_Image to load the image and then stored the loaded data inside a buffer. After that, I decided to calculate the maximum number of mip levels of that loaded image. This will be needed later when adding support for mip mapped textures. 
 
-The remaining set of steps involved creating a vulkan image, store the loaded image data in a Vulkan buffer, and then finally copy the data from the buffer to the Vulkan image. After implementing these steps, I only had to update the descriptor sets by adding one more binding slot for the texture, and similarly update the shader code. With these additions in place, I was able to see complex models with textures. 
+The remaining set of steps involved creating a vulkan image, storing the loaded image data in a Vulkan buffer, and then finally copying the data from the buffer to the Vulkan image. After implementing these steps, I only had to update the descriptor sets by adding one more binding slot for the texture, and similarly update the shader code. With these additions in place, I was able to see complex models with textures. 
 
 
 <br> 
 ### **Implementing A Lighting System** <br>
 <br>
 
-Next, I decided to embark on implementing the lighting system. It was fairly simple. All I have to do was create a new uniform buffer containing information like the position and the color of the light, and update the descriptor set to account for the extra binding to of the uniform buffer. This created uniform buffer, which resides in the fragment shader, will actually be useful later, as I can simply append more data inside it like the camera position, for them to be used by the fragment shader code.
+Next, I decided to embark on implementing the lighting system. It was fairly simple. All I had to do was create a new uniform buffer containing information like the position and the color of the light, and update the descriptor set to account for the extra binding of the uniform buffer. This created uniform buffer, which resides in the fragment shader, will actually be useful later, as I can simply append more data inside it like the camera position, for them to be used by the fragment shader code.
 
-<br> 
-### **Development Journey So Far** <br>
-<br>
-
-I was enjoying the development journey at that time. So far, it was a smooth experience. There was no major obstacles being faced, and the features added were straightforward to implement. There were no new Vulkan constructs to learn about. I got introduced to all of them at the very beginning when I was creating the simple triangle, and I keep re-using and recreating them for different features. 
+I was enjoying the development journey at that time. So far, it was a smooth experience. There was no major obstacles being faced, and the features added were straightforward to implement. There were no new Vulkan constructs to learn about. I got introduced to all of them at the very beginning when I was creating the simple triangle, and I kept re-using and recreating them for different features. 
 
 <br>
 ### **Implementing PBR** <br>
 <br>
 
-Implementing PBR at that time was easy for me. That’s because I already had a working shader from my OpenGL engine. Refactoring it in my Vulkan engine was straightforward: I just added more textures to support maps such as albedo, roughness, AO, displacement and normal. Adding these functionalities only involved replicating the texturing code I had added before. 
+Implementing PBR at that time was easy for me. That’s because I already had a working shader from my OpenGL engine. Refactoring it in my Vulkan engine was straightforward: I just had to replicate the code for implementing I had before, to account for the extra images. 
 
 With this, I was able to have a solid renderer that was able to produce reasonably good images. Nevertheless, I was adamant on adding more features like IBL and HDR skyboxes for better visuals. 
 
