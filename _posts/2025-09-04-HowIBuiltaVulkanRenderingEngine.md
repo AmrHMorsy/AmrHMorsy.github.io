@@ -69,7 +69,7 @@ For example, I created a shader class which loads the SPV files and creates a sh
 
 At that point, Vulkan became a bit clearer to me in some way. In fact, after cleaning out the code, I realized that I actually prefer Vulkan over any other high-level API. It’s verbosity and low-levelness gives so much control over the pipeline, and allows me to understand what really happens under the hood in so many details. 
 
-At that point, I was excited to continue developing the engine further and add more features. The next set of features I added were lighting system, PBR and textures. The journey of developing these features will be shared in the next part of the blog. 
+From then on, I was excited to continue developing the engine further and add more features. The next set of features I added were lighting system, PBR and textures. The journey of developing these features will be shared in the next part of the blog. 
 
 <br>
 
