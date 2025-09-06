@@ -78,6 +78,17 @@ From then on, I was excited to continue developing the engine further and add mo
 
 At that point, the engine was capable of rendering models with solid colors only. The obvious next step of development was to add support for textures. 
 
+<br>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure class="text-center">
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/MedievalHouseScene.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">A scene of a medieval house with a texture, rendered using Vejaler.</figcaption>
+    </figure>
+  </div>
+</div>
+<br>
+
 Implementing textures was a bit tricky, as it involved several steps. First, it was apparent to me that I needed to load the image first. This part of implementation is similar to how I used to do it in OpenGL. I used the library STB_Image to load the image and then stored the loaded data inside a buffer. After that, I decided to calculate the maximum number of mip levels of that loaded image. This will be needed later when adding support for mip mapped textures. 
 
 <br>
