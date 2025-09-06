@@ -99,7 +99,15 @@ Implementing PBR at that time was easy for me. That’s because I already had a 
 
 With this, I was able to have a solid renderer that was able to produce reasonably good images. Nevertheless, I was adamant on adding more features like IBL and HDR skyboxes for better visuals. 
 
-
+<br>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure class="text-center">
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/ViolinScene.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">A scene of a violin, rendered using Vejaler</figcaption>
+    </figure>
+  </div>
+</div>
 
 <br>
 
