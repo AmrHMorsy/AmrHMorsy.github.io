@@ -82,6 +82,16 @@ Implementing textures was a bit tricky, as it involved several steps. First, it 
 
 The remaining set of steps involved creating a vulkan image, storing the loaded image data in a Vulkan buffer, and then finally copying the data from the buffer to the Vulkan image. After implementing these steps, I only had to update the descriptor sets by adding one more binding slot for the texture, and similarly update the shader code. With these additions in place, I was able to see complex models with textures. 
 
+<br>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure class="text-center">
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/TruckScene.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">A scene of a truck, rendered using Vejaler.</figcaption>
+    </figure>
+  </div>
+</div>
+<br>
 
 <br> 
 ### **Implementing A Lighting System** <br>
