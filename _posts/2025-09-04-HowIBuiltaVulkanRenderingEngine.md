@@ -118,6 +118,17 @@ I was enjoying the development journey at that time. So far, it was a smooth exp
 
 Implementing PBR at that time was easy for me. That’s because I already had a working shader from my OpenGL engine. Refactoring it in my Vulkan engine was straightforward: I just had to replicate the code for implementing I had before, to account for the extra images. 
 
+<br>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure class="text-center">
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/GramophoneScene.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">A scene of a Gramophone, featuring PBR, rendered using Vejaler.</figcaption>
+    </figure>
+  </div>
+</div>
+<br>
+
 With this, I was able to have a solid renderer that was able to produce reasonably good images. Nevertheless, I was adamant on adding more features like IBL and HDR skyboxes for better visuals. 
 
 <br>
