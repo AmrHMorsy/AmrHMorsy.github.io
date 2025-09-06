@@ -80,6 +80,17 @@ At that point, the engine was capable of rendering models with solid colors only
 
 Implementing textures was a bit tricky, as it involved several steps. First, it was apparent to me that I needed to load the image first. This part of implementation is similar to how I used to do it in OpenGL. I used the library STB_Image to load the image and then stored the loaded data inside a buffer. After that, I decided to calculate the maximum number of mip levels of that loaded image. This will be needed later when adding support for mip mapped textures. 
 
+<br>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure class="text-center">
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/CottageScene.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">A scene of a cottage with a texture, rendered using Vejaler.</figcaption>
+    </figure>
+  </div>
+</div>
+<br>
+
 The remaining set of steps involved creating a vulkan image, storing the loaded image data in a Vulkan buffer, and then finally copying the data from the buffer to the Vulkan image. After implementing these steps, I only had to update the descriptor sets by adding one more binding slot for the texture, and similarly update the shader code. With these additions in place, I was able to see complex models with textures. 
 
 <br>
@@ -114,7 +125,7 @@ With this, I was able to have a solid renderer that was able to produce reasonab
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
       {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/ViolinScene.png" class="img-fluid rounded z-depth-1" %}
-      <figcaption class="mt-2 text-muted">A scene of a violin, rendered using Vejaler</figcaption>
+      <figcaption class="mt-2 text-muted">A scene of a violin, featuring PBR, rendered using Vejaler</figcaption>
     </figure>
   </div>
 </div>
