@@ -151,7 +151,17 @@ With this, I was able to have a solid renderer that was able to produce reasonab
     </figure>
   </div>
 </div>
+<br>
 
+<br>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure class="text-center">
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/FireHydrantScene" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">A scene of a Fire Hydrant, featuring PBR, rendered using Vejaler.</figcaption>
+    </figure>
+  </div>
+</div>
 <br>
 
 ***
