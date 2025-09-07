@@ -130,7 +130,11 @@ For example, I started adding a functionality that allows the camera to roam fre
 
 At that point, I decided to stop adding more features, and instead try to understand Vulkan in more details. I wanted to grasp the purpose of each vulkan construct, and recognize how they are connected in the graphics pipeline. In my experience, the way I understand any source code has always been through refactoring the code. That is, I started re-organizing the code into classes, where each class is a stateless utility-style unit which manages a single vulkan entity in the rendering pipeline. 
 
-For example, I created a graphics pipeline class which is responsible for creating, binding and destroying a graphics pipeline object, as well as managing its configurations. I continued refactoring all Vulkan constructs in my program into static components and grouped them all into a single module called "Engine". This way, whenever I need to create a vulkan object, I could simply call a single function in the engine module (Engine::GraphicsPipeline::BuildGraphicsPipeline(GraphicsPipelineBuildConfiguration{})) and provide it with all the needed parameters, to build that object and return it. This design choice reduced the clutter in the source files, and created a clean workflow that can easily be understood by anyone, including future me. 
+For example, I created a graphics pipeline class which is responsible for creating, binding and destroying a graphics pipeline object, as well as managing its configurations. I continued refactoring all Vulkan constructs in my program into static components and grouped them all into a single module called "Engine". This way, whenever I need to create a vulkan object, I could simply call a single function in the engine module 
+<br>
+**(Engine::GraphicsPipeline::BuildGraphicsPipeline(GraphicsPipelineBuildConfiguration{}))**
+<br>
+and provide it with all the needed parameters, to build that object and return it. This design choice reduced the clutter in the source files, and created a clean workflow that can easily be understood by anyone, including future me. 
 
 Once I refactored the engine code, it became clear to me why Vulkan is a superior choice as a graphics API. Its verbosity and low-levelness can be a headache, yes. But once I was able to have a grasp of the entities involved in the rendering pipeline, I started prefering Vulkan over any other APIs I have worked with in the past. It gives me the ability to control every aspect in application, and, hence, the ability to hack and optimize some features, where no higher-level API would have allowed me to do so.  
 
@@ -185,7 +189,9 @@ The next remaining set of steps involved creating a vulkan image, image view and
 ### **Implementing A Lighting System** <br>
 <br>
 
-Next, I decided to embark on implementing the lighting system. It was fairly simple. All I had to do was create a new uniform buffer containing information like the position and the color of the light, and update the descriptor set to account for the extra binding of the uniform buffer. This created uniform buffer, which resides in the fragment shader, will actually be useful later, as I can simply append more data inside it like the camera position, for them to be used by the fragment shader code.
+The scenes I had rendered so far were flat and unrealistic. Adding a lighting system was the simplest and most obvious functionality to be next included in the engine, as it would make the scenes more physically accurate and visually better. All I had to do was simply create a new uniform buffer in the fragment shader and fill it with information like the position and the intensity of the light source, and then update the descriptor set to account for the extra binding of that fragment shader uniform buffer. 
+
+However, something was missing in this implementation. Only one light source was accepted, which is unpractical, as a scene can have multiple. Although this can easily be fixed by passing an array of light positions and intensities to the uniform buffer, one issue arised. The size of the array in the shader must be known at compile-time. It cannot be dynamically determined at run-time. This posed restrictiveness on the engine's ability to handle any random scene. The best solution I could find at that time was to define a MAX_NUM_LIGHTS varible in the shader and initialize it with a high number, and ensure that the user-defined number of light sources in the scene doesn't exceed that limit. This was a resonable solution, though I am unsure if it was the best and most effecient fix for the problem. 
 
 <br>
 <div class="row mt-3">
@@ -198,7 +204,7 @@ Next, I decided to embark on implementing the lighting system. It was fairly sim
 </div>
 <br>
 
-I was enjoying the development journey at that time. So far, it was a smooth experience. There was no major obstacles being faced, and the features added were straightforward to implement. There were no new Vulkan constructs to learn about. I got introduced to all of them at the very beginning when I was creating the simple triangle, and I kept re-using and recreating them for different features. 
+The development journey so far was relatively smooth. There were no major obstacles being faced that I wasn't able to intuitively straightforwardly handle and resolve. Luckily, there were no new Vulkan constructs to learn about. I got introduced to the majority of them at the very beginning when I was creating the simple triangle, and I kept re-using and recreating them for different features. 
 
 <br>
 ### **Implementing PBR** <br>
