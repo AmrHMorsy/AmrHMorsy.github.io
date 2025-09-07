@@ -77,9 +77,9 @@ I quickly became proficient in OpenGL and was able to build a complete engine us
 
 I started my journey in January 2025 by first creating a small window with a simple triangle. This took me almost a week just to get right, because of the many vulkan entities that needs to be set and initialized. It takes so many lines of code to just create a simple window. At first, nothing made sense to me. 
 
-What is a window surface ? 
-What is the logical and the physical device ? 
-What is image and image view ?
+What is a window surface ? <br>
+What is the logical and the physical device ? <br>
+What is image and image view ? <br>
 
 Although I was able to create a very simple triangle scene, I didn’t understand much about what was going on under the hood. This was not unusual to me. I have always faced difficulties with new advanced topics, and experience has taught not me to dwell on the lack of understanding, and instead continue progressing deeper into the topic. Grasping the topic is inevitable with time. This rule has never failed me, which is why I continued re-reading the Vulkan documentation, and adding more advanced features. 
 
@@ -136,13 +136,12 @@ Once I refactored the engine code, it became clear to me why Vulkan is a superio
 
 I was excited to continue developing the engine further and add more features. That's why, I decided that the next set of funtionalities to implement should be: Textures, a lighting system and physically-based rendering (PBR). 
 
----
 
 <br> 
 ### **Adding Support for Textures** <br>
 <br>
 
-At that point, the engine was capable of rendering models with solid colors only. The obvious next step of development was to add support for textures. 
+At that point, the engine was capable of rendering 3D models, but with solid colors only. The obvious next step of development was to add support for textures.
 
 <br>
 <div class="row mt-3">
@@ -155,7 +154,7 @@ At that point, the engine was capable of rendering models with solid colors only
 </div>
 <br>
 
-Implementing textures was a bit tricky, as it involved several steps. First, it was apparent to me that I needed to load the image first. This part of implementation is similar to how I used to do it in OpenGL. I used the library STB_Image to load the image and then stored the loaded data inside a buffer. After that, I decided to calculate the maximum number of mip levels of that loaded image. This will be needed later when adding support for mip mapped textures. 
+Implementing textures was a bit tricky, as it involved several steps. The first step was obvious to me: I needed to load the image first. This part of the implementation was similar to how I used to do it in OpenGL. I used the library [STB_Image]() to load the image data, and then store loaded data inside a vulkan buffer. 
 
 <br>
 <div class="row mt-3">
@@ -168,7 +167,8 @@ Implementing textures was a bit tricky, as it involved several steps. First, it 
 </div>
 <br>
 
-The remaining set of steps involved creating a vulkan image, storing the loaded image data in a Vulkan buffer, and then finally copying the data from the buffer to the Vulkan image. After implementing these steps, I only had to update the descriptor sets by adding one more binding slot for the texture, and similarly update the shader code. With these additions in place, I was able to see complex models with textures. 
+
+The next remaining set of steps involved creating a vulkan image, image view and a sampler. The image created then was an empty image construct, with no data stored inside it. That's why, the subsequent step was to copy the image data from the vulkan buffer into the created vulkan image, while taking into consideration the necessary image layout transitions that needed to be done for the process to be successful. Finally, what was left after that was simply to update the descriptor sets by adding an additional descriptor image binding slot. With these implementations in place, I was able to see complex 3D models rendered with textures. 
 
 <br>
 <div class="row mt-3">
