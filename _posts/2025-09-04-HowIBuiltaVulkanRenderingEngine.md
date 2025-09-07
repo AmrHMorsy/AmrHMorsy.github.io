@@ -124,22 +124,19 @@ The development journey, at that point of time, became much smoother. I started 
 
 For example, I started adding a functionality that allows the camera to roam freely in the scene. This involved a series of steps, which included building a view and a projection matrix, creating a uniform buffer to upload these matrices into, and finally update the descriptor sets to account for the extra binding of the uniform data in the vertex shader. This allowed me to produce renders from different point of views, and create a reasonably good foundation for more advanced scenes.  
 
-
-----
-
-
 <br>
 ### **Refactoring Engine Code** <br>
 <br>
 
-At that point, I decided to stop adding more features, and instead try to understand the API in more details. In my experience, the way I do that has always been through refactoring the code. I started separating the code into classes, where each class is responsible for a single task in the rendering pipeline. 
+At that point, I decided to stop adding more features, and instead try to understand Vulkan in more details. I wanted to grasp the purpose of each vulkan construct, and recognize how they are connected in the graphics pipeline. In my experience, the way I understand any source code has always been through refactoring the code. That is, I started re-organizing the code into classes, where each class is a stateless utility-style unit which manages a single vulkan entity in the rendering pipeline. 
 
-For example, I created a shader class which loads the SPV files and creates a shader module and returns it. I also created another separate class which handles the creation of the graphics pipeline and all its necessary configuration. I continued doing this for all the Vulkan constructs in my program and turned all these engine components into static classes. That is, I transformed all these classes into utility-style classes, so that it doesn’t store any state. This simplified the code a lot, since it delegated each class only one task, which is to manage that particular Vulkan object. 
+For example, I created a graphics pipeline class which is responsible for creating, binding and destroying a graphics pipeline object, as well as managing its configurations. I continued refactoring all Vulkan constructs in my program into static components and grouped them all into a single module called "Engine". This way, whenever I need to create a vulkan object, I could simply call a single function in the engine module (Engine::GraphicsPipeline::BuildGraphicsPipeline(GraphicsPipelineBuildConfiguration{})) and provide it with all the needed parameters, to build that object and return it. This design choice reduced the clutter in the source files, and created a clean workflow that can easily be understood by anyone, including future me. 
 
-At that point, Vulkan became a bit clearer to me in some way. In fact, after cleaning out the code, I realized that I actually prefer Vulkan over any other high-level API. It’s verbosity and low-levelness gives so much control over the pipeline, and allows me to understand what really happens under the hood in so many details. 
+Once I refactored the engine code, it became clear to me why Vulkan is a superior choice as a graphics API. Its verbosity and low-levelness can be a headache, yes. But once I was able to have a grasp of the entities involved in the rendering pipeline, I started prefering Vulkan over any other APIs I have worked with in the past. It gives me the ability to control every aspect in application, and, hence, the ability to hack and optimize some features, where no higher-level API would have allowed me to do so.  
 
-From then on, I was excited to continue developing the engine further and add more features. The next set of features I added were lighting system, PBR and textures. 
+I was excited to continue developing the engine further and add more features. That's why, I decided that the next set of funtionalities to implement should be: Textures, a lighting system and physically-based rendering (PBR). 
 
+---
 
 <br> 
 ### **Adding Support for Textures** <br>
