@@ -185,8 +185,8 @@ However, something was missing in this implementation. Only one light source was
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
-      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/FireHydrantScene.png" class="img-fluid rounded z-depth-1" %}
-      <figcaption class="mt-2 text-muted">A scene of a Fire Hydrant, featuring PBR, rendered using Vejaler.</figcaption>
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/GramophoneScene.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">A scene of a Gramophone, featuring PBR, rendered using Vejaler.</figcaption>
     </figure>
   </div>
 </div>
@@ -204,8 +204,8 @@ Implementing PBR at that time was the most obvious next step of development. The
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
-      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/GramophoneScene.png" class="img-fluid rounded z-depth-1" %}
-      <figcaption class="mt-2 text-muted">A scene of a Gramophone, featuring PBR, rendered using Vejaler.</figcaption>
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/ViolinScene.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">A scene of a violin, featuring PBR, rendered using Vejaler</figcaption>
     </figure>
   </div>
 </div>
@@ -217,8 +217,8 @@ My rendering engine was able to produce reasonably accurate and realistic visual
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
-      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/ViolinScene.png" class="img-fluid rounded z-depth-1" %}
-      <figcaption class="mt-2 text-muted">A scene of a violin, featuring PBR, rendered using Vejaler</figcaption>
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/FireHydrantScene.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">A scene of a Fire Hydrant, featuring PBR, rendered using Vejaler.</figcaption>
     </figure>
   </div>
 </div>
@@ -233,19 +233,19 @@ I merged the albedo and the AO image into one texture, where the albedo occupied
   <div class="col-sm">
     <figure>
       {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/AlbedoAO.png" class="img-fluid rounded z-depth-1" %}
-      <figcaption class="mt-2 text-muted">Albedo & AO</figcaption>
+      <figcaption class="mt-2 text-muted">AlbedoAO of Fire Hydrant</figcaption>
     </figure>
   </div>
   <div class="col-sm">
     <figure>
       {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/NormalRoughness.png" class="img-fluid rounded z-depth-1" %}
-      <figcaption class="mt-2 text-muted">Normal & Roughness</figcaption>
+      <figcaption class="mt-2 text-muted">NormalRoughness of Fire Hydrant</figcaption>
     </figure>
   </div>
   <div class="col-sm">
     <figure>
       {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/MetallicDisplacementOpacity.png" class="img-fluid rounded z-depth-1" %}
-      <figcaption class="mt-2 text-muted">Metallic & Displacement & Opacity</figcaption>
+      <figcaption class="mt-2 text-muted">MetallicDisplacementOpacity of Fire Hydrant</figcaption>
     </figure>
   </div>
 </div>
