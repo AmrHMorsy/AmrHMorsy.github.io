@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Barycentric Coordinates
+title: Understanding Barycentric Coordinates
 date: 2025-02-09 12:00:00
 description:
 tags:
-categories:
+categories: Theory
 thumbnail: assets/img/Blog/Barycentric_Coordinates/5.png
 featured: false
 ---

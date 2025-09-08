@@ -3,8 +3,8 @@ layout: post
 title: How I Built a Vulkan Rendering Engine
 date: 2025-09-04 12:00:00
 description:
-tags: Vulkan
-categories:
+tags:
+categories: Vulkan
 thumbnail: assets/img/Blog/HowIBuiltaVulkanRenderingEngine/CarOnBridgeScene.png
 featured: false
 ---

@@ -36,10 +36,11 @@ table {
 
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
+  // font-weight: bold;
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-text-color);
     text-decoration: underline;
   }
 
@@ -51,7 +52,7 @@ table.table a {
 .table-dark {
   background-color: transparent;
   &.table-bordered{
-    border: 1px solid var(--global-divider-color) !important;
+    border: 1px solid var(--global-text-color) !important;
   }
 }
 
@@ -139,6 +140,8 @@ blockquote {
 
   .card-title {
     color: var(--global-text-color);
+    font-weight: bold;
+    text-align: center;
   }
 
   .card-item {
@@ -504,6 +507,7 @@ footer.sticky-bottom {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
+  font-weight: bold;
 }
 
 .post-list {
@@ -582,10 +586,12 @@ footer.sticky-bottom {
 .projects {
   a {
     text-decoration: none;
+    font-weight: bold;
 
     &:hover {
       .card-title {
         color: var(--global-theme-color);
+        font-weight: bold;
       }
     }
   }
