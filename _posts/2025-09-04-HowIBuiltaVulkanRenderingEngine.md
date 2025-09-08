@@ -145,9 +145,7 @@ I was excited to continue developing the engine further and add more features. T
 ### **Adding Support for Textures** <br>
 <br>
 
-At that point, the engine was capable of rendering 3D models, but with solid colors only. The obvious next step of development was to add support for textures.
-
-Implementing textures was a bit tricky, as it involved several steps. The first step was obvious to me: I needed to load the image first. This part of the implementation was similar to how I used to do it in OpenGL. I used the library [STB_Image]() to load the image data, and then store loaded data inside a vulkan buffer. 
+At that point, the engine was capable of rendering 3D models, but with solid colors only. The obvious next step of development was to add support for textures. Implementing textures was a bit tricky, as it involved several steps. The first step was obvious to me: I needed to load the image first. This part of the implementation was similar to how I used to do it in OpenGL. I used the library [STB_Image]() to load the image data, and then store loaded data inside a vulkan buffer. 
 
 <br>
 <div class="row mt-3">
