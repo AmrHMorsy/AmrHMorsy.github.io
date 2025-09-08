@@ -147,6 +147,8 @@ I was excited to continue developing the engine further and add more features. T
 
 At that point, the engine was capable of rendering 3D models, but with solid colors only. The obvious next step of development was to add support for textures.
 
+Implementing textures was a bit tricky, as it involved several steps. The first step was obvious to me: I needed to load the image first. This part of the implementation was similar to how I used to do it in OpenGL. I used the library [STB_Image]() to load the image data, and then store loaded data inside a vulkan buffer. 
+
 <br>
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
@@ -157,20 +159,6 @@ At that point, the engine was capable of rendering 3D models, but with solid col
   </div>
 </div>
 <br>
-
-Implementing textures was a bit tricky, as it involved several steps. The first step was obvious to me: I needed to load the image first. This part of the implementation was similar to how I used to do it in OpenGL. I used the library [STB_Image]() to load the image data, and then store loaded data inside a vulkan buffer. 
-
-<br>
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    <figure class="text-center">
-      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/CottageScene.png" class="img-fluid rounded z-depth-1" %}
-      <figcaption class="mt-2 text-muted">A scene of a cottage with a texture, rendered using Vejaler.</figcaption>
-    </figure>
-  </div>
-</div>
-<br>
-
 
 The next remaining set of steps involved creating a vulkan image, image view and a sampler. The image created then was an empty image construct, with no data stored inside it. That's why, the subsequent step was to copy the image data from the vulkan buffer into the created vulkan image, while taking into consideration the necessary image layout transitions that needed to be done for the process to be successful. Finally, what was left after that was simply to update the descriptor sets by adding an additional descriptor image binding slot. With these implementations in place, I was able to see complex 3D models rendered with textures. 
 
