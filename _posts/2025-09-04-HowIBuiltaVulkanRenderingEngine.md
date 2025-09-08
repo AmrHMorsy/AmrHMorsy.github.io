@@ -198,7 +198,7 @@ The development journey so far was relatively smooth. There were no major obstac
 ### **Implementing PBR** <br>
 <br>
 
-Implementing PBR at that time was easy for me. That’s because I already had a working shader from my OpenGL engine. Refactoring it in my Vulkan engine was straightforward: I just had to replicate the code for implementing I had before, to account for the extra images. 
+Implementing PBR at that time was the most obvious next step of development. The engine supported textures as well as a lighting system. Extending the engine to support PBR only required that I update the number of textures being supported to account for all the images in the PBR pipeline: Albedo, Displacement, Roughness, Opacity, Ambient Occlusion, Normal and Metallic. As for the shader code, I have already implemented PBR before in my OpenGL engine. All I had to do was refactor that code into my Vulkan engine. 
 
 <br>
 <div class="row mt-3">
@@ -211,7 +211,7 @@ Implementing PBR at that time was easy for me. That’s because I already had a 
 </div>
 <br>
 
-With this, I was able to have a solid renderer that was able to produce reasonably good images. Nevertheless, I was adamant on adding more features like IBL and HDR skyboxes for better visuals. 
+My rendering engine was able to produce reasonably accurate and realistic visuals. I experimented with many different scenes, using different number of light sources and intensities, in order to test the engine's ability to handle all kinds of inputs. The issue that arised at that point was the lack of support for different image formats. My engine supported only png images, which was not practical nor effecient. Therefore, I added the support for all possible image formats, and account for the mismatch between the actual and the expected number of channels in the image.
 
 <br>
 <div class="row mt-3">
@@ -224,11 +224,32 @@ With this, I was able to have a solid renderer that was able to produce reasonab
 </div>
 <br>
 
-<br>
-### **Adding HDR Skybox** <br>
-<br>
+One thing I noticed in my PBR implementation was the fact that I was uploading textures like Metallic, AO, displacement and opacity, and only sampling from the red channel of the image. This was an inefficiency that could easily be resolved by merging several images in the PBR pipeline into one texture.
 
-A skybox is an important component of any graphics application. Having a solid color as a background image
+I merged the albedo and the AO image into one texture, where the albedo occupied the RGB component and the AO value occupied the A component. In a similar fashion, I also merged the normal and the roughness images. As for the metallic, displacement and opacity values, I merged all of them into one texture. This optimized my shader greatly, as then PBR can only be implemented using 3 textures, instead of 7 seperate textures. 
+
+<br>
+<div class="row mt-3 text-center">
+  <div class="col-sm">
+    <figure>
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/AlbedoAO.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">Albedo & AO</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm">
+    <figure>
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/NormalRoughness.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">Normal & Roughness</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm">
+    <figure>
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/MetallicDisplacementOpacity.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">Metallic & Displacement & Opacity</figcaption>
+    </figure>
+  </div>
+</div>
+<br>
 
 ***
 
