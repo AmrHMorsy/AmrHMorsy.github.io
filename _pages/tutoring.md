@@ -16,8 +16,13 @@ With **five** years of teaching experience, I’ve helped students from around t
 
 **I can help you with:**
 <br>
+<br>
 - Learning theoretical **computer graphics**, from foundational concepts to advanced topics
+<br>
+<br>
 - Building custom game engines, and real-time applications, including games, simulations, and animations, using low-level graphics APIs: **Vulkan**, **OpenGL**, **Metal**, and **DirectX**.
+<br>
+<br>
 - Debugging and guiding you through projects, assignments, or personal work
 
 > **$60 / hour**

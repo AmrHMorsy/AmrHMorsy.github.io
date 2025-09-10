@@ -249,6 +249,49 @@ I merged the albedo and the AO image into one texture, where the albedo occupied
 </div>
 <br>
 
+<br>
+### **Adding an HDR Skybox** <br>
+<br>
+
+Incorporating an HDR skybox into my engine was one of the most difficult feature to implement. It involved many different complex steps, that attempting it without strong understanding of certain Vulkan constructs would, otherwise, make the matter much more difficult and cumbersome. Unfortunately, I committed this mistake. I delved deeper into implementing this feature, without first, taking a step back and solidifying my understanding of the API. It was a bold move, but, indirectly, has forced me to grasp Vulkan more deeply. 
+
+<br>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure class="text-center">
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/MorningSkybox.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">An HDR skybox of a sky in the morning, rendered using Vejaler.</figcaption>
+    </figure>
+  </div>
+</div>
+<br>
+
+The first step I did was create a texture containing the HDR image. I loaded the HDR image using the STB_Image library, and uploaded the image data into a Vulkan buffer. Then I created a Vulkan image, and copied the image data from the buffer to that Vulkan image. The equirectangular texture created cannot be used to render a skybox. It had to converted into a cubemap texture, to be sampled from and rendered into the screen. This conversion process involved sampling from the equirectangular texture and baking into an empty cubemap texture.  Hence, I created an empty cubemap Vulkan image, and initiated the baking process. 
+
+<br>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure class="text-center">
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/VillageSkybox.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">An HDR skybox of a village scene, rendered using Vejaler.</figcaption>
+    </figure>
+  </div>
+</div>
+<br>
+
+The baking process is invoked only once during the engine construction, and is re-invoked during run-time, only if the skybox is to be changed with a different one. The baking process involved running the shader 6 times. Each run filled one side of the cube with image data, sampled from the equirectangular texture. After the building of the cubemap texture is finished, it is passed to a skybox shader. This shader is run every frame, and is responsible for rendering the cubemap texture to the screen. 
+
+<br>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <figure class="text-center">
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/ForestSkybox.png" class="img-fluid rounded z-depth-1" %}
+      <figcaption class="mt-2 text-muted">An HDR skybox of a forest scene, rendered using Vejaler.</figcaption>
+    </figure>
+  </div>
+</div>
+<br>
+
 ***
 
 <br>
