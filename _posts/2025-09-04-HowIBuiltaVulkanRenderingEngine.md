@@ -279,7 +279,7 @@ The first step I did was create a texture containing the HDR image. This process
 </div>
 <br>
 
-The baking process is invoked only once during the engine construction, and is re-invoked during run-time, only if the skybox is to be changed with a different one. The baking process involved running the shader 6 times. Each run filled one side of the cube with image data, sampled from the equirectangular texture. After the building of the cubemap texture is finished, it is passed to a skybox shader. This shader is run every frame, and is responsible for rendering the cubemap texture to the screen. 
+The baking process involved collecting samples from the equirectangular texture and using them to fill all 6 sides of the cubemap. This process is invoked only once during the engine initizalizqtion phase, and is not re-run, unless the skybox is changed dynamically during run-time. After the cubemap texture is filled with the HDR image data, it is used and sampled from every frame to render the skybox.
 
 <br>
 <div class="row mt-3">
