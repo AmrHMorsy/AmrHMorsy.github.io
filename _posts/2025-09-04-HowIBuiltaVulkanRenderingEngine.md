@@ -253,7 +253,7 @@ I merged the albedo and the AO image into one texture, where the albedo occupied
 ### **Adding an HDR Skybox** <br>
 <br>
 
-Incorporating an HDR skybox into my engine was one of the most difficult feature to implement. It involved many different complex steps, that attempting it without strong understanding of certain Vulkan constructs would, otherwise, make the matter much more difficult and cumbersome. Unfortunately, I committed this mistake. I delved deeper into implementing this feature, without first, taking a step back and solidifying my understanding of the API. It was a bold move, but, indirectly, has forced me to grasp Vulkan more deeply. 
+Incorporating an HDR skybox into my engine was a challenging feature to implement. It involved many different complex steps, and it took me significant amount of time in debugging just to get it right. That's because it involves an offline baking process and the managment of several vulkan images and descriptor sets. 
 
 <br>
 <div class="row mt-3">
@@ -266,7 +266,7 @@ Incorporating an HDR skybox into my engine was one of the most difficult feature
 </div>
 <br>
 
-The first step I did was create a texture containing the HDR image. I loaded the HDR image using the STB_Image library, and uploaded the image data into a Vulkan buffer. Then I created a Vulkan image, and copied the image data from the buffer to that Vulkan image. The equirectangular texture created cannot be used to render a skybox. It had to converted into a cubemap texture, to be sampled from and rendered into the screen. This conversion process involved sampling from the equirectangular texture and baking into an empty cubemap texture.  Hence, I created an empty cubemap Vulkan image, and initiated the baking process. 
+The first step I did was create a texture containing the HDR image. This process is similar to how albedo and normal textures were created in the PBR implementation. First, I loaded the HDR image using the STB_Image library, and uploaded the image data into a Vulkan buffer. Then I created a Vulkan image, and copied the image data from the buffer to that Vulkan image. However, The equirectangular texture just created cannot be used to render a skybox. It had to converted into a cubemap texture, to be sampled from and rendered into the screen later on. This conversion process involved sampling from the equirectangular texture and baking into an empty cubemap texture.  Hence, I created an empty Vulkan image of type cubemap, and initiated the baking process. 
 
 <br>
 <div class="row mt-3">
