@@ -23,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
 
 My name is **Amr Morsy**, and I am a **graphics programmer**. 
 
-I specialize in low-level graphics programming, working with APIs like **OpenGL**, **Vulkan**, **Metal**, and **Direct3D** to develop games, applications, and custome game engines.
+I specialize in low-level graphics programming, working with APIs like **OpenGL**, **Vulkan**, **Metal**, and **Direct3D** to develop custome game engines and real-time applications, including games, simulations and animations. 
 
 <br>
 
