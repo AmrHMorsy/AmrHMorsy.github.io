@@ -27,8 +27,8 @@ I specialize in low-level graphics programming, working with APIs like **OpenGL*
 
 <br>
 
-On my [blog](https://amrhmorsy.github.io/blog/), I share tutorials, development insights, and reflections from my journey in computer graphics. 
-
 I offer **freelancing** and **tutoring** services in graphics programming for both students and professionals.
+
+On my [blog](https://amrhmorsy.github.io/blog/), I share tutorials, development insights, and reflections from my journey in computer graphics. 
 
 <br>
