@@ -87,21 +87,21 @@ Although I was able to create a very simple triangle scene, I didn’t understan
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
-      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/Simple TriangleScene.png" class="img-fluid rounded z-depth-1" %}
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/TriangleScene.png" class="img-fluid rounded z-depth-1" %}
       <figcaption class="mt-2 text-muted">A scene of a simple triangle</figcaption>
     </figure>
   </div>
 </div>
 <br>
 
-After rendering that simple triangle, I thought the next logical step would be to load an OBJ model. It’s the simplest extension at that point, since all I had to do was load the OBJ model using the [Assimp]() library, upload the vertex data inside the vertex buffer and create an extra index buffer and upload the index data to it. With just a few extra steps, the engine was capable of rendering more complex 3D models, instead of just a simple polygon. 
+After rendering that simple triangle, I thought the next logical step would be to load an OBJ model. It’s the simplest extension at that point, since all I had to do was load the OBJ model using the [Assimp](https://assimp.org) library, upload the vertex data inside the vertex buffer and create an extra index buffer and upload the index data to it. With just a few extra steps, the engine was capable of rendering more complex 3D models, instead of just a simple polygon. 
 
 <br>
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
       {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/Simple ModelSceneNoDepthTesting.png" class="img-fluid rounded z-depth-1" %}
-      <figcaption class="mt-2 text-muted">A scene of a simple 3D model</figcaption>
+      <figcaption class="mt-2 text-muted">A scene of a simple 3D model, without depth testing</figcaption>
     </figure>
   </div>
 </div>
@@ -145,7 +145,7 @@ I was excited to continue developing the engine further and add more features. T
 ### **Adding Support for Textures** <br>
 <br>
 
-At that point, the engine was capable of rendering 3D models, but with solid colors only. The obvious next step of development was to add support for textures. Implementing textures was a bit tricky, as it involved several steps. The first step was obvious to me: I needed to load the image first. This part of the implementation was similar to how I used to do it in OpenGL. I used the library [STB_Image]() to load the image data, and then store loaded data inside a vulkan buffer. 
+At that point, the engine was capable of rendering 3D models, but with solid colors only. The obvious next step of development was to add support for textures. Implementing textures was a bit tricky, as it involved several steps. The first step was obvious to me: I needed to load the image first. This part of the implementation was similar to how I used to do it in OpenGL. I used the library [STB_Image](https://github.com/nothings/stb) to load the image data, and then store loaded data inside a vulkan buffer. 
 
 <br>
 <div class="row mt-3">
@@ -266,7 +266,7 @@ Incorporating an HDR skybox into my engine was a challenging feature to implemen
 </div>
 <br>
 
-The first step I did was create a texture containing the HDR image. This process is similar to how albedo and normal textures were created in the PBR implementation. First, I loaded the HDR image using the STB_Image library, and uploaded the image data into a Vulkan buffer. Then I created a Vulkan image, and copied the image data from the buffer to that Vulkan image. However, The equirectangular texture just created cannot be used to render a skybox. It had to converted into a cubemap texture, to be sampled from and rendered into the screen later on. This conversion process involved sampling from the equirectangular texture and baking into an empty cubemap texture.  Hence, I created an empty Vulkan image of type cubemap, and initiated the baking process. 
+The first step I did was create a texture containing the HDR image. This process is similar to how albedo and normal textures were created in the PBR implementation. First, I loaded the HDR image using the [STB_Image](https://github.com/nothings/stb) library, and uploaded the image data into a Vulkan buffer. Then I created a Vulkan image, and copied the image data from the buffer to that Vulkan image. However, The equirectangular texture just created cannot be used to render a skybox. It had to converted into a cubemap texture, to be sampled from and rendered into the screen later on. This conversion process involved sampling from the equirectangular texture and baking into an empty cubemap texture.  Hence, I created an empty Vulkan image of type cubemap, and initiated the baking process. 
 
 <br>
 <div class="row mt-3">
