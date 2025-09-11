@@ -100,7 +100,7 @@ After rendering that simple triangle, I thought the next logical step would be t
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
-      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/Simple ModelSceneNoDepthTesting.png" class="img-fluid rounded z-depth-1" %}
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/SimpleModelSceneNoDepthTesting.png" class="img-fluid rounded z-depth-1" %}
       <figcaption class="mt-2 text-muted">A scene of a simple 3D model, without depth testing</figcaption>
     </figure>
   </div>
@@ -113,7 +113,7 @@ Although the engine was capable of rendering 3D models, depth testing wasn't imp
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
     <figure class="text-center">
-      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/Simple ModelScene.png" class="img-fluid rounded z-depth-1" %}
+      {% include figure.html loading="eager" path="assets/img/Blog/HowIBuiltaVulkanRenderingEngine/SimpleModelScene.png" class="img-fluid rounded z-depth-1" %}
       <figcaption class="mt-2 text-muted">A scene of a simple 3D model</figcaption>
     </figure>
   </div>
@@ -266,7 +266,7 @@ Incorporating an HDR skybox into my engine was a challenging feature to implemen
 </div>
 <br>
 
-The first step I did was create a texture containing the HDR image. This process is similar to how albedo and normal textures were created in the PBR implementation. First, I loaded the HDR image using the [STB_Image](https://github.com/nothings/stb) library, and uploaded the image data into a Vulkan buffer. Then I created a Vulkan image, and copied the image data from the buffer to that Vulkan image. However, The equirectangular texture just created cannot be used to render a skybox. It had to converted into a cubemap texture, to be sampled from and rendered into the screen later on. This conversion process involved sampling from the equirectangular texture and baking into an empty cubemap texture.  Hence, I created an empty Vulkan image of type cubemap, and initiated the baking process. 
+The first step I did was create a texture containing the HDR image. This process is similar to how textures were created in the PBR implementation. First, I loaded the HDR image using the [STB_Image](https://github.com/nothings/stb) library, and uploaded the image data into a Vulkan buffer. Then I created a Vulkan image, and copied the image data from the buffer to that Vulkan image. However, The equirectangular texture just created cannot be used to render a skybox. It had to converted into a cubemap texture, to be sampled from and rendered into the screen later on. This conversion process involved sampling from the equirectangular texture and baking into an empty cubemap texture.  Hence, I created an empty Vulkan image of type cubemap, and initiated the baking process. 
 
 <br>
 <div class="row mt-3">
