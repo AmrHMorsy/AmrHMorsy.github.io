@@ -9,11 +9,11 @@ display_categories:
 horizontal: false
 ---
 
-> I offer **freelancing** and **tutoring** services in graphics programming for both students and professionals.
+> I offer **graphics programming** services for both students and professionals - including **private tutoring** and **project development** for custom games, engines, and real-time applications.
 <br>
 <br>
 **Learn more →** [Tutoring](https://amrhmorsy.github.io/tutoring/)
 <br>
-**Learn more →** [Freelancing](https://amrhmorsy.github.io/freelancing/)
+**Learn more →** [Project Development](https://amrhmorsy.github.io/ProjectDevelopment/)
 
 ***
