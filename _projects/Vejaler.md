@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Vejaler
-description: Vejaler is a rendering engine built using the Vulkan API. It provides a clean and efficient foundation for building high-performance games, simulations, and interactive 3D applications.
+description: Vejaler is a modern, lightweight, high-performance game engine core, built on the Vulkan API and provided as fully documented C++ source code. It is a dedicated developer tool for programmers and studios who want full control and a clean, extensible foundation for building their own real-time graphics applications
 img: assets/img/Blog/HowIBuiltaVulkanRenderingEngine/CarOnBridgeScene.png
 redirect: https://vejaler.github.io
 importance: 1
