@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: #prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
 
@@ -17,18 +17,21 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 <br> 
-
-**Welcome !** <br>
-<br>
-
-My name is **Amr Morsy**, and I am a **graphics programmer**. 
-
-I specialize in low-level graphics programming, working with APIs like **OpenGL**, **Vulkan**, **Metal**, and **Direct3D** to develop custome game engines and real-time applications, including games, simulations and animations. 
+<div>
+I am a <b>graphics programmer</b>. I specialize in developing <b>game engines</b>, and <b>real-time applications</b> using <b>Vulkan</b>, <b>OpenGL</b>, <b>Metal</b>, and <b>Direct3D</b>. 
+</div>
 
 <br>
-
-I offer **graphics programming services** for both students and professionals - including **private tutoring** and **project development**.
-
-On my [blog](https://amrhmorsy.github.io/blog/), I share tutorials, development insights, and reflections from my journey in computer graphics. 
-
-<br>
+<div class="row align-items-center mt-3">
+  <div class="col-md-6 text-center">
+    <blockquote>
+        <a href="/portfolio/">Porfolio</a> 
+    </blockquote>
+  <br>
+  </div>
+  <div class="col-md-6 text-center">
+    <blockquote>
+        <a href="/blog/">Blog</a> 
+    </blockquote>
+  </div>
+</div>

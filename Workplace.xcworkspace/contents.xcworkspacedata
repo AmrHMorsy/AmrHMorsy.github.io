@@ -26,9 +26,6 @@
       location = "group:_posts">
    </FileRef>
    <FileRef
-      location = "group:_projects">
-   </FileRef>
-   <FileRef
       location = "group:_sass">
    </FileRef>
    <FileRef
@@ -73,4 +70,11 @@
    <FileRef
       location = "group:robots.txt">
    </FileRef>
+   <Group
+      location = "group:_projects"
+      name = "_projects">
+      <FileRef
+         location = "group:Vejaler.md">
+      </FileRef>
+   </Group>
 </Workspace>

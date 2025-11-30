@@ -46,10 +46,10 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
-max_width: 800px
+max_width: 1500px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -215,7 +215,6 @@ plugins:
   - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
@@ -260,7 +259,7 @@ jekyll-archives:
     category: '/blog/category/:name/'
 
 display_tags: [] # these tags will be displayed on the front page of your blog
-display_categories: [Vulkan, Theory] # these categories will be displayed on the front page of your blog
+display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

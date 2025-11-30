@@ -1,25 +1,28 @@
     {% if site.footer_fixed %}
     <footer class="fixed-bottom">
-      <div class="container mt-0">
-        &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
-        {%- if site.impressum_path -%}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-        {%- endif -%}
-        {%- if site.last_updated -%}
-        Last updated: {{ "now" | date: '%B %d, %Y' }}.
-        {%- endif %}
+      <div class="container">
+          <div class="footr">
+              For inquiries, please send an email to
+              <a href="mailto:amrhmorsy@proton.me">amrhmorsy@proton.me</a>
+              <br>
+              <br>
+              &copy; {{ site.time | date: '%Y' }} Amr Morsy
+          </div>
       </div>
     </footer>
     {%- else -%}
-    <footer class="sticky-bottom mt-5">
+    <footer class="sticky-bottom">
       <div class="container">
-        &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
-        {%- if site.impressum_path -%}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-        {%- endif -%}
-        {%- if site.last_updated -%}
-        Last updated: {{ "now" | date: '%B %d, %Y' }}.
-        {%- endif %}
+          <div class="footr">
+              <br>
+              For inquiries, please send an email to
+              <a href="mailto:amrhmorsy@proton.me">amrhmorsy@proton.me</a>
+              <br>
+              <br>
+              &copy; {{ site.time | date: '%Y' }} Amr Morsy
+              <br>
+              <br>
+          </div>
       </div>
     </footer>
     {%- endif %}

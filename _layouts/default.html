@@ -46,8 +46,24 @@
       {% endif %}
     </div>
 
+    
     <!-- Footer -->
-    {%- include footer.html %}
+    {% if page.url == "/" %}
+        <!-- Social -->
+        {%- if page.social %}
+          <div class="social">
+            <div class="contact-icons">
+              {% include social.html %}
+            </div>
+
+            <div class="contact-note">
+              {{ site.contact_note }}
+            </div>
+
+          </div>
+        {%- endif %}
+      {% include footer.html %}
+    {% endif %}
 
     <!-- JavaScripts -->
     {% include scripts/jquery.html %}
