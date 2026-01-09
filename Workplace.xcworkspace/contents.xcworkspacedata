@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:_bibliography">
+   </FileRef>
+   <FileRef
+      location = "group:_config.yml">
+   </FileRef>
+   <FileRef
+      location = "group:_data">
+   </FileRef>
+   <FileRef
+      location = "group:_includes">
+   </FileRef>
+   <FileRef
+      location = "group:_layouts">
+   </FileRef>
+   <FileRef
+      location = "group:_pages">
+   </FileRef>
+   <FileRef
+      location = "group:_plugins">
+   </FileRef>
+   <FileRef
+      location = "group:_posts">
+   </FileRef>
+   <FileRef
+      location = "group:_sass">
+   </FileRef>
+   <FileRef
+      location = "group:_site">
+   </FileRef>
+   <FileRef
+      location = "group:404.html">
+   </FileRef>
+   <FileRef
+      location = "group:assets">
+   </FileRef>
+   <FileRef
+      location = "group:bin">
+   </FileRef>
+   <FileRef
+      location = "group:docker-compose.yml">
+   </FileRef>
+   <FileRef
+      location = "group:Dockerfile">
+   </FileRef>
+   <FileRef
+      location = "group:Gemfile">
+   </FileRef>
+   <FileRef
+      location = "group:Gemfile.lock">
+   </FileRef>
+   <FileRef
+      location = "group:google24efc76e55f68afb.html">
+   </FileRef>
+   <FileRef
+      location = "group:LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:purgecss.config.js">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:reports">
+   </FileRef>
+   <FileRef
+      location = "group:robots.txt">
+   </FileRef>
+   <Group
+      location = "group:_projects"
+      name = "_projects">
+      <FileRef
+         location = "group:Vejaler.md">
+      </FileRef>
+   </Group>
+</Workspace>
