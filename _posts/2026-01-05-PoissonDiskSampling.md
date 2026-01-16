@@ -335,165 +335,221 @@ Below is a full C++ implementation of **Bridson's** algorithm:
 
 ```c++
 #include <random>
-#include <map>
+#include <limits>
 
-struct Extent{
-    std::vector<float> min;
-    std::vector<float> max;
-};
 
-float Random(float min, float max)
-{
-    static std::default_random_engine rng(std::random_device{}());
-    std::uniform_real_distribution<float> dist(min, max);
 
-    return dist(rng);
-}
-
-int Random(int min, int max)
-{
-    static std::default_random_engine rng(std::random_device{}());
-    std::uniform_int_distribution<int> dist(min, max);
-
-    return dist(rng);
-}
-
-std::vector<float> Random(std::vector<float> min, std::vector<float> max, int n)
-{
-    std::vector<float> P(n);
+template<int D>
+class PoissonDisk{
     
-    for(int i = 0; i < n; i++)
-        P[i] = Random(min[i], max[i]);
+private:
     
-    return P;
-}
-
-float ComputeDistanceSquared(std::vector<float> P, std::vector<float> Q, int n)
-{
-    float distanceSquared = 0.0f;
-    for(int i = 0; i < n; i++)
-        distanceSquared += ( (P[i] - Q[i]) * (P[i] - Q[i]) );
-    
-    return distanceSquared;
-}
-
-std::vector<int> ComputeCellIndex(std::vector<float> p, std::vector<float> min, int n, float cellSize)
-{
-    std::vector<int> j(n);
-    
-    for(int i = 0; i < n; i++)
-        j[i] = (p[i] - min[i])/cellSize;
-    
-    return j;
-}
-
-std::vector<int> ComputeNeighborIndex(std::vector<int> i, int n, int j)
-{
-    std::vector<int> b = i;
-
-    for(int d = 0; d < n; d++){
-        int offset = (j % 3) - 1;
-        j /= 3;
-        b[d] += offset;
+    static float Length(const std::array<float, D>& v)
+    {
+        float length = 0.0f;
+        
+        for(int i = 0; i < D; i++)
+            length += (v[i]*v[i]);
+        
+        return std::sqrt(length);
     }
     
-    return b;
-}
-
-float ComputeMagnitude(std::vector<float> v)
-{
-    float magnitude = 0.0f;
-    for(int i = 0; i < v.size(); i++)
-        magnitude += (v[i]*v[i]);
+    static float Random(float min, float max)
+    {
+        static std::default_random_engine rng(std::random_device{}());
+        std::uniform_real_distribution<float> dist(min, max);
         
-    return std::sqrt(magnitude);
-}
-
-std::vector<float> Normalize(std::vector<float> v)
-{
-    std::vector<float> u = v;
-    float magnitude = ComputeMagnitude(v);
+        return dist(rng);
+    }
     
-    for(int i = 0; i < u.size(); i++)
-        u[i] /= magnitude;
-            
-    return u;
-}
-
-std::vector<std::vector<float>> BridsonAlgorithm(int n, int k, float r, Extent E)
-{
-    float rSquared = r * r;
-    int numNeighbors = pow(3, n);
-    float cellSize = r / sqrt(n);
-    std::vector<float> minDirection(n, -1.0f);
-    std::vector<float> maxDirection(n, 1.0f);
-    
-    std::vector<float> x = Random(E.min, E.max, n);
-    
-    std::vector<std::vector<float>> S;
-    S.push_back(x);
-    
-    std::vector<std::vector<float>> A;
-    A.push_back(x);
-    
-    std::map<std::vector<int>, std::vector<float>> G; 
-    G[ComputeCellIndex(x, min, n, cellSize)] = x;
+    static std::array<float, D> Random(const std::array<float, D>& min, const std::array<float, D>& max)
+    {
+        std::array<float, D> p;
         
-    while(!A.empty()){
+        for(int i = 0; i < D; i++)
+            p[i] = Random(min[i], max[i]);
+        
+        return p;
+    }
     
-        // Pick the last element of A
-        std::vector<float> a = A[A.size() - 1];
+    static std::array<float, D> Normalize(const std::array<float, D>& v)
+    {
+        std::array<float, D> u = v;
         
-        bool retire = true;
+        float length = Length(u);
         
-        for(int t = 0; t < k; t++){
+        if(length == 0.0f)
+            return u;
         
-            // Generate a random sample from the spherical annulus between radius r and 2r around a
-            std::vector<float> w = a + Normalize(Random(minDirection, maxDirection, n)) * Random(r, 2.0f*r);
-            
-            // i is the cell index of w in G
-            std::vector<int> i = ComputeCellIndex(w, E.min, n, cellSize);
-            
-            bool approved = true;
-            
-            // Check every neighbor of w
-            for(int m = 0; m < numNeighbors; m++){
-            
-                // j is the cell index of neighbor m
-                std::vector<int> j = ComputeNeighborIndex(i, n, m);
-                
-                // Ignore if its the same cell as w
-                if(i == j)
-                    continue;
-                    
-                std::vector<float> q = G[j];
-                
-                if(q.empty())
-                    continue;
-                
-                float dSquared = ComputeDistanceSquared(q, w, n);
-                if(dSquared < rSquared){
-                    approved = false;
-                    break;
-                }                    
-            }
-            
-            // Candidate sample w is approved
-            if(approved){ 
-                S.push_back(w);
-                A.push_back(w);
-                G[i] = w;
-                retire = false;
-            }
+        for(int i = 0; i < D; i++)
+            u[i] /= length;
+        
+        return u;
+    }
+    
+    static std::array<float, D> RandomWithinSphericalAnnulus(const std::array<float, D>& sample, float minDistance)
+    {
+        std::array<float, D> minDir;
+        for(int i = 0; i < D; i++)
+            minDir[i] = -1.0f;
+        
+        std::array<float, D> maxDir;
+        for(int i = 0; i < D; i++)
+            maxDir[i] = 1.0f;
+        
+        std::array<float, D> randomDir = Normalize(Random(minDir, maxDir));
+        
+        float t = Random(minDistance, 2.0f * minDistance);
+        
+        std::array<float, D> newSample;
+        for(int i = 0; i < D; i++)
+            newSample[i] = sample[i] + (randomDir[i] * t);
+        
+        return newSample;
+    }
+        
+    static std::array<float, D> Subtract(const std::array<float, D>& a, const std::array<float, D>& b)
+    {
+        std::array<float, D> c;
+        
+        for(int i = 0; i < D; i++)
+            c[i] = a[i] - b[i];
+        
+        return c;
+    }
+    
+    static std::array<int, D> ComputeGridIndex(const std::array<float, D>& sample, const std::array<float, D>& min, float cellSize)
+    {
+        std::array<int, D> gridIndex;
+        
+        for(int i = 0; i < D; i++)
+            gridIndex[i] = (sample[i] - min[i]) / cellSize;
+        
+        return gridIndex;
+    }
+    
+    static std::array<int, D> ComputeNeighborGridIndex(const std::array<int, D>& index, int rank)
+    {
+        int d, offset, tmp = rank;
+        std::array<int, D> neighborIndex = index;
+        
+        for(d = 0; d < D; d++){
+            offset = (tmp % 3) - 1;
+            tmp /= 3;
+            neighborIndex[d] += offset;
         }
         
-        // Remove the sample from A
-        if(retire)
-            A.pop_back();
+        return neighborIndex;
     }
     
-    return S;
-}
+    static int ComputeFlattenedGridIndex(const std::array<int, D>& gridIndex, const std::array<int, D>& gridResolutions)
+    {
+        int flattenedGridIndex = gridIndex[0];
+        int stride = gridResolutions[0];
+        for(int i = 1; i < D; i++){
+            flattenedGridIndex += (gridIndex[i] * stride);
+            stride *= gridResolutions[i];
+        }
+        
+        return flattenedGridIndex;
+    }
+    
+    static std::array<int, D> ComputeGridResolutions(float cellSize, const std::array<float, D>& min, const std::array<float, D>& max)
+    {
+        std::array<int, D> gridResolutions;
+        for(int i = 0; i < D; i++)
+            gridResolutions[i] = std::ceil((max[i] - min[i]) / cellSize);
+        
+        return gridResolutions;
+    }
+    
+    static int ComputeTotalNumGridCells(const std::array<int, D>& gridResolutions)
+    {
+        int totalNumGridCells = 1;
+        for(int i = 0; i < D; i++)
+            totalNumGridCells *= gridResolutions[i];
+
+        return totalNumGridCells;
+    }
+        
+public:
+    
+    PoissonDisk(){}
+    
+    static std::vector<std::array<float, D>> Generate(int numSamples, int maxNumAttempts, float minDistance, const std::array<float, D>& min, const std::array<float, D>& max)
+    {
+        int numNeighbors = pow(3, D);
+        float cellSize = minDistance / sqrt(D);
+        
+        std::array<int, D> gridResolutions = ComputeGridResolutions(cellSize, min, max);
+        
+        int totalNumGridCells = ComputeTotalNumGridCells(gridResolutions);
+        
+        std::array<float, D> initialSample;
+        for(int i = 0; i < D; i++)
+            initialSample[i] = (max[i] + min[i]) / 2.0f;                
+        std::array<int, D> initialSampleGridIndex = ComputeGridIndex(initialSample, min, cellSize);
+        int initialSampleFlattenedGridIndex = ComputeFlattenedGridIndex(initialSampleGridIndex, gridResolutions);
+        
+        std::vector<std::array<float, D>> samples;
+        samples.push_back(initialSample);
+        
+        std::vector<int> activeSamples;
+        activeSamples.push_back(0);
+        
+        std::vector<int> grid(totalNumGridCells, -1);
+        grid[initialSampleFlattenedGridIndex] = 0;
+        
+        while(!activeSamples.empty() && samples.size() < numSamples){
+            std::array<float, D> sample = samples[activeSamples[activeSamples.size()-1]];
+            
+            bool retire = true;
+            
+            for(int i = 0; i < maxNumAttempts; i++){
+                std::array<float, D> candidate = RandomWithinSphericalAnnulus(sample, minDistance);
+                                
+                std::array<int, D> candidateGridIndex = ComputeGridIndex(candidate, min, cellSize);
+                int candidateFlattenedGridIndex = ComputeFlattenedGridIndex(candidateGridIndex, gridResolutions);
+                
+                bool candidateApproved = true;
+                
+                for(int m = 0; m < numNeighbors; m++){
+                    
+                    std::array<int, D> neighborGridIndex = ComputeNeighborGridIndex(candidateGridIndex, m);
+                    
+                    if(neighborGridIndex == candidateGridIndex)
+                        continue;
+                    
+                    int neighborFlattenedGridIndex = ComputeFlattenedGridIndex(neighborGridIndex, gridResolutions);
+                                        
+                    if(grid[neighborFlattenedGridIndex] == -1)
+                        continue;
+                    
+                    std::array<float, D> neighbor = samples[grid[neighborFlattenedGridIndex]];
+                    
+                    if(Length(Subtract(neighbor, candidate)) < minDistance){
+                        candidateApproved = false;
+                        break;
+                    }
+                }
+                
+                if(candidateApproved){
+                    samples.push_back(candidate);
+                    activeSamples.push_back(samples.size() - 1);
+                    grid[candidateFlattenedGridIndex] = samples.size() - 1;
+                    retire = false;
+                }
+            }
+            
+            if(retire)
+                activeSamples.pop_back();
+        }
+        
+        return samples;
+    }
+    
+    ~PoissonDisk(){}
+};
 ```
 
 <br>
