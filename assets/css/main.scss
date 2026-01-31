@@ -18,3 +18,14 @@ $max-content-width: {{ site.max_width }};
   "font-awesome/solid",
   "font-awesome/regular"
 ;
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+
+
+.handwritten {
+  font-family: 'Caveat', cursive;
+  font-size: 1.7em;
+  line-height: 1.4;
+  text-align: center;
+      font-weight: bold;
+}

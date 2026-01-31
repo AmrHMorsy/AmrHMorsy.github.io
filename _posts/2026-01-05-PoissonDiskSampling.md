@@ -27,9 +27,9 @@ $$:
 
     - Generate a random sample $$P$$ within $$E$$.
     
-    - Check the distance $$d_i$$ between each point $$s_i$$ in $$S$$ and $$P$$. If there is at least one point $$s_i$$ in $$S$$ where $$d_i < r$$, then we discard $$P$$ and try again with a new point. Otherwise, $$P$$ is added to $$S$$.
+    - Check the distance $$d_i$$ between $$P$$ and each point $$s_i$$ in $$S$$. If there is at least one point $$s_i$$ in $$S$$ where $$d_i < r$$, then we discard $$P$$ and try again with a new point. Otherwise, $$P$$ is added to $$S$$.
 
-> One problem with this algorithm is that at some point when the area is fully saturated, and there are still remaining samples to be generated, it will be difficult for any newly generated point to be approved, causing the algorithm to run forever. Hence, as a precaution, a maximum number of attempts $$A$$ is enforced, where $$A >= N$$. If all $$A$$ attempts are used, then the algorithm will terminate regardless of whether $$N$$ approved sample points were generated or not. 
+> One problem with this algorithm is that at some point when the area is fully saturated, and there are still remaining samples to be generated, it might be impossible for any newly generated point to be approved, causing the algorithm to potentially run forever. Hence, as a precaution, a maximum number of attempts $$A$$ is enforced, where $$A >= N$$. If all $$A$$ attempts are used, then the algorithm will terminate regardless of whether $$N$$ approved sample points were generated or not. 
 
 Below is an **C++** implementation of the dart-throwing algorithm: 
 
@@ -39,59 +39,75 @@ Below is an **C++** implementation of the dart-throwing algorithm:
 #include <random>
 
 
-float Random(float min, float max)
-{
-    static std::default_random_engine rng(std::random_device{}());
-    std::uniform_real_distribution<float> dist(min, max);
-
-    return dist(rng);
-}
-
-std::vector<float> Random(std::vector<float> min, std::vector<float> max, int n)
-{
-    std::vector<float> P(n);
+template<int D>
+class PoissonDisk{
     
-    for(int i = 0; i < n; i++)
-        P[i] = Random(min[i], max[i]);
+private:
     
-    return P;
-}
-
-float ComputeDistanceSquared(const std::vector<float>& P, const std::vector<float>& Q, int n)
-{
-    float distance = 0.0f;
-    for(int i = 0; i < n; i++)
-        distance += ( (P[i] - Q[i]) * (P[i] - Q[i]) );
-    
-    return distance;
-}
-
-std::vector<std::vector<float>> DartThrowingAlgorithm(int N, int n, int A, float r, const std::vector<float>& min, const std::vector<float>& max)
-{
-    if((min.size() != n) || (max.size() != n))
-        return {};
+    static float Length(const std::array<float, D>& v)
+    {
+        float length = 0.0f;
         
-    float rSquared = r * r;
-    std::vector<std::vector<float>> S;
-    
-    int a = 0;
-    while( (samples.size() < N) && (a < A) ){
-        std::vector<float> P = Random(min, max, n);
-        bool isApproved = true;
-        for(int i = 0; i < samples.size(); i++){
-            float dSquared = ComputeDistanceSquared(P, S[i], n);
-            if(dSquared < rSquared){
-                isApproved = false;
-                break;
-            }
-        }
-        if(isApproved)
-            S.push_back(P);
-        a++;
+        for(int i = 0; i < D; i++)
+            length += (v[i]*v[i]);
+        
+        return std::sqrt(length);
     }
     
-    return S;
-}
+    static std::array<float, D> Subtract(const std::array<float, D>& a, const std::array<float, D>& b)
+    {
+        std::array<float, D> c;
+        
+        for(int i = 0; i < D; i++)
+            c[i] = a[i] - b[i];
+        
+        return c;
+    }
+
+    static float Random(float min, float max)
+    {
+        static std::default_random_engine rng(std::random_device{}());
+        std::uniform_real_distribution<float> dist(min, max);
+        
+        return dist(rng);
+    }
+    
+    static std::array<float, D> Random(const std::array<float, D>& min, const std::array<float, D>& max)
+    {
+        std::array<float, D> p;
+        
+        for(int i = 0; i < D; i++)
+            p[i] = Random(min[i], max[i]);
+        
+        return p;
+    }
+                            
+public:
+    
+    static std::vector<std::array<float, D>> Generate(int numSamples, int maxNumAttempts, float minDistance, const std::array<float, D>& min, const std::array<float, D>& max)
+    {
+        std::vector<std::array<float, D>> samples;
+    
+        int attempt = 0;
+        while((samples.size() < numSamples) && (attempt < maxNumAttempts)){
+            std::array<float, D> point = Random(min, max);
+            
+            bool approved = true;
+            for(int i = 0; i < samples.size(); i++){
+                if(Length(Subtract(point, samples[i])) < minDistance){
+                    approved = false;
+                    break;
+                }
+            }
+            if(approved)
+                samples.push_back(point);
+                
+            attempt++;
+        }
+    
+        return samples;
+    }
+};
 ```
 
 <br>
@@ -99,15 +115,7 @@ std::vector<std::vector<float>> DartThrowingAlgorithm(int N, int n, int A, float
 As discussed before, the Dart-Throwing algorithm is naive and inefficient. The best-case scenario for the algorithm happens when each generated point $$P$$ is approved and added to the set $$S$$. That is, the best-case time complexity of the algorithm is
 
 $$
-T(N) = \sum_{k=1}^N D + Dk 
-$$
-
-$$
-\sum_{k=1}^N D(k + 1) = D \sum_{k=1}^N (k + 1) 
-$$
-
-$$
-= D \frac{N(N+3)}{2} = \Omega(D N^2)
+T(N) = \sum_{k=1}^N k = \frac{N(N+1)}{2} = \Omega(N^2)
 $$
 
 The worst-case scenario for the algorithm happens when $$N-1$$ points are generated and approved, and the $$N^{th}$$ point keeps getting rejected till the $$A-N+1$$ attempts left are used and the algorithm terminates. That is, the worst-case time complexity of the algorithm is
@@ -271,7 +279,13 @@ The size of each cell in the grid \(G\) must be at most \(\frac{r}{\sqrt(n)}\).
 <b><b>Proof</b></b>
 <br>
 <br>
-We know that the distance between any two points must be at least \(r\). We also know that each cell in the grid \(G\) must have only one point. Consider the cell \(C\) in \(G\). Let \(d\) be the length of the diagonal of \(C\) and \(s\) be its cell size. Suppose for the sake of contradiction that \(d > r\). This means that two points can be placed inside \(C\) whose distance is greater than or equal to \(r\). This violates the requirement that each cell in the grid \(G\) must have only one point. Thus, \(d \leq r\). Using Pythagoras theorem: 
+We know that the distance between any two points must be at least \(r\). We also know that each cell in the grid \(G\) must have only one point. Consider the cell \(C\) in \(G\). Let \(d\) be the length of the diagonal of \(C\) and \(s\) be its cell size. Suppose for the sake of contradiction that \(d > r\). This means that two points can be placed inside \(C\) whose distance is greater than or equal to \(r\). This violates the requirement that each cell in the grid \(G\) must have only one point. Thus, \(d \leq r\). 
+
+<div class="row align-items-center mt-3">
+    <div class="col-md-10">
+    <br>
+<br>
+Now, using Pythagoras theorem: 
 
 $$
 d^2 = s_1^2 + s_2^2 + ...... + s_n^2 = n \; s^2
@@ -290,6 +304,21 @@ Since \(d \leq r\), then
 $$
 s \leq \frac{r}{\sqrt(n)} 
 $$
+
+    </div>
+    <div class="col-md-2">
+        <figure class="col-md-6 text-center theme-img repo-img-light">
+            {% include figure.html loading="lazy"
+                 path="assets/img/Blog/PoissonDiskSampling/Dark/1.png"
+                 width="300" height="300" %}
+        </figure>
+        <figure class="col-md-6 text-center theme-img repo-img-dark">
+            {% include figure.html loading="lazy"
+                 path="assets/img/Blog/PoissonDiskSampling/Light/1.png"
+                 width="300" height="300" %}
+        </figure>
+    </div>
+</div>
 
 \(\blacksquare\)
 
@@ -474,8 +503,6 @@ private:
         
 public:
     
-    PoissonDisk(){}
-    
     static std::vector<std::array<float, D>> Generate(int numSamples, int maxNumAttempts, float minDistance, const std::array<float, D>& min, const std::array<float, D>& max)
     {
         int numNeighbors = pow(3, D);
@@ -547,8 +574,6 @@ public:
         
         return samples;
     }
-    
-    ~PoissonDisk(){}
 };
 ```
 

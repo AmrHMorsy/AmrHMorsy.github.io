@@ -19,8 +19,34 @@ strong {
   color: var(--global-text-color);
 }
 
+.vulkanFunction {
+  color: #A94442;
+  font-weight: 700;
+}
+.vulkanClass {
+  color: #3A6EA5;
+  font-weight: 700;
+}
+.vulkanVariable {
+  color: #3E7A5A;
+  font-weight: 700;
+}
+.vulkanType {
+  color: #D08C45;
+  font-weight: 700;
+}
+.vulkanValue {
+  color: #4A8FA3;
+  font-weight: 700;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
 BlogPost{
-  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
   color: var(--global-text-color);
 }
 
