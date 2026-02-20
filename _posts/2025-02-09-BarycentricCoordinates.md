@@ -9,29 +9,25 @@ thumbnail: assets/img/Blog/BarycentricCoordinates/
 featured: false
 ---
 
+<br>
+<h3><b><b> Introduction </b></b></h3>
+<br>
+
+A **nondegenerate** triangle is a triangle where: 
+
+- All vertices are distinct
+- The vertices do not all lie on a single line (Non-collinear vertices)
+
 <div class="row align-items-center mt-3">
     <div class="col-md-6">
-        <h3><b><b> Introduction </b></b></h3>
-        <br>
-        <br>
-        A <b><b>nondegenerate</b></b> triangle is a triangle where: 
-        <br>
-        <br>
-        <li> All vertices are distinct</li>
-        <li> The vertices do not all lie on a single line (Non-collinear vertices)</li>
-        <br>
         Consider the following <b>nondegenerate</b> triangle with vertices \(A\), \(B\), and \(C\). 
     </div>
     <div class="col-md-6">
         <figure class="col-md-12 text-center theme-img repo-img-light">
-            {% include figure.html loading="lazy"
-                 path="assets/img/Blog/BarycentricCoordinates/Dark/1.png"
-                 width="550" height="400" %}
+            {% include figure.html loading="lazy" path="assets/img/Blog/BarycentricCoordinates/Dark/1.png" class="scaled-img70" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
-            {% include figure.html loading="lazy"
-                 path="assets/img/Blog/BarycentricCoordinates/Light/1.png"
-                 width="550" height="400" %}
+            {% include figure.html loading="lazy" path="assets/img/Blog/BarycentricCoordinates/Light/1.png" class="scaled-img70" %}
         </figure>
     </div>
 </div>
@@ -39,7 +35,7 @@ featured: false
 <br>
 
 <div class="row align-items-center mt-3">
-    <div class="col-md-4">
+    <div class="col-md-6">
 A point \(Q\) that lies on the edge \(AB\) has the form
 
 $$
@@ -47,25 +43,21 @@ Q = (1-t)A + tB
 $$
 
 where \(0 \leq t \leq 1\).
- 
-    </div>
-    <div class="col-md-8">
+
+</div>
+    <div class="col-md-6">
         <figure class="col-md-12 text-center theme-img repo-img-light">
-            {% include figure.html loading="lazy"
-                 path="assets/img/Blog/BarycentricCoordinates/Dark/2.png"
-                 width="550" height="400" %}
+            {% include figure.html loading="lazy" path="assets/img/Blog/BarycentricCoordinates/Dark/2.png" class="scaled-img70" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
-            {% include figure.html loading="lazy"
-                 path="assets/img/Blog/BarycentricCoordinates/Light/2.png"
-                 width="550" height="400" %}
+            {% include figure.html loading="lazy" path="assets/img/Blog/BarycentricCoordinates/Light/2.png" class="scaled-img70" %}
         </figure>
     </div>
 </div>
 
 
 <div class="row align-items-center mt-3">
-    <div class="col-md-4">
+    <div class="col-md-6">
         Similarly, a point \(R\) that lies on the edge \(QC\) has the form 
 
         $$
@@ -74,21 +66,21 @@ where \(0 \leq t \leq 1\).
 
         where \(0 \leq s \leq 1\).
     </div>
-    <div class="col-md-8">
+    <div class="col-md-6">
         <figure class="col-md-12 text-center theme-img repo-img-light">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Dark/3.png"
-                 width="550" height="400" %}
+                class="scaled-img80" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Light/3.png"
-                 width="550" height="400" %}
+                class="scaled-img80" %}
         </figure>
     </div>
 </div>
 
-We can rewrite $$R$$ by substituting the equation for $$Q$$. This results in the following equation
+We can rewrite $$R$$ by substituting the equation for $$Q$$.
 
 $$
 R = (1-s)((1-t)A + tB) + sC
@@ -98,21 +90,21 @@ $$
 R = (1-s)(1-t)A + (1-s)tB + sC
 $$
 
-Now, if we sum the coefficients of equation of $$R$$, we get
+If we sum the coefficients of equation $$R$$, we get
 
 $$
 (1-s)(1-t) + (1-s)t + s = (1 - t - s + st) + (t - st) + s = 1
 $$
 
-Since $$R$$ is an arbitrary point inside the triangle $$ABC$$, we can generalize the equation to any point $$P$$. 
+<br>
 
-That is, any point $$P$$ inside the triangle $$ABC$$ has the form
+Since $$R$$ is an arbitrary point inside the triangle $$ABC$$, we can generalize the equation to any point $$P$$. That is, any point $$P$$ inside the triangle $$ABC$$ has the form
 
 $$
 P = αA + βB + γC
 $$
 
-where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$. 
+where $$α + β + γ = 1 $$ and $$0 \geq α, β, γ \leq 1$$. 
 
 
 <div class="row align-items-center mt-3">
@@ -120,8 +112,11 @@ where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$.
         These coefficients \(α\), \(β\) and \(γ\) are called the <b>barycentric coordinates</b> of \(P\) with respect to the triangle \(ABC\), such that 
         <br>
         <br>
+        <br>
         <li> If \(α = 0\), then \(P\) lies on the edge \(BC\)</li>
+        <br>
         <li> If \(β = 0\), then \(P\) lies on the edge \(AC\)</li>
+        <br>
         <li> If \(γ = 0\), then \(P\) lies on the edge \(AB\)</li>
         
     </div>
@@ -129,12 +124,12 @@ where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$.
         <figure class="col-md-12 text-center theme-img repo-img-light">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Dark/4.png"
-                 width="550" height="400" %}
+                class="scaled-img80" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Light/4.png"
-                 width="550" height="400" %}
+                                 class="scaled-img70" %}
         </figure>
     </div>
 </div>
@@ -161,18 +156,19 @@ where $$α + β + γ = 1 $$ and $$α, β, γ \geq 0$$.
         
         <br>
 
-        The proof for these equations will be explained later in this blog post. 
+        These equations are proved <a href="#proof" class="IndexLink">here</a>. 
+        
     </div>
     <div class="col-md-6">
         <figure class="col-md-12 text-center theme-img repo-img-light">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Dark/5.png"
-                 width="550" height="400" %}
+                                 class="scaled-img70" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Light/5.png"
-                 width="550" height="400" %}
+                                 class="scaled-img70" %}
         </figure>
     </div>
 </div>
@@ -191,7 +187,7 @@ There are 2 ways to calculate the area of the triangle:
         The area of the triangle is 
 
         $$
-        Area = \frac{1}{2} \times Base \times Height
+        Area = \frac{1}{2} \; Base \; Height
         $$
 
         where \(Height\) is the perpendicular shortest distance from the the base edge to the opposite vertex. 
@@ -199,7 +195,7 @@ There are 2 ways to calculate the area of the triangle:
         For example, the area of triangle \(PBC\) is 
 
         $$
-        Area(▲PBC) = \frac{1}{2} \times ||\vec{BC}|| \times d_{⊥} (P,BC)
+        Area(▲PBC) = \frac{1}{2} \; ||\vec{BC}|| \; d_{⊥} (P,BC)
         $$
         
     </div>
@@ -207,12 +203,12 @@ There are 2 ways to calculate the area of the triangle:
         <figure class="col-md-12 text-center theme-img repo-img-light">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Dark/6.png"
-                 width="550" height="400" %}
+                                 class="scaled-img70" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Light/6.png"
-                 width="550" height="400" %}
+                                 class="scaled-img70" %}
         </figure>
     </div>
 </div>
@@ -228,7 +224,7 @@ There are 2 ways to calculate the area of the triangle:
         Consider the parallelogram \(ABCD\). The area of the parallelogram \(ABCD\) is 
 
         $$
-        Area(▰ABCD) = ||\vec{AB}|| \times ||\vec{AC}|| \times sin(\theta)
+        Area(▰ABCD) = ||\vec{AB}|| \; ||\vec{AC}|| \; sin(\theta)
         $$
 
         We can also express the area of the parallelogram \(ABCD\) as the magnitude of the cross product of two vectors that lie on the parallelogram. That is, 
@@ -240,7 +236,7 @@ There are 2 ways to calculate the area of the triangle:
         The area of the triangle is equal to half the area of the parallelogram. Hence, the area of the triangle \(ABC\) can be expressed as 
 
         $$
-        Area(▲ABC) = \frac{||\vec{AB}|| \times ||\vec{AC}|| \times sin(\theta)}{2} = \frac{||\vec{AB} \times \vec{AC}|| }{2}
+        Area(▲ABC) = \frac{||\vec{AB}|| \; ||\vec{AC}|| \; sin(\theta)}{2} = \frac{||\vec{AB} \times \vec{AC}|| }{2}
         $$
 
     </div>
@@ -248,45 +244,36 @@ There are 2 ways to calculate the area of the triangle:
         <figure class="col-md-12 text-center theme-img repo-img-light">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Dark/7.png"
-                 width="550" height="400" %}
+                                 class="scaled-img70" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Light/7.png"
-                 width="550" height="400" %}
+                                 class="scaled-img70" %}
         </figure>
     </div>
 </div>
 
+<br>
+
+<br>
+### **Proving Equations of Barycentric Coordinates** {#proof}
+<br>
+
 <div class="row align-items-center mt-3">
     <div class="col-md-6">
-        <h3><b><b>Proof</b></b></h3>
-        <br>
-        <br>
-        Consider the triangle \(ABC\). Let \(P\) be a point inside the triangle. We know that 
+        
+        Let \(P\) be a point inside the triangle \(ABC\). We know that 
 
         $$
         P = αA + βB + γC
         $$
 
         where \(α + β + γ = 1\) and \(α, β, γ \geq 0\). 
-    </div>
-    <div class="col-md-6">
-        <figure class="col-md-12 text-center theme-img repo-img-light">
-            {% include figure.html loading="lazy"
-                 path="assets/img/Blog/BarycentricCoordinates/Dark/8.png"
-                 width="550" height="400" %}
-        </figure>
-        <figure class="col-md-12 text-center theme-img repo-img-dark">
-            {% include figure.html loading="lazy"
-                 path="assets/img/Blog/BarycentricCoordinates/Light/8.png"
-                 width="550" height="400" %}
-        </figure>
-    </div>
-</div>
-
-<div class="row align-items-center mt-3">
-    <div class="col-md-6">
+        
+        <br>
+        <br>
+        
         We want to prove that 
 
         $$
@@ -301,65 +288,86 @@ There are 2 ways to calculate the area of the triangle:
         γ = \frac{Area(▲PAB)}{Area(▲ABC)}
         $$
 
-        Without loss of generality, consider the barycentric coordinate \(α\). 
+    </div>
+    <div class="col-md-6">
+        <figure class="col-md-12 text-center theme-img repo-img-light">
+            {% include figure.html loading="lazy"
+                 path="assets/img/Blog/BarycentricCoordinates/Dark/8.png"
+                                 class="scaled-img70" %}
+        </figure>
+        <figure class="col-md-12 text-center theme-img repo-img-dark">
+            {% include figure.html loading="lazy"
+                 path="assets/img/Blog/BarycentricCoordinates/Light/8.png"
+                                 class="scaled-img70" %}
+        </figure>
+    </div>
+</div>
 
+<div class="row align-items-center mt-3">
+    <div class="col-md-6">
+        Without loss of generality, consider the barycentric coordinate \(α\). 
+        <br>
+        <br>
         Let \(d_P\) be the perpendicular distance from \(P\) to \(BC\) and \(d_A\) be the perpendicular distance from \(A\) to \(BC\). 
     </div>
     <div class="col-md-6">
         <figure class="col-md-12 text-center theme-img repo-img-light">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Dark/9.png"
-                 width="550" height="400" %}
+                                 class="scaled-img70" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Light/9.png"
-                 width="550" height="400" %}
+                                 class="scaled-img70" %}
         </figure>
     </div>
 </div>
 
 
 <div class="row align-items-center mt-3">
-    <div class="col-md-6">
+    <div class="col-md-8">
         We know that the area of triangle \(PBC\) is 
 
         $$
-        Area(▲PBC) = \frac{1}{2} \times ||\vec{BC}|| \times d_P
+        Area(▲PBC) = \frac{1}{2} \; ||\vec{BC}|| \; d_P
         $$
 
         and the area of triangle \(ABC\) is 
 
         $$
-        Area(▲ABC) = \frac{1}{2} \times ||\vec{BC}|| \times d_A
+        Area(▲ABC) = \frac{1}{2} \; ||\vec{BC}|| \; d_A
         $$
 
         From these equations, we can see that
 
-        - \(Area(▲PBC)\) is linearly proportional to the perpendicular distance from \(P\) to \(BC\) ; \(d_P\)
+        <br>
+        <br>
+
+        <li> \(Area(▲PBC)\) is linearly proportional to the perpendicular distance from \(P\) to \(BC\)</li>
 
         $$
         Area(▲PBC) ∝ d_P
         $$
 
-        - \(Area(▲ABC)\) is linearly proportional to the perpendicular distance from \(A\) to \(BC\) ; \(d_A\). 
+        <li> \(Area(▲ABC)\) is linearly proportional to the perpendicular distance from \(A\) to \(BC\)</li>
 
         $$
         Area(▲ABC) ∝ d_A
         $$
 
-        As \(d_P\) decreases, the point \(P\) becomes closer to the edge \(BC\), causing the value of \(α\) to also decrease. When \(d_P=0\), the point \(P\) lies on the edge \(BC\) and \(α=0\). 
+        As \(d_P\) decreases, the point \(P\) becomes closer to the edge \(BC\) and the value of \(α\) to also decrease. When \(d_P=0\), the point \(P\) lies on the edge \(BC\) and \(α=0\). 
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
         <figure class="col-md-12 text-center theme-img repo-img-light">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Dark/10.png"
-                 width="550" height="500" %}
+                                 class="scaled-img90" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Light/10.png"
-                 width="550" height="500" %}
+                                 class="scaled-img90" %}
         </figure>
     </div>
 </div>
@@ -408,12 +416,12 @@ There are 2 ways to calculate the area of the triangle:
         <figure class="col-md-12 text-center theme-img repo-img-light">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Dark/11.png"
-                 width="550" height="500" %}
+                                 class="scaled-img70" %}
         </figure>
         <figure class="col-md-12 text-center theme-img repo-img-dark">
             {% include figure.html loading="lazy"
                  path="assets/img/Blog/BarycentricCoordinates/Light/11.png"
-                 width="550" height="500" %}
+                                 class="scaled-img70" %}
         </figure>
     </div>
 </div>

@@ -19,25 +19,73 @@ strong {
   color: var(--global-text-color);
 }
 
-.vulkanFunction {
-  color: #A94442;
+
+.vulkan{
+  color: var(--global-important-variable);
   font-weight: 700;
+  
+    &:hover {
+        color: var(--global-important-variable);
+        text-decoration: underline;
+        font-weight: 700;
+    }
 }
-.vulkanClass {
-  color: #3A6EA5;
+
+.aboutLinks{
+  color: var(--global-text-color);
   font-weight: 700;
+  
+    &:hover {
+        color: var(--global-text-color);
+        text-decoration: underline;
+        font-weight: 700;
+    }
 }
-.vulkanVariable {
-  color: #3E7A5A;
-  font-weight: 700;
+
+.scaled-img70 {
+    width: 70%;      /* or whatever scale you want */
+    height: auto;    /* keeps aspect ratio */
 }
-.vulkanType {
-  color: #D08C45;
-  font-weight: 700;
+
+.scaled-img60 {
+    width: 60%;      /* or whatever scale you want */
+    height: auto;    /* keeps aspect ratio */
 }
-.vulkanValue {
-  color: #4A8FA3;
+
+.scaled-img50 {
+    width: 50%;      /* or whatever scale you want */
+    height: auto;    /* keeps aspect ratio */
+}
+
+.scaled-img20 {
+    width: 20%;      /* or whatever scale you want */
+    height: auto;    /* keeps aspect ratio */
+}
+
+.scaled-img40 {
+    width: 40%;      /* or whatever scale you want */
+    height: auto;    /* keeps aspect ratio */
+}
+
+.scaled-img80 {
+    width: 80%;      /* or whatever scale you want */
+    height: auto;    /* keeps aspect ratio */
+}
+
+.scaled-img90 {
+    width: 90%;      /* or whatever scale you want */
+    height: auto;    /* keeps aspect ratio */
+}
+
+.IndexLink{
+  color: var(--global-text-color);
   font-weight: 700;
+  
+    &:hover {
+        color: var(--global-text-color);
+        text-decoration: underline;
+        font-weight: 700;
+    }
 }
 
 strong, b {
@@ -55,14 +103,15 @@ hr {
 }
 
 ovrv{
+  font-weight: 400;
   color: var(--global-text-color);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 table {
   td,
   th {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   th {
@@ -1185,3 +1234,10 @@ nav[data-toggle="toc"] {
 .card-title {
     font-weight: bold !important;
 }
+
+
+
+
+
+
+

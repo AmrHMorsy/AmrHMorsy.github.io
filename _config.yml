@@ -122,7 +122,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: # Rendered Reflections # blog_name will be displayed in your blog page
 blog_nav_title: # blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: # Exploring the art and science of computer graphics programming. 
+blog_description: # Exploring the art and science of computer graphics programming.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -172,12 +172,12 @@ collections:
 announcements:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
   scrollable: false # true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: # leave blank to include all the blog posts
+  limit: 3 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
