@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 I am a <b>graphics programmer</b>. 
 <br>
 <br>
-I build <b>real-time</b> software, including simulations, tools, video games, and game engines.
+I build game engines, video games, and real-time simulations. 
 <br>
 <br>
 You can view my curriculum vitae <a href="/cv">here</a>.
