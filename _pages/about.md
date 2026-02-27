@@ -41,7 +41,7 @@ You can view my curriculum vitae <a href="/cv">here</a>.
   <div class="row justify-content-center mt-4 text-center">
     <div class="col-md-10">
       <div class = "repo-img-dark" style="
-        background-color: #e3e7ec;
+        background-color: #f4f7fb;
         border-left: 6px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
@@ -85,7 +85,7 @@ You can view my curriculum vitae <a href="/cv">here</a>.
   <div class="row justify-content-center mt-4 text-center">
     <div class="col-md-10">
       <div class = "repo-img-dark" style="
-        background-color: #e3e7ec;
+        background-color: #f4f7fb;
         border-left: 6px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
@@ -130,7 +130,7 @@ You can view my curriculum vitae <a href="/cv">here</a>.
   <div class="row justify-content-center mt-4 text-center">
     <div class="col-md-10">
       <div class = "repo-img-dark" style="
-        background-color: #e3e7ec;
+        background-color: #f4f7fb;
         border-left: 6px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
@@ -174,7 +174,7 @@ You can view my curriculum vitae <a href="/cv">here</a>.
   <div class="row justify-content-center mt-4 text-center">
     <div class="col-md-10">
       <div class = "repo-img-dark" style="
-        background-color: #e3e7ec;
+        background-color: #f4f7fb;
         border-left: 6px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
@@ -217,7 +217,7 @@ You can view my curriculum vitae <a href="/cv">here</a>.
   <div class="row justify-content-center mt-4 text-center">
     <div class="col-md-10">
       <div class = "repo-img-dark" style="
-        background-color: #e3e7ec;
+        background-color: #f4f7fb;
         border-left: 6px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
@@ -261,7 +261,7 @@ You can view my curriculum vitae <a href="/cv">here</a>.
   <div class="row justify-content-center mt-4 text-center">
     <div class="col-md-10">
       <div class = "repo-img-dark" style="
-        background-color: #e3e7ec;
+        background-color: #f4f7fb;
         border-left: 6px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
