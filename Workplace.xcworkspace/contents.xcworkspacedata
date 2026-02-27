@@ -71,8 +71,8 @@
       location = "group:robots.txt">
    </FileRef>
    <Group
-      location = "group:_projects"
-      name = "_projects">
+      location = "group:_portfolio"
+      name = "_portfolio">
       <FileRef
          location = "group:Vejaler.md">
       </FileRef>
