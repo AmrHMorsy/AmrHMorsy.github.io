@@ -749,6 +749,8 @@ footer.sticky-bottom {
     
     a {
         text-decoration: none;
+    font-weight: bold;
+    text-align: center;
 
         &:hover {
             .card-title {
@@ -759,12 +761,15 @@ footer.sticky-bottom {
     }
 
     .card {
+        font-weight: bold;
+    text-align: center;
         img {
             width: 100%;
         }
     }
 
     .card-item {
+            font-weight: bold;
         width: auto;
         margin-bottom: 10px;
 
