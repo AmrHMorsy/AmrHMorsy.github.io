@@ -37,9 +37,9 @@ layout: default
           </div>
           {%- endif %}
 
-          <ovrv class="clearfix">
+          <div class="ovrv">
             {{ content }}
-          </ovrv>
+          </div>
 
         </article>
 </div>
@@ -54,7 +54,7 @@ layout: default
 <!-- News -->
 {% if page.news and site.announcements.enabled -%}
 <div style="text-align: center; margin: 0 auto;">
-  <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Announcements</a></h2>
+  <h3><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Announcements</a></h3>
   <br>
   {%- include news.html limit=true %}
   <br>
@@ -65,13 +65,10 @@ layout: default
 <br>
 <br>
 
-
-
-<!--
 <div class="row align-items-center mt-3" style="text-align: center;">
     <div class="col-md-6">
     {% if page.latest_posts and site.latest_posts.enabled -%}
-      <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">Latest Blog Posts</a></h2>
+      <h3><a href="{{ '/blog/' | relative_url }}" style="color: inherit; ">Latest Blog Posts</a></h3>
       <br>
       {%- include latest_posts.html %}
       <br>
@@ -82,12 +79,27 @@ layout: default
         
     <div class="col-md-6">
         {% if page.selected_papers -%}
-          <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Latest Publications</a></h2>
+          <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Latest Publications</a></h3>
           {%- include selected_papers.html %}
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
         {%- endif %}
     </div>
 </div>
--->
+
+<div style="text-align: center; margin: 0 auto;">
+  <h3><a href="{{ '/latestVideos/' | relative_url }}" style="color: inherit;">Latest Videos</a></h3>
+  <br>
+  {%- include latestVideos.html limit=true %}
+  <br>
+  <br>
+  </div>
 
 <br>
 <br>

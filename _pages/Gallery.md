@@ -4,7 +4,7 @@ title: Gallery
 permalink: /gallery/
 description:
 nav: true
-nav_order: 7
+nav_order: 5
 display_categories:
 horizontal: false
 ---

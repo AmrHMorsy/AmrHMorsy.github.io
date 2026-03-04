@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description:
 nav: true
-nav_order: 5
+nav_order: 3
 ---
 
 {% include bib_search.html %}
