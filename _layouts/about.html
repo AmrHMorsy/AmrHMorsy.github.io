@@ -44,66 +44,170 @@ layout: default
         </article>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<br><br><br>
+<hr>
+<br><br><br>
 
-<!-- News -->
-{% if page.news and site.announcements.enabled -%}
-<div style="text-align: center; margin: 0 auto;">
-  <h3><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Announcements</a></h3>
-  <br>
-  {%- include news.html limit=true %}
-  <br>
-  <br>
-  </div>
-{%- endif %}
-
-<br>
-<br>
-
-<div class="row align-items-center mt-3" style="text-align: center;">
-    <div class="col-md-6">
-    {% if page.latest_posts and site.latest_posts.enabled -%}
-      <h3><a href="{{ '/blog/' | relative_url }}" style="color: inherit; ">Latest Blog Posts</a></h3>
-      <br>
-      {%- include latest_posts.html %}
-      <br>
-      <br>
-      <br>
-    {%- endif %}
-    </div>
-        
-    <div class="col-md-6">
-        {% if page.selected_papers -%}
-          <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Latest Publications</a></h3>
-          {%- include selected_papers.html %}
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-        {%- endif %}
+<div class="row mt-4 justify-content-center  text-center">
+    <div class="col-md-12">
+        <div class = "repo-img-light" style="
+          background-color: #1e2530;
+          border-left: 3px solid #4a6fa5;
+          padding: 30px 40px;
+          border-radius: 8px;
+          transition: all 0.25s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
+        "
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+            {% if page.news and site.announcements.enabled -%}
+            <div style="text-align: center; margin: 0 auto;">
+              <h3><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Announcements</a></h3>
+              <br>
+              {%- include news.html limit=true %}
+              </div>
+            {%- endif %}
+        </div>
+        <div class = "repo-img-dark" style="
+          background-color: #f4f7fb;
+          border-left: 3px solid #4a6fa5;
+          padding: 30px 40px;
+          border-radius: 8px;
+          transition: all 0.25s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
+        "
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+            {% if page.news and site.announcements.enabled -%}
+            <div style="text-align: center; margin: 0 auto;">
+              <h3><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Announcements</a></h3>
+              <br>
+              {%- include news.html limit=true %}
+              </div>
+            {%- endif %}
+        </div>
     </div>
 </div>
 
-<div style="text-align: center; margin: 0 auto;">
-  <h3><a href="{{ '/latestVideos/' | relative_url }}" style="color: inherit;">Latest Videos</a></h3>
-  <br>
-  {%- include latestVideos.html limit=true %}
-  <br>
-  <br>
-  </div>
+<br><br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="row mt-4 justify-content-center  text-center">
+    <div class="col-md-6">
+        <div class = "repo-img-light" style="
+          background-color: #1e2530;
+          border-left: 3px solid #4a6fa5;
+          padding: 30px 40px;
+          border-radius: 8px;
+          transition: all 0.25s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
+        "
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+            {% if page.latest_posts and site.latest_posts.enabled -%}
+              <h3><a href="{{ '/blog/' | relative_url }}" style="color: inherit; ">Latest Blog Posts</a></h3>
+              <br>
+              {%- include latest_posts.html %}
+            {%- endif %}
+        </div>
+        <div class = "repo-img-dark" style="
+          background-color: #f4f7fb;
+          border-left: 3px solid #4a6fa5;
+          padding: 30px 40px;
+          border-radius: 8px;
+          transition: all 0.25s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
+        "
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+            {% if page.latest_posts and site.latest_posts.enabled -%}
+              <h3><a href="{{ '/blog/' | relative_url }}" style="color: inherit; ">Latest Blog Posts</a></h3>
+              <br>
+              {%- include latest_posts.html %}
+            {%- endif %}
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class = "repo-img-light" style="
+          background-color: #1e2530;
+          border-left: 3px solid #4a6fa5;
+          padding: 30px 40px;
+          border-radius: 8px;
+          transition: all 0.25s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
+        "
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+            {% if page.selected_papers -%}
+              <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Latest Publications</a></h3>
+              {%- include selected_papers.html %}
+            {%- endif %}
+        </div>
+        <div class = "repo-img-dark" style="
+          background-color: #f4f7fb;
+          border-left: 3px solid #4a6fa5;
+          padding: 30px 40px;
+          border-radius: 8px;
+          transition: all 0.25s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
+        "
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+            {% if page.selected_papers -%}
+              <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Latest Publications</a></h3>
+              {%- include selected_papers.html %}
+            {%- endif %}
+        </div>
+    </div>
+</div>
+
+<br><br>
+<br><br>
+<div class="row mt-4 justify-content-center  text-center">
+    <div class="col-md-12">
+        <div class = "repo-img-light" style="
+          background-color: #1e2530;
+          border-left: 3px solid #4a6fa5;
+          padding: 30px 40px;
+          border-radius: 8px;
+          transition: all 0.25s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
+        "
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+            <div style="text-align: center; margin: 0 auto;">
+                  <h3><a href="{{ '/latestVideos/' | relative_url }}" style="color: inherit;">Latest Videos</a></h3>
+                  <br>
+                  {%- include latestVideos.html limit=true %}
+                  <br><br>
+            </div>
+        </div>
+        <div class = "repo-img-dark" style="
+          background-color: #f4f7fb;
+          border-left: 3px solid #4a6fa5;
+          padding: 30px 40px;
+          border-radius: 8px;
+          transition: all 0.25s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
+        "
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+            <div style="text-align: center; margin: 0 auto;">
+                  <h3><a href="{{ '/latestVideos/' | relative_url }}" style="color: inherit;">Latest Videos</a></h3>
+                  <br>
+                  {%- include latestVideos.html limit=true %}
+                  <br><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br>
+<br><br><br><br>

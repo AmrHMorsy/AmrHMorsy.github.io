@@ -1,1 +1,6 @@
-
+- title: Education
+  type: time_table
+  contents:
+    - title: Bsc Computer Science
+      institution: Concordia University | Montréal, Canada
+      year: May 2024

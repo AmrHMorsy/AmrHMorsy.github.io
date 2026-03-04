@@ -16,9 +16,6 @@ horizontal: false
       <div class = "repo-img-dark" style="
         background-color: #f4f7fb;
         border-left: 3px solid #4a6fa5;
-        border-right: 3px solid #4a6fa5;
-        border-top: 3px solid #4a6fa5;
-        border-bottom: 3px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
         transition: all 0.25s ease;
@@ -35,9 +32,6 @@ I offer freelance graphics programming services for individuals and companies.
       <div class = "repo-img-light" style="
         background-color: #1e2530;
         border-left: 3px solid #4a6fa5;
-        border-right: 3px solid #4a6fa5;
-        border-top: 3px solid #4a6fa5;
-        border-bottom: 3px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
         transition: all 0.25s ease;
@@ -57,9 +51,6 @@ I offer freelance graphics programming services for individuals and companies.
       <div class = "repo-img-dark" style="
         background-color: #f4f7fb;
         border-left: 3px solid #4a6fa5;
-        border-right: 3px solid #4a6fa5;
-        border-top: 3px solid #4a6fa5;
-        border-bottom: 3px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
         transition: all 0.25s ease;
@@ -75,9 +66,6 @@ I offer online tutoring in computer graphics, game development, and game engine 
       <div class = "repo-img-light" style="
         background-color: #1e2530;
         border-left: 3px solid #4a6fa5;
-        border-right: 3px solid #4a6fa5;
-        border-top: 3px solid #4a6fa5;
-        border-bottom: 3px solid #4a6fa5;
         padding: 30px 40px;
         border-radius: 8px;
         transition: all 0.25s ease;
