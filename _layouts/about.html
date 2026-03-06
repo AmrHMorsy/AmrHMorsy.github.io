@@ -94,7 +94,7 @@ layout: default
 <br><br>
 
 <div class="row mt-4 justify-content-center  text-center">
-    <div class="col-md-6">
+    <div class="col-md-12">
         <div class = "repo-img-light" style="
           background-color: #1e2530;
           border-left: 3px solid #4a6fa5;
@@ -127,48 +127,12 @@ layout: default
               <h3><a href="{{ '/blog/' | relative_url }}" style="color: inherit; ">Latest Blog Posts</a></h3>
               <br>
               {%- include latest_posts.html %}
-            {%- endif %}
-        </div>
-    </div>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br>
-    <div class="col-md-6">
-        <div class = "repo-img-light" style="
-          background-color: #1e2530;
-          border-left: 3px solid #4a6fa5;
-          padding: 30px 40px;
-          border-radius: 8px;
-          transition: all 0.25s ease;
-        "
-        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
-        "
-        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
-        >
-            {% if page.selected_papers -%}
-              <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Latest Publications</a></h3>
-              {%- include selected_papers.html %}
-            {%- endif %}
-        </div>
-        <div class = "repo-img-dark" style="
-          background-color: #f4f7fb;
-          border-left: 3px solid #4a6fa5;
-          padding: 30px 40px;
-          border-radius: 8px;
-          transition: all 0.25s ease;
-        "
-        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.35)';
-        "
-        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
-        >
-            {% if page.selected_papers -%}
-              <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Latest Publications</a></h3>
-              {%- include selected_papers.html %}
             {%- endif %}
         </div>
     </div>
 </div>
+
+<br><br>
 
 <div class="row mt-4 justify-content-center  text-center">
     <div class="col-md-12">
