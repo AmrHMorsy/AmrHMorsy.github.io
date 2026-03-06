@@ -285,9 +285,9 @@ glm::vec3 compute_reflection_vector( glm::vec3 L, glm::vec3 N )
       "
       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
       >
-        <a href="/tutoring">Tutoring</a>
-        <br><br>
         I offer online tutoring in computer graphics, game development, and game engine development.
+        <br><br>
+        <a href="/tutoring">Learn more</a>
  </div>
     </div>
 </div>

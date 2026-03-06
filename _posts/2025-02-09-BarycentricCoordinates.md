@@ -564,9 +564,9 @@ There are 2 ways to calculate the area of the triangle:
       "
       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
       >
-        <a href="/tutoring">Tutoring</a>
-        <br><br>
         I offer online tutoring in computer graphics, game development, and game engine development.
+        <br><br>
+        <a href="/tutoring">Learn more</a>
  </div>
     </div>
 </div>

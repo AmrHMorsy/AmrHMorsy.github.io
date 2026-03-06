@@ -60,7 +60,7 @@ I build game engines, video games, and real-time graphics systems.
         <a href="/portfolio">Portfolio</a>
       </div>
     </div>
-    
+<br><br><br><br>
         <div class="col-md-2">
       <div class = "repo-img-dark" style="
         background-color: #f4f7fb;
@@ -95,6 +95,7 @@ I build game engines, video games, and real-time graphics systems.
         <a href="/blog">Blog</a>
       </div>
     </div>
+<br><br><br><br>
     <div class="col-md-2">
       <div class = "repo-img-dark" style="
         background-color: #f4f7fb;
@@ -129,8 +130,7 @@ I build game engines, video games, and real-time graphics systems.
         <a href="/publications">Publications</a>
       </div>
     </div>
-    
-
+<br><br><br><br>
     <div class="col-md-2">
       <div class = "repo-img-dark" style="
         background-color: #f4f7fb;
@@ -165,7 +165,7 @@ I build game engines, video games, and real-time graphics systems.
         <a href="/services">Services</a>
       </div>
     </div>
-
+<br><br><br><br>
     <div class="col-md-2">
       <div class = "repo-img-dark" style="
         background-color: #f4f7fb;
@@ -202,7 +202,7 @@ I build game engines, video games, and real-time graphics systems.
       </div>
     </div>
     
-    
+<br><br><br><br>
     <div class="col-md-2">
       <div class = "repo-img-dark" style="
         background-color: #f4f7fb;

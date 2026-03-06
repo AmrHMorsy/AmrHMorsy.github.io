@@ -24,7 +24,7 @@ horizontal: false
       "
       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
       >
-        <a href="/Freelancing">Freelancing</a>
+        <a href="/freelancing">Freelancing</a>
                 <br>
         <br>
 I offer freelance graphics programming services for individuals and companies.
@@ -40,13 +40,13 @@ I offer freelance graphics programming services for individuals and companies.
       "
       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
       >
-        <a href="/Freelancing">Freelancing</a>
+        <a href="/freelancing">Freelancing</a>
         <br>
         <br>
 I offer freelance graphics programming services for individuals and companies. 
 </div>
     </div>
-    
+<br><br><br><br><br><br><br><br>
     <div class="col-md-6">
       <div class = "repo-img-dark" style="
         background-color: #f4f7fb;
