@@ -10,6 +10,19 @@ horizontal: false
 ---
 
 <figure class="col-md-12 text-center theme-img repo-img-light">
+{% include figure.html loading="lazy" path="assets/img/Games/TheRoomSheLeftBehind/SneakPeak.png" class="scaled-img90"%}
+  <figcaption>Opening Scene - The Room She Left Behind</figcaption>
+</figure>
+
+<figure class="col-md-12 text-center theme-img repo-img-dark">
+{% include figure.html loading="lazy" path="assets/img/Games/TheRoomSheLeftBehind/SneakPeak.png" class="scaled-img90"%}
+  <figcaption>Opening Scene - The Room She Left Behind</figcaption>
+</figure>
+
+<br>
+<br>
+
+<figure class="col-md-12 text-center theme-img repo-img-light">
 {% include figure.html loading="lazy" path="assets/img/Blog/CompleteVulkanTutorial/PlaneScene.png" class="scaled-img90"%}
   <figcaption>Aircraft Scene — Vejaler Engine</figcaption>
 </figure>
