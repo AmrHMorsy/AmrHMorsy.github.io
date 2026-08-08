@@ -281,6 +281,12 @@
       <FileRef
          location = "group:2026-04-15-LightCulling.md">
       </FileRef>
+      <FileRef
+         location = "group:2026-07-13-StochasticLightCulling.md">
+      </FileRef>
+      <FileRef
+         location = "group:MathematicianLamentAnalysis.md">
+      </FileRef>
    </Group>
    <Group
       location = "group:_sass"
