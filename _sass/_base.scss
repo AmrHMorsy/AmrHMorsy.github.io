@@ -242,6 +242,21 @@ blockquote {
   text-align: left;
 }
 
+
+
+.proof {
+  background: var(--global-bg-color);
+  border-left: 5px solid var(--global-theme-color);
+  margin: 1.5em 0;
+  padding: 1em;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.proof p {
+  margin-bottom: 0;
+}
+
 // Math
 
 .equation {

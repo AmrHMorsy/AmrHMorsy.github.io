@@ -1509,8 +1509,7 @@ The github repository containing the entire demo source code can be found <a hre
 <h4 id="References"><b>References</b></h4>
 <br>
 
-**[1]** $$$$ $$$$ Harada, T., McKee, J., Yang, J. C. Forward+: Bringing Deferred
-Lighting to the Next Level. 2012.
+**[1]** $$$$ $$$$ Harada, T., McKee, J., Yang, J. C. Forward+: Bringing Deferred Lighting to the Next Level. 2012.
 <br>
 <br>
 **[2]** $$$$ $$$$ T.Harada. A 2.5d culling for forward+. 2012.
