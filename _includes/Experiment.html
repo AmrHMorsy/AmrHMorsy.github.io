@@ -1,0 +1,68 @@
+<div class="col-md-6">
+    <div class="justify-content-center text-center">
+        {{ include.title }}
+        <br>
+
+        FPS = {{ include.fps }}
+        <br>
+
+        FrameTime = {{ include.frametime }} ms
+        <br><br>
+
+        {% assign sceneP = include.path | append: "/Scene.png" %}
+        {% assign hP = include.path | append: "/HeatMap.png" %}
+
+        <div class="row align-items-center mt-3 justify-content-center">
+
+            <div class="col-md-6">
+
+                <figure class="col-md-12 text-center theme-img repo-img-light">
+                    {% include figure.html
+                        path=sceneP
+                        class="scaled-img100"
+                    %}
+                    <figcaption>
+                        Scene
+                    </figcaption>
+                </figure>
+
+                <figure class="col-md-12 text-center theme-img repo-img-dark">
+                    {% include figure.html
+                        path=sceneP
+                        class="scaled-img100"
+                    %}
+                    <figcaption>
+                        Scene
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <figure class="col-md-12 text-center theme-img repo-img-light">
+                    {% include figure.html
+                        path=hP
+                        class="scaled-img100"
+                    %}
+                    <figcaption>
+                        Light Count HeatMap
+                    </figcaption>
+                </figure>
+
+                <figure class="col-md-12 text-center theme-img repo-img-dark">
+                    {% include figure.html
+                        path=hP
+                        class="scaled-img100"
+                    %}
+                    <figcaption>
+                        Light Count HeatMap
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
