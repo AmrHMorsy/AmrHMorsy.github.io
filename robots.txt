@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://cgnotes.github.io/sitemap.xml
+Sitemap: https://amrhmorsy.github.io/sitemap.xml
