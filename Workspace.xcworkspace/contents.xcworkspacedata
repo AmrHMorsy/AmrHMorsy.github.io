@@ -5,6 +5,13 @@
       location = "group:_config.yml">
    </FileRef>
    <Group
+      location = "group:_projects"
+      name = "_projects">
+      <FileRef
+         location = "group:LightCullingDemo.md">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:_includes"
       name = "_includes">
       <FileRef
@@ -543,72 +550,6 @@
                   </FileRef>
                   <FileRef
                      location = "group:vulkan_simplified_pipeline.svg">
-                  </FileRef>
-               </Group>
-            </Group>
-            <Group
-               location = "group:StochasticLightCulling"
-               name = "StochasticLightCulling">
-               <Group
-                  location = "group:Light"
-                  name = "Light">
-                  <FileRef
-                     location = "group:Paper.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:gg.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:SceneWLightCulling.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:Stochastic01.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:Graph.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:Thumbnail.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:stochastic001.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:SceneWoLightCulling.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:g.png">
-                  </FileRef>
-               </Group>
-               <Group
-                  location = "group:Dark"
-                  name = "Dark">
-                  <FileRef
-                     location = "group:Paper.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:gg.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:SceneWLightCulling.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:Stochastic01.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:Graph.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:Thumbnail.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:stochastic001.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:SceneWoLightCulling.png">
-                  </FileRef>
-                  <FileRef
-                     location = "group:g.png">
                   </FileRef>
                </Group>
             </Group>
