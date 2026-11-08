@@ -172,9 +172,6 @@
          location = "group:latest_posts.html">
       </FileRef>
       <FileRef
-         location = "group:latest_postsManager.html">
-      </FileRef>
-      <FileRef
          location = "group:LatestPublications.html">
       </FileRef>
       <FileRef
