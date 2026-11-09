@@ -5,6 +5,13 @@
       location = "group:_config.yml">
    </FileRef>
    <Group
+      location = "group:_videos"
+      name = "_videos">
+      <FileRef
+         location = "group:LightCulling.md">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:_projects"
       name = "_projects">
       <FileRef
@@ -89,6 +96,9 @@
          location = "group:projects.html">
       </FileRef>
       <FileRef
+         location = "group:videos.html">
+      </FileRef>
+      <FileRef
          location = "group:disqus.html">
       </FileRef>
       <FileRef
@@ -105,9 +115,6 @@
       </FileRef>
       <FileRef
          location = "group:metadata.html">
-      </FileRef>
-      <FileRef
-         location = "group:latestVideos.html">
       </FileRef>
       <Group
          location = "group:scripts"
@@ -169,13 +176,13 @@
          location = "group:selected_papers.html">
       </FileRef>
       <FileRef
-         location = "group:latest_posts.html">
+         location = "group:LatestPosts.html">
       </FileRef>
       <FileRef
          location = "group:LatestPublications.html">
       </FileRef>
       <FileRef
-         location = "group:LatestVideosManager.html">
+         location = "group:LatestVideos.html">
       </FileRef>
       <FileRef
          location = "group:LatestProjects.html">
