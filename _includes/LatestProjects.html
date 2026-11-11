@@ -1,0 +1,74 @@
+    <div class = "repo-img-light custom-cardLight">
+        <h4><b><a href="{{ '/projects/' | relative_url }}" style="color: inherit;">Latest Projects</a></b></h4>
+        <br>
+        <br>
+        
+        
+        <div class="row">
+          {% assign sorted_projects = site.projects | sort: "importance" %}
+
+          {% for project in sorted_projects %}
+          
+          
+          <div class="col-md-6 mb-4">
+              <div class = "repo-img-light custom-cardLight2">
+                <h5>
+                  <a href="https://github.com/AmrHMorsy/Vulkan-Light-Culling-Demo" style="color: inherit;">
+                    {{ project.title }}
+                  </a>
+                </h5>
+                <h6 class="vulkan"><b><i>{{ project.category }}</i></b></h6>
+                <br>
+                <h6><b>{{ project.description }}</b></h6>
+                <br>
+                <img
+                  src="{{ project.img | relative_url }}"
+                  alt="{{ project.title }}"
+                  class="img-fluid"
+                >
+              </div>
+          </div>
+
+
+
+          {% endfor %}
+        </div>
+        
+    </div>
+    <div class = "repo-img-dark custom-cardDark">
+        <h4><b><a href="{{ '/projects/' | relative_url }}" style="color: inherit;">Latest Projects</a></b></h4>
+        <br>
+        <br>
+        <div class="row">
+          {% assign sorted_projects = site.projects | sort: "importance" %}
+          {% for project in sorted_projects %}
+          
+          
+          
+          
+            <div class="col-md-6 mb-4">
+                <div class = "repo-img-dark custom-cardDark2">
+              <h5>
+                <a href="https://github.com/AmrHMorsy/Vulkan-Light-Culling-Demo" style="color: inherit;">
+                  {{ project.title }}
+                </a>
+              </h5>
+              <h6 style="color: #8b0000"><b><i>{{ project.category }}</i></b></h6>
+              <br>
+              <h6><b>{{ project.description }}</b></h6>
+              <br>
+              <img
+                src="{{ project.img | relative_url }}"
+                alt="{{ project.title }}"
+                class="img-fluid"
+              >
+            </div>
+            </div>
+            
+            
+            
+            
+            
+          {% endfor %}
+        </div>
+    </div>

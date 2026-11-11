@@ -1,0 +1,84 @@
+<div class = "repo-img-light custom-cardLight">
+    <h4><b><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">Latest Blog Posts</a></b></h4>
+    <br>
+    <br>
+    
+    
+    <div class="row">
+        {%- assign latest_posts = site.posts -%}
+        {% if site.latest_posts.limit %}
+        {% assign latest_posts_limit = site.latest_posts.limit %}
+        {% else %}
+        {% assign latest_posts_limit = latest_posts_size %}
+        {% endif %}
+        {% for item in latest_posts limit: latest_posts_limit %}
+
+        {% assign read_time = item.content | number_of_words | divided_by: 180 | plus: 1 %}
+
+        
+      <div class="col-md-6 mb-4">
+          <div class = "repo-img-light custom-cardLight2 blog-card">
+            <h5>
+                <a class="news-title" style="color: inherit;" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            </h5>
+            <h6 class="vulkan"><i><b>{{ read_time }} min &nbsp; &middot; &nbsp; {{ item.date | date: "%b %-d, %Y" }}</b></i></h6>
+            <br>
+            <figure class="theme-img repo-img-light">
+                {% assign thumbnail_path = item.thumbnail | append: "Dark/Thumbnail.png" %}
+                {% include figure.html path=thumbnail_path class="scaled-img100 blog-thumbnail" %}
+            </figure>
+            <figure class="theme-img repo-img-dark">
+                {% assign thumbnail_path = item.thumbnail | append: "Light/Thumbnail.png" %}
+                {% include figure.html path=thumbnail_path class="scaled-img100 blog-thumbnail" %}
+            </figure>
+          </div>
+      </div>
+
+
+
+      {% endfor %}
+    </div>
+    
+</div>
+<div class = "repo-img-dark custom-cardDark">
+    <h4><b><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">Latest Blog Posts</a></b></h4>
+    <br>
+    <br>
+    <div class="row">
+        {%- assign latest_posts = site.posts -%}
+        {% if site.latest_posts.limit %}
+        {% assign latest_posts_limit = site.latest_posts.limit %}
+        {% else %}
+        {% assign latest_posts_limit = latest_posts_size %}
+        {% endif %}
+        {% for item in latest_posts limit: latest_posts_limit %}
+
+        {% assign read_time = item.content | number_of_words | divided_by: 180 | plus: 1 %}
+
+      
+      
+        <div class="col-md-6 mb-4">
+            <div class = "repo-img-dark custom-cardDark2 blog-card">
+          <h5>
+              <a class="news-title" style="color: inherit;" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          </h5>
+          <h6 class="vulkan"><i><b>{{ read_time }} min &nbsp; &middot; &nbsp; {{ item.date | date: "%b %-d, %Y" }}</b></i></h6>
+          <br>
+          <figure class="theme-img repo-img-light">
+              {% assign thumbnail_path = item.thumbnail | append: "Dark/Thumbnail.png" %}
+              {% include figure.html path=thumbnail_path class="scaled-img100 blog-thumbnail" %}
+          </figure>
+          <figure class="theme-img repo-img-dark">
+              {% assign thumbnail_path = item.thumbnail | append: "Light/Thumbnail.png" %}
+              {% include figure.html path=thumbnail_path class="scaled-img100 blog-thumbnail" %}
+          </figure>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+      {% endfor %}
+    </div>
+</div>
