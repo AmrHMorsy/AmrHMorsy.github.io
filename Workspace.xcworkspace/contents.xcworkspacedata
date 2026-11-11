@@ -5,13 +5,6 @@
       location = "group:_config.yml">
    </FileRef>
    <Group
-      location = "group:_videos"
-      name = "_videos">
-      <FileRef
-         location = "group:LightCulling.md">
-      </FileRef>
-   </Group>
-   <Group
       location = "group:_projects"
       name = "_projects">
       <FileRef
@@ -286,6 +279,9 @@
       name = "_posts">
       <FileRef
          location = "group:2026-07-13-LightCulling.md">
+      </FileRef>
+      <FileRef
+         location = "group:2026-11-091-VulkanBible.md">
       </FileRef>
    </Group>
    <Group
