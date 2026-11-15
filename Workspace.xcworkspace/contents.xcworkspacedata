@@ -278,6 +278,15 @@
       location = "group:_posts"
       name = "_posts">
       <FileRef
+         location = "group:2024-10-28-ReflectionVectorCalculation.md">
+      </FileRef>
+      <FileRef
+         location = "group:2024-10-31-RefractionVectorCalculation.md">
+      </FileRef>
+      <FileRef
+         location = "group:2025-02-09-BarycentricCoordinates.md">
+      </FileRef>
+      <FileRef
          location = "group:2026-01-05-PoissonDiskSampling.md">
       </FileRef>
       <FileRef
