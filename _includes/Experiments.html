@@ -1,0 +1,184 @@
+{% assign experimentTitle = "Experiment "
+    | append: include.experimentIndex
+%}
+{% assign numLightsTitle = "NumLights = "
+    | append: include.numLights
+%}
+
+<div class="justify-content-center text-center">
+    <h4><b>{{ experimentTitle }}</b></h4>
+    <br>
+    <h5><b>{{ numLightsTitle }}</b></h5>
+</div>
+
+{% assign basePath = "assets/img/Blog/LightCulling/Experiments/"
+    | append: include.numLights
+%}
+
+{% assign graphPath = basePath | append: "/Graph.png" %}
+<br>
+<div class="row align-items-center mt-3  justify-content-center  text-center">
+    <div class="col-md-6">
+        <figure class="col-md-12 text-center theme-img repo-img-light">
+            {% include figure.html
+                path=graphPath
+                class="scaled-img100"
+            %}
+            <figcaption>Graph</figcaption>
+        </figure>
+        <figure class="col-md-12 text-center theme-img repo-img-dark">
+            {% include figure.html
+                path=graphPath
+                class="scaled-img100"
+            %}
+            <figcaption>Graph</figcaption>
+        </figure>
+    </div>
+</div>
+
+
+<br>
+<br>
+
+{% assign pathN = basePath | append: "/N" %}
+{% assign path1 = basePath | append: "/1" %}
+{% assign path10 = basePath | append: "/10" %}
+{% assign path20 = basePath | append: "/20" %}
+{% assign path30 = basePath | append: "/30" %}
+{% assign path40 = basePath | append: "/40" %}
+{% assign path50 = basePath | append: "/50" %}
+{% assign path60 = basePath | append: "/60" %}
+{% assign path70 = basePath | append: "/70" %}
+{% assign path80 = basePath | append: "/80" %}
+{% assign path90 = basePath | append: "/90" %}
+{% assign path100 = basePath | append: "/100" %}
+
+<div class="row align-items-center mt-3 justify-content-center text-center">
+    {% include Experiment.html
+        numlights=include.numLights
+        title="No Light Culling"
+        fps="20.4"
+        frametime="49.00 ms"
+        path=pathN
+    %}
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 1%"
+        fps="42.3"
+        frametime="23.333 ms"
+        path=path1
+    %}
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="row align-items-center mt-3 justify-content-center text-center">
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 10%"
+        fps="94.7"
+        frametime="10.557 ms"
+        path=path10
+    %}
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 20%"
+        fps="120"
+        frametime="8.333 ms"
+        path=path20
+    %}
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="row align-items-center mt-3 justify-content-center text-center">
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 30%"
+        fps="120"
+        frametime="8.333 ms"
+        path=path30
+    %}
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 40%"
+        fps="120"
+        frametime="8.333 ms"
+        path=path40
+    %}
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="row align-items-center mt-3 justify-content-center text-center">
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 50%"
+        fps="120"
+        frametime="8.333 ms"
+        path=path50
+    %}
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 60%"
+        fps="120"
+        frametime="8.333 ms"
+        path=path60
+    %}
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="row align-items-center mt-3 justify-content-center text-center">
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 70%"
+        fps="120"
+        frametime="8.333 ms"
+        path=path70
+    %}
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 80%"
+        fps="120"
+        frametime="8.333 ms"
+        path=path80
+    %}
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="row align-items-center mt-3 justify-content-center text-center">
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 90%"
+        fps="120"
+        frametime="8.333 ms"
+        path=path90
+    %}
+    {% include Experiment.html
+        numlights=include.numLights
+        title="Attenuation cutoff = 100%"
+        fps="120"
+        frametime="8.333 ms"
+        path=path100
+    %}
+</div>
+
+<br>
+<br>
+<br>
+
+<hr>
+<br>
+

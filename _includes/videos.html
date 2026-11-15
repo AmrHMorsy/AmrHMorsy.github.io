@@ -1,0 +1,36 @@
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  {% if video.redirect -%}
+  <a href="{{ video.redirect }}">
+    {%- else -%}
+    <a href="{{ video.url | relative_url }}">
+      {%- endif %}
+      <div class="card hoverable">
+        {%- if video.img %}
+        {%- include figure.html
+          path=video.img
+          alt="video thumbnail" -%}
+        {%- endif %}
+        <div class="card-body">
+          <h2 class="card-title">{{ video.title }}</h2>
+          <p class="card-text">{{ video.description }}</p>
+          <div class="row ml-1 mr-1 p-0">
+            {%- if video.github -%}
+            <div class="github-icon">
+              <div class="icon" data-toggle="tooltip" title="Code Repository">
+                <a href="{{ video.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
+              </div>
+              {%- if video.github_stars -%}
+              <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                <i class="fa-solid fa-star"></i>
+                <span id="{{ video.github_stars }}-stars"></span>
+              </span>
+              {%- endif %}
+            </div>
+            {%- endif %}
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
