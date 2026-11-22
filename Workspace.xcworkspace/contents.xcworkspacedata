@@ -12,6 +12,64 @@
       </FileRef>
    </Group>
    <Group
+      location = "group:_bookshelf"
+      name = "_bookshelf">
+      <FileRef
+         location = "group:AgnesGrey.md">
+      </FileRef>
+      <FileRef
+         location = "group:Stoner.md">
+      </FileRef>
+      <FileRef
+         location = "group:LookingforAlaska.md">
+      </FileRef>
+      <FileRef
+         location = "group:Disgrace.md">
+      </FileRef>
+      <FileRef
+         location = "group:TheBellJar.md">
+      </FileRef>
+      <FileRef
+         location = "group:TheShining.md">
+      </FileRef>
+      <FileRef
+         location = "group:Carrie.md">
+      </FileRef>
+      <FileRef
+         location = "group:WhiteNights.md">
+      </FileRef>
+      <FileRef
+         location = "group:TheDeathOfIvanIlych.md">
+      </FileRef>
+      <FileRef
+         location = "group:MathematicianLament.md">
+      </FileRef>
+      <FileRef
+         location = "group:TeachYourClassOff.md">
+      </FileRef>
+      <FileRef
+         location = "group:JaneEyre.md">
+      </FileRef>
+      <FileRef
+         location = "group:TheFaultInOurStars.md">
+      </FileRef>
+      <FileRef
+         location = "group:VeronicaDecidesToDie.md">
+      </FileRef>
+      <FileRef
+         location = "group:TheAlchemist.md">
+      </FileRef>
+      <FileRef
+         location = "group:Sapiens.md">
+      </FileRef>
+      <FileRef
+         location = "group:Miramar.md">
+      </FileRef>
+      <FileRef
+         location = "group:LonesomeDove.md">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:_includes"
       name = "_includes">
       <FileRef
@@ -102,6 +160,9 @@
       </FileRef>
       <FileRef
          location = "group:Experiment.html">
+      </FileRef>
+      <FileRef
+         location = "group:Bookshelf.html">
       </FileRef>
       <FileRef
          location = "group:Experiments.html">
@@ -250,6 +311,9 @@
       </FileRef>
       <FileRef
          location = "group:Videos.md">
+      </FileRef>
+      <FileRef
+         location = "group:Bookshelf.md">
       </FileRef>
       <FileRef
          location = "group:blog.md">
@@ -445,6 +509,9 @@
       <Group
          location = "group:js"
          name = "js">
+         <FileRef
+            location = "group:Sphere.js">
+         </FileRef>
          <Group
             location = "group:distillpub"
             name = "distillpub">
