@@ -12,6 +12,14 @@
       </FileRef>
    </Group>
    <Group
+      location = "group:_games"
+      name = "_games">
+   </Group>
+   <Group
+      location = "group:_books"
+      name = "_books">
+   </Group>
+   <Group
       location = "group:_bookshelf"
       name = "_bookshelf">
       <FileRef
@@ -242,6 +250,12 @@
          location = "group:LatestProjects.html">
       </FileRef>
       <FileRef
+         location = "group:LatestBooks.html">
+      </FileRef>
+      <FileRef
+         location = "group:LatestGames.html">
+      </FileRef>
+      <FileRef
          location = "group:header.html">
       </FileRef>
       <FileRef
@@ -308,6 +322,12 @@
       </FileRef>
       <FileRef
          location = "group:Projects.md">
+      </FileRef>
+      <FileRef
+         location = "group:Games.md">
+      </FileRef>
+      <FileRef
+         location = "group:Books.md">
       </FileRef>
       <FileRef
          location = "group:Videos.md">
