@@ -77,7 +77,10 @@
          location = "group:LonesomeDove.md">
       </FileRef>
       <FileRef
-         location = "group:LonesomeDove 2.md">
+         location = "group:TheAlgorithmicBeautyofPlants.md">
+      </FileRef>
+      <FileRef
+         location = "group:Godel.md">
       </FileRef>
    </Group>
    <Group
