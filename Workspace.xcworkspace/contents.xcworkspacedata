@@ -76,6 +76,9 @@
       <FileRef
          location = "group:LonesomeDove.md">
       </FileRef>
+      <FileRef
+         location = "group:LonesomeDove 2.md">
+      </FileRef>
    </Group>
    <Group
       location = "group:_includes"
