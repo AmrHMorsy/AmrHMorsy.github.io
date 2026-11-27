@@ -1,0 +1,149 @@
+<br>
+<h5><b>Currently Reading</b></h5>
+<hr>
+<br>
+
+<div class="row">
+    {% assign booksInBookshelf = site.bookshelf%}
+    {% for book in booksInBookshelf %}
+    {%- if book.status == "CurrentlyReading" -%}
+  <div class="col-md-2 mb-4">
+      <div class = "repo-img-light justify-content-center text-center">
+        <a href="{{ book.redirect }}" style="color: inherit;">
+            <img
+              src="{{ book.img | relative_url }}"
+              alt="{{ book.title }}"
+              class="img-fluid blog-thumbnail"
+            >
+            <br>
+            <br>
+            <h5><b>
+                {{ book.title }}
+            </b></h5>
+            <h6><b>
+                {{ book.author }}
+            </b></h6>
+        </a>
+      </div>
+      <div class = "repo-img-dark justify-content-center text-center">
+          <a href="{{ book.redirect }}" style="color: inherit;">
+              <img
+                src="{{ book.img | relative_url }}"
+                alt="{{ book.title }}"
+                class="img-fluid blog-thumbnail"
+              >
+              <br>
+              <br>
+              <h5><b>
+                  {{ book.title }}
+              </b></h5>
+              <br>
+              <h6><b>
+                  {{ book.author }}
+              </b></h6>
+          </a>
+      </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<br>
+<br>
+<h5><b>Read</b></h5>
+<hr>
+<br>
+<div class="row">
+    {% assign booksInBookshelf = site.bookshelf%}
+    {% for book in booksInBookshelf %}
+    {%- if book.status == "Read" -%}
+  <div class="col-md-2 mb-4">
+      <div class = "repo-img-light justify-content-center text-center">
+        <a href="{{ book.redirect }}" style="color: inherit;">
+            <img
+              src="{{ book.img | relative_url }}"
+              alt="{{ book.title }}"
+              class="img-fluid blog-thumbnail"
+            >
+            <br>
+            <br>
+            <h5><b>
+                {{ book.title }}
+            </b></h5>
+            <h6><b>
+                {{ book.author }}
+            </b></h6>
+        </a>
+      </div>
+      <div class = "repo-img-dark justify-content-center text-center">
+          <a href="{{ book.redirect }}" style="color: inherit;">
+              <img
+                src="{{ book.img | relative_url }}"
+                alt="{{ book.title }}"
+                class="img-fluid blog-thumbnail"
+              >
+              <br>
+              <br>
+              <h5><b>
+                  {{ book.title }}
+              </b></h5>
+              <br>
+              <h6><b>
+                  {{ book.author }}
+              </b></h6>
+          </a>
+      </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<br>
+<br>
+<h5><b>Want to Read</b></h5>
+<hr>
+<br>
+<div class="row">
+    {% assign booksInBookshelf = site.bookshelf%}
+    {% for book in booksInBookshelf %}
+    {%- if book.status == "WantToRead" -%}
+  <div class="col-md-2 mb-4">
+      <div class = "repo-img-light justify-content-center text-center">
+        <a href="{{ book.redirect }}" style="color: inherit;">
+            <img
+              src="{{ book.img | relative_url }}"
+              alt="{{ book.title }}"
+              class="img-fluid blog-thumbnail"
+            >
+            <br>
+            <br>
+            <h5><b>
+                {{ book.title }}
+            </b></h5>
+            <h6><b>
+                {{ book.author }}
+            </b></h6>
+        </a>
+      </div>
+      <div class = "repo-img-dark justify-content-center text-center">
+          <a href="{{ book.redirect }}" style="color: inherit;">
+              <img
+                src="{{ book.img | relative_url }}"
+                alt="{{ book.title }}"
+                class="img-fluid blog-thumbnail"
+              >
+              <br>
+              <br>
+              <h5><b>
+                  {{ book.title }}
+              </b></h5>
+              <br>
+              <h6><b>
+                  {{ book.author }}
+              </b></h6>
+          </a>
+      </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
